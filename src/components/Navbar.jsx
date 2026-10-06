@@ -16,10 +16,10 @@ export default function Navbar({ onOpenInquiry }) {
 
   const navLinks = [
     { name: 'About Us', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Portals', href: '#portals' },
-    { name: 'Execution Process', href: '#workflow' },
-    { name: 'Compliance & GSTIN', href: '#compliance' },
+    { name: '13 Core Services', href: '#services' },
+    { name: 'Portals & PSUs', href: '#portals' },
+    { name: 'Bidding Process', href: '#workflow' },
+    { name: 'Compliance & FAQs', href: '#compliance' },
     { name: 'Contact', href: '#contact' }
   ];
 
@@ -32,26 +32,32 @@ export default function Navbar({ onOpenInquiry }) {
       {/* Top micro bar for statutory & quick contact */}
       <div className="hidden lg:block border-b border-slate-800/60 pb-2 mb-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-xs text-slate-400">
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-5">
             <span className="flex items-center text-cyan-400">
               <ShieldCheck className="w-3.5 h-3.5 mr-1 text-cyan-400" />
               <span>GSTIN: <strong className="text-white font-mono tracking-wider">{COMPANY_INFO.gstin}</strong></span>
             </span>
             <span className="text-slate-500">|</span>
-            <span className="text-slate-300">Registered: Begusarai, Bihar (10)</span>
+            <span className="text-slate-300 font-medium">Systematic Approach to Government Operations</span>
             <span className="text-slate-500">|</span>
-            <span className="text-emerald-400 font-medium">● GeM & CPPP Qualified Contractor</span>
+            <span className="text-emerald-400 font-medium">● GeM, CPPP & PSU Empanelment Advisors</span>
           </div>
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-5">
             <a href={`mailto:${COMPANY_INFO.email}`} className="flex items-center hover:text-cyan-400 transition-colors">
               <Mail className="w-3.5 h-3.5 mr-1 text-cyan-400" />
               <span>{COMPANY_INFO.email}</span>
             </a>
             <span className="text-slate-500">|</span>
-            <a href={`tel:${COMPANY_INFO.phoneRaw}`} className="flex items-center text-slate-300 hover:text-cyan-400 transition-colors font-medium">
-              <Phone className="w-3.5 h-3.5 mr-1 text-cyan-400" />
-              <span>{COMPANY_INFO.phone}</span>
-            </a>
+            <div className="flex items-center space-x-2 text-slate-300 font-medium">
+              <Phone className="w-3.5 h-3.5 text-cyan-400" />
+              <a href={`tel:${COMPANY_INFO.phoneRaw}`} className="hover:text-cyan-400 transition-colors">
+                {COMPANY_INFO.phone}
+              </a>
+              <span>/</span>
+              <a href={`tel:${COMPANY_INFO.altPhoneRaw}`} className="hover:text-cyan-400 transition-colors">
+                {COMPANY_INFO.altPhone}
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -75,7 +81,7 @@ export default function Navbar({ onOpenInquiry }) {
                 D NANDANI <span className="text-cyan-400">TECH</span>
               </span>
               <span className="text-[10px] sm:text-xs text-slate-400 tracking-wider uppercase font-semibold">
-                Solutions • Bihar
+                Government Tender & GeM Advisors
               </span>
             </div>
           </a>
@@ -110,7 +116,7 @@ export default function Navbar({ onOpenInquiry }) {
               onClick={onOpenInquiry}
               className="relative inline-flex items-center justify-center px-4 py-2 text-xs font-bold text-slate-950 bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 rounded-lg hover:from-cyan-300 hover:to-blue-400 transition-all duration-300 shadow-md shadow-cyan-500/20 hover:shadow-cyan-500/40 transform hover:-translate-y-0.5"
             >
-              <span>Submit Tender Inquiry</span>
+              <span>Get Tender Proposal</span>
               <ArrowUpRight className="w-3.5 h-3.5 ml-1 stroke-[2.5]" />
             </button>
           </div>
@@ -121,7 +127,7 @@ export default function Navbar({ onOpenInquiry }) {
               onClick={onOpenInquiry}
               className="px-2.5 py-1.5 text-xs font-bold text-slate-900 bg-cyan-400 rounded-md"
             >
-              Inquire
+              Proposal
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -142,7 +148,7 @@ export default function Navbar({ onOpenInquiry }) {
               <ShieldCheck className="w-3.5 h-3.5 mr-1" />
               GSTIN: <span className="font-mono text-white ml-1">{COMPANY_INFO.gstin}</span>
             </div>
-            <div className="text-slate-400">Begusarai, Bihar • GeM & CPPP Ready</div>
+            <div className="text-slate-400">Systematic Approach to Government Operations</div>
           </div>
 
           <div className="flex flex-col space-y-3">
@@ -167,13 +173,20 @@ export default function Navbar({ onOpenInquiry }) {
               Call: {COMPANY_INFO.phone}
             </a>
             <a
+              href={`tel:${COMPANY_INFO.altPhoneRaw}`}
+              className="flex items-center justify-center py-2.5 px-4 rounded-lg bg-slate-800 text-slate-200 text-xs font-medium border border-slate-700 hover:bg-slate-700"
+            >
+              <Phone className="w-3.5 h-3.5 mr-2 text-cyan-400" />
+              Call: {COMPANY_INFO.altPhone}
+            </a>
+            <a
               href={COMPANY_INFO.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center py-2.5 px-4 rounded-lg bg-emerald-500/20 text-emerald-400 text-xs font-semibold border border-emerald-500/30"
             >
               <MessageSquare className="w-3.5 h-3.5 mr-2" />
-              Direct WhatsApp Inquiry
+              Direct WhatsApp Proposal
             </a>
             <button
               onClick={() => {
@@ -182,7 +195,7 @@ export default function Navbar({ onOpenInquiry }) {
               }}
               className="flex items-center justify-center py-2.5 px-4 rounded-lg bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 font-bold text-xs"
             >
-              Submit Tender / RFP Query
+              Request Free Tender Consultation
             </button>
           </div>
         </div>

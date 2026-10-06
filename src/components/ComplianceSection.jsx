@@ -1,29 +1,29 @@
 import React, { useState } from 'react';
 import { COMPANY_INFO, FAQS } from '../data/companyData';
-import { ShieldCheck, ChevronDown, ChevronUp, CheckCircle, FileCheck, Building, HelpCircle } from 'lucide-react';
+import { ShieldCheck, ChevronDown, ChevronUp, CheckCircle, FileCheck, Building, HelpCircle, Scale } from 'lucide-react';
 
 export default function ComplianceSection() {
   const [openFaq, setOpenFaq] = useState(0);
 
   const compliancePoints = [
     {
-      title: "Active Bihar GST Registration",
-      desc: "Registered under Bihar jurisdiction with State Code 10. GSTIN: 10CDBPR1005E1ZH. Fully active with regular GST-1 and GSTR-3B filings.",
+      title: "CVC & General Procurement Rules",
+      desc: "Our advisors are well-versed in public policies, rules, and circulars of entities including the Central Vigilance Commission (CVC) and General Financial Rules (GFR 2017).",
+      icon: Scale
+    },
+    {
+      title: "QCI Vendor Assessment & BIS Exemption",
+      desc: "Comprehensive expertise in preparing desktop audit document packs for Quality Council of India (QCI) assessment and securing exemptions for BIS licensees.",
       icon: ShieldCheck
     },
     {
-      title: "GeM Seller & Bid Compliance",
-      desc: "Fully aligned with GeM GTC (General Terms and Conditions), STC, and SLA clauses for supply and service categories.",
+      title: "Public-Private Partnership (PPP) & RTI Norms",
+      desc: "Strict compliance with Public-Private Partnership project guidelines, transparency laws, and Right to Information (RTI) procedures during departmental liaisoning.",
       icon: FileCheck
     },
     {
-      title: "Make in India (MII) Preference",
-      desc: "Prioritizing Class-I and Class-II local suppliers to maximize local content compliance under DPIIT Public Procurement Orders.",
-      icon: CheckCircle
-    },
-    {
-      title: "Transparent Accounting & Audit Trail",
-      desc: "Clean digital banking, GST e-invoices, and E-Way bill generation for seamless interstate and intrastate movement.",
+      title: "Statutory Tax & Regulatory Registration",
+      desc: "Headquartered in Begusarai, Bihar with active GSTIN: 10CDBPR1005E1ZH. Fully compliant with all legal and commercial registration standards.",
       icon: Building
     }
   ];
@@ -36,13 +36,13 @@ export default function ComplianceSection() {
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold uppercase tracking-wider">
             <ShieldCheck className="w-3.5 h-3.5 mr-1" />
-            <span>Governance & Standards</span>
+            <span>Policy Compliance & FAQs</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
-            Statutory <span className="text-gradient">Compliance & FAQs</span>
+            Governance, Public Policy & <span className="text-gradient">FAQs</span>
           </h2>
           <p className="text-slate-300 text-base sm:text-lg">
-            Complete transparency in business credentials, tax registrations, and procurement norms.
+            Advisors well-versed in central public procurement guidelines, vigilance norms, and portal frameworks.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ export default function ComplianceSection() {
           {/* Left Column: 4 Compliance Cards */}
           <div className="lg:col-span-6 space-y-4">
             <h3 className="text-xl font-bold text-white mb-2 flex items-center">
-              <span>Statutory Alignment</span>
+              <span>Public Procurement Expertise</span>
             </h3>
 
             {compliancePoints.map((item, idx) => {
@@ -81,7 +81,7 @@ export default function ComplianceSection() {
 
             {/* Official Tax Badge Box */}
             <div className="p-4 rounded-xl bg-slate-900 border border-cyan-500/30 flex items-center justify-between text-xs">
-              <span className="text-slate-300">GSTIN Tax Registration ID:</span>
+              <span className="text-slate-300">GSTIN Registered Identification:</span>
               <span className="font-mono text-cyan-300 font-bold text-sm">{COMPANY_INFO.gstin}</span>
             </div>
           </div>
@@ -123,13 +123,13 @@ export default function ComplianceSection() {
               })}
             </div>
 
-            {/* Quick Inquiry Callout */}
+            {/* Quick Proposal Callout */}
             <div className="p-5 rounded-2xl bg-gradient-to-r from-cyan-950/40 to-blue-950/40 border border-cyan-500/30 text-xs space-y-2 mt-6">
               <div className="font-bold text-white text-sm">
-                Have a specific Tender NIT or BOQ for verification?
+                Need a tailored proposal letter for your company?
               </div>
               <p className="text-slate-300">
-                Email us your Tender document or RFP link directly to <a href={`mailto:${COMPANY_INFO.email}`} className="text-cyan-300 underline font-medium">{COMPANY_INFO.email}</a> for feasibility assessment.
+                Email us your company profile to <a href={`mailto:${COMPANY_INFO.email}`} className="text-cyan-300 underline font-medium">{COMPANY_INFO.email}</a> or call our advisors directly at <span className="text-cyan-300 font-semibold">{COMPANY_INFO.phone}</span> / <span className="text-cyan-300 font-semibold">{COMPANY_INFO.altPhone}</span>.
               </p>
             </div>
 

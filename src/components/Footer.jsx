@@ -30,7 +30,7 @@ export default function Footer() {
             </div>
 
             <p className="text-xs text-slate-300 leading-relaxed max-w-sm">
-              Premier technology solutions provider and turnkey government contracting partner. Specializing in GeM, CPPP, and state tender execution with guaranteed statutory compliance.
+              <strong>Systematic Approach to Government Operations.</strong> End-to-end bid processing management services for Government tenders on GeM, CPPP, Indian Railways, and PSUs.
             </p>
 
             {/* Official GSTIN Box */}
@@ -56,45 +56,53 @@ export default function Footer() {
               Company Navigation
             </h4>
             <ul className="space-y-2 text-xs">
-              <li><a href="#about" className="hover:text-cyan-400 transition-colors">About Firm</a></li>
-              <li><a href="#services" className="hover:text-cyan-400 transition-colors">Tender Capabilities</a></li>
-              <li><a href="#portals" className="hover:text-cyan-400 transition-colors">Procurement Portals</a></li>
-              <li><a href="#workflow" className="hover:text-cyan-400 transition-colors">Execution Lifecycle</a></li>
-              <li><a href="#compliance" className="hover:text-cyan-400 transition-colors">Compliance & GSTIN</a></li>
-              <li><a href="#contact" className="hover:text-cyan-400 transition-colors">Contact Directorate</a></li>
+              <li><a href="#about" className="hover:text-cyan-400 transition-colors">About Our Advisors</a></li>
+              <li><a href="#services" className="hover:text-cyan-400 transition-colors">13 Core Services</a></li>
+              <li><a href="#portals" className="hover:text-cyan-400 transition-colors">Portals & PSUs Covered</a></li>
+              <li><a href="#workflow" className="hover:text-cyan-400 transition-colors">Bidding Lifecycle</a></li>
+              <li><a href="#compliance" className="hover:text-cyan-400 transition-colors">Governance & FAQs</a></li>
+              <li><a href="#contact" className="hover:text-cyan-400 transition-colors">Proposal Desk</a></li>
             </ul>
           </div>
 
-          {/* Column 4: Supported Portals & Domains */}
+          {/* Column 4: Core Services */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-wider text-white">
-              Portals & Standards
+              Key Capabilities
             </h4>
             <ul className="space-y-2 text-xs">
-              <li><span className="text-slate-300">Government e-Marketplace (GeM)</span></li>
-              <li><span className="text-slate-300">CPPP (eprocure.gov.in)</span></li>
-              <li><span className="text-slate-300">Bihar eProcurement (GePNIC)</span></li>
-              <li><span className="text-slate-300">Indian Railways (IREPS)</span></li>
-              <li><span className="text-slate-300">Public Sector Units (PSUs)</span></li>
-              <li><span className="text-slate-300">General Financial Rules (GFR 2017)</span></li>
+              <li><span className="text-slate-300">GeM & CPPP Registration</span></li>
+              <li><span className="text-slate-300">Vendor Assessment (QCI)</span></li>
+              <li><span className="text-slate-300">BIS Assessment Exemption</span></li>
+              <li><span className="text-slate-300">PSU Empanelment (BHEL, EIL)</span></li>
+              <li><span className="text-slate-300">OEM Panel & Brand Approval</span></li>
+              <li><span className="text-slate-300">Live Reverse Auction (RA)</span></li>
+              <li><span className="text-slate-300">L1 PO & EMD Refund Follow-up</span></li>
             </ul>
           </div>
 
           {/* Column 5: Direct Official Contact */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-wider text-white">
-              Contact Desk
+              Contact Strategy Desk
             </h4>
             <div className="space-y-2.5 text-xs">
               <div className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span className="text-slate-300">Begusarai, Bihar, India</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <Phone className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                <a href={`tel:${COMPANY_INFO.phoneRaw}`} className="text-slate-200 hover:text-cyan-300 transition-colors">
-                  {COMPANY_INFO.phone}
-                </a>
+              <div className="flex flex-col space-y-1">
+                <div className="flex items-center space-x-2">
+                  <Phone className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                  <a href={`tel:${COMPANY_INFO.phoneRaw}`} className="text-slate-200 hover:text-cyan-300 transition-colors">
+                    {COMPANY_INFO.phone}
+                  </a>
+                </div>
+                <div className="flex items-center space-x-2 pl-6">
+                  <a href={`tel:${COMPANY_INFO.altPhoneRaw}`} className="text-slate-200 hover:text-cyan-300 transition-colors">
+                    {COMPANY_INFO.altPhone}
+                  </a>
+                </div>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-cyan-400 flex-shrink-0" />
@@ -123,13 +131,13 @@ export default function Footer() {
           <div className="text-slate-400 text-center sm:text-left">
             © {new Date().getFullYear()} <strong>D NANDANI TECH SOLUTIONS</strong>. All Rights Reserved.
             <div className="text-[11px] text-slate-500 mt-0.5">
-              Independent contractor & supplier. All portal trademarks (GeM, CPPP, IREPS) belong to respective government authorities.
+              Tender bidding & procurement strategy advisory. All portal trademarks (GeM, CPPP, IREPS, BHEL, EIL) belong to respective authorities.
             </div>
           </div>
 
           <div className="flex items-center space-x-4">
             <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-[11px] text-slate-400">
-              ⚡ Cloudflare Pages Ready
+              ⚡ Systematic Approach
             </span>
             <button
               onClick={scrollToTop}

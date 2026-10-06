@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, Send, CheckCircle2, ShieldCheck } from 'lucide-react';
+import { X, Send, CheckCircle2 } from 'lucide-react';
 import { COMPANY_INFO } from '../data/companyData';
 
 export default function TenderInquiryModal({ isOpen, onClose, initialService }) {
@@ -8,8 +8,8 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
     organization: '',
     phone: '',
     email: '',
-    category: 'GeM Tender Execution',
-    tenderId: '',
+    category: 'Full 13-Service Outsourced Bid Manager Package',
+    tenderDetails: '',
     message: ''
   });
 
@@ -26,14 +26,14 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const text = `*Urgent Tender / RFP Inquiry*\n\n` +
+    const text = `*New Bid Consultation Request*\n\n` +
       `*Name:* ${formData.name}\n` +
-      `*Organization:* ${formData.organization}\n` +
+      `*Company:* ${formData.organization}\n` +
       `*Phone:* ${formData.phone}\n` +
       `*Email:* ${formData.email}\n` +
-      `*Domain / Category:* ${formData.category}\n` +
-      (formData.tenderId ? `*Tender ID / NIT:* ${formData.tenderId}\n` : '') +
-      `*Details:* ${formData.message}`;
+      `*Service Required:* ${formData.category}\n` +
+      (formData.tenderDetails ? `*Tender / Product Details:* ${formData.tenderDetails}\n` : '') +
+      `*Scope / Notes:* ${formData.message}`;
 
     const encodedText = encodeURIComponent(text);
     const waUrl = `https://wa.me/918929851130?text=${encodedText}`;
@@ -62,10 +62,10 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
           </div>
           <div>
             <h3 className="text-lg font-bold text-white">
-              Tender & Project Inquiry
+              Tender & GeM Proposal Consultation
             </h3>
             <p className="text-xs text-slate-400">
-              D Nandani Tech Solutions • Begusarai, Bihar
+              D Nandani Tech Solutions • Call: {COMPANY_INFO.phone} / {COMPANY_INFO.altPhone}
             </p>
           </div>
         </div>
@@ -73,9 +73,9 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
         {submitted ? (
           <div className="py-8 text-center space-y-4">
             <CheckCircle2 className="w-12 h-12 text-emerald-400 mx-auto" />
-            <h4 className="text-lg font-bold text-white">Inquiry Forwarded!</h4>
+            <h4 className="text-lg font-bold text-white">Request Dispatched!</h4>
             <p className="text-xs text-slate-300">
-              Your details have been pre-filled into WhatsApp. We will review your tender scope immediately.
+              Your details have been pre-filled into WhatsApp. Our tender strategy advisor will consult with you shortly.
             </p>
             <button
               onClick={() => {
@@ -105,12 +105,12 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
 
             <div>
               <label className="block text-xs font-semibold text-slate-300 mb-1">
-                Department / Organization *
+                Company / Firm Name *
               </label>
               <input
                 type="text"
                 required
-                placeholder="Department or Enterprise Name"
+                placeholder="Business Name"
                 value={formData.organization}
                 onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
                 className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-cyan-400"
@@ -146,48 +146,36 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-3">
-              <div>
-                <label className="block text-xs font-semibold text-slate-300 mb-1">
-                  Category
-                </label>
-                <select
-                  value={formData.category}
-                  onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-cyan-400"
-                >
-                  <option>GeM Tender Execution</option>
-                  <option>CPPP Central Tender</option>
-                  <option>Bihar eProcurement</option>
-                  <option>IT Hardware & Supply</option>
-                  <option>CCTV & Networking</option>
-                  <option>Smart Classroom & AV</option>
-                  <option>AMC & Maintenance</option>
-                  <option>Tender Advisory</option>
-                </select>
-              </div>
-              <div>
-                <label className="block text-xs font-semibold text-slate-300 mb-1">
-                  Tender / NIT No.
-                </label>
-                <input
-                  type="text"
-                  placeholder="Optional"
-                  value={formData.tenderId}
-                  onChange={(e) => setFormData({ ...formData, tenderId: e.target.value })}
-                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-cyan-400 font-mono"
-                />
-              </div>
+            <div>
+              <label className="block text-xs font-semibold text-slate-300 mb-1">
+                Service Scope
+              </label>
+              <select
+                value={formData.category}
+                onChange={(e) => setFormData({ ...formData, category: e.target.value })}
+                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-cyan-400"
+              >
+                <option>Full 13-Service Outsourced Bid Manager Package</option>
+                <option>GeM Portal & CPPP Registration</option>
+                <option>Vendor Assessment (QCI) on GeM</option>
+                <option>Vendor Assessment Exemption (BIS License)</option>
+                <option>PSU Empanelment (BHEL, EIL, Indian Railways)</option>
+                <option>OEM Panel & Brand Approval Setup</option>
+                <option>Product Upload & Catalogue Approval</option>
+                <option>Tender Document Study & Eligibility Summary</option>
+                <option>Live Bidding & Reverse Auction (RA) Management</option>
+                <option>L1 Purchase Order & EMD Refund Follow-up</option>
+              </select>
             </div>
 
             <div>
               <label className="block text-xs font-semibold text-slate-300 mb-1">
-                Brief Scope / Specifications *
+                Products Manufactured or Specific Tender Details *
               </label>
               <textarea
                 rows={2}
                 required
-                placeholder="Product specs, quantity, delivery location, or timeline..."
+                placeholder="Mention product category, licenses held, or tender ID..."
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-cyan-400"
@@ -200,7 +188,7 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
                 className="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-slate-950 bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 transition-all shadow-md shadow-cyan-500/20 flex items-center justify-center space-x-2"
               >
                 <Send className="w-4 h-4" />
-                <span>Submit & Dispatch to WhatsApp Desk</span>
+                <span>Submit & Dispatch to WhatsApp Strategy Desk</span>
               </button>
             </div>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, ArrowRight, CheckCircle2, Building2, FileSpreadsheet, Send, PhoneCall } from 'lucide-react';
+import { ShieldCheck, ArrowRight, CheckCircle2, Building2, FileSpreadsheet, Send, PhoneCall, Award, Users } from 'lucide-react';
 import { COMPANY_INFO } from '../data/companyData';
 
 export default function Hero({ onOpenInquiry }) {
@@ -17,40 +17,48 @@ export default function Hero({ onOpenInquiry }) {
           {/* Left Column: Headline & Value Proposition */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             
-            {/* Compliance Badge */}
+            {/* Tagline Pill */}
             <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cyan-950/60 border border-cyan-500/40 text-cyan-300 text-xs font-semibold shadow-inner">
               <span className="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
-              <span>Statutory Compliance Verified: GSTIN <strong>{COMPANY_INFO.gstin}</strong></span>
+              <span>Systematic Approach to Government Operations</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
-              Precision Tender Execution &{' '}
-              <span className="text-gradient">Technology Infrastructure</span>
+              Expand Your Business Through{' '}
+              <span className="text-gradient">Govt Tenders & GeM Bidding</span>
             </h1>
 
             {/* Subtitle */}
             <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              Based in <strong>Begusarai, Bihar</strong>, D Nandani Tech Solutions is an authorized contractor & tech procurement partner. We execute high-precision contracts on <strong>GeM</strong>, <strong>CPPP</strong>, and state e-procurement portals with 100% compliance, rapid BOQ fulfillment, and on-site SLA delivery.
+              <strong>D Nandani Tech Solutions</strong> provides end-to-end bid processing management and strategic tendering services. We act as your <strong>dedicated Virtual Bid Manager</strong>—handling portal registrations, GeM vendor assessment, PSU empanelment (BHEL, EIL, Railways), catalogue approvals, and live reverse auctions.
             </p>
 
-            {/* Key Assurance Bullet Points */}
+            {/* Key Assurance Bullet Points from Official Proposal */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2 text-left max-w-xl mx-auto lg:mx-0">
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-300">
                 <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                <span>GeM Custom Bids & Direct Buying</span>
+                <span>GeM & CPPP Portal Registration & DSC Setup</span>
               </div>
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-300">
                 <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                <span>Turnkey IT Hardware & Server Setup</span>
+                <span>Vendor Assessment (QCI) & BIS Exemption</span>
               </div>
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-300">
                 <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                <span>CCTV Surveillance & Campus Networking</span>
+                <span>PSU Empanelment (BHEL, EIL, Indian Railways)</span>
               </div>
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-300">
                 <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                <span>On-Site SLA & Multi-Year AMC</span>
+                <span>OEM Panel Creation & Reseller Management</span>
+              </div>
+              <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-300">
+                <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                <span>Tender Scrutiny, BOQ Study & Rate Strategy</span>
+              </div>
+              <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-300">
+                <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                <span>Live Reverse Auction, PO & EMD Refund Follow-up</span>
               </div>
             </div>
 
@@ -61,14 +69,14 @@ export default function Hero({ onOpenInquiry }) {
                 className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-bold text-sm text-slate-950 bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 transition-all shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 transform hover:-translate-y-0.5"
               >
                 <Send className="w-4 h-4 mr-2" />
-                <span>Submit Tender / RFP Query</span>
+                <span>Request Bidding Proposal</span>
               </button>
 
               <a
                 href="#services"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-semibold text-sm text-slate-200 bg-slate-900/80 border border-slate-700/80 hover:border-cyan-400/60 hover:text-white transition-all hover:bg-slate-800"
               >
-                <span>Explore Capabilities</span>
+                <span>View All 13 Services</span>
                 <ArrowRight className="w-4 h-4 ml-2 text-cyan-400" />
               </a>
 
@@ -77,7 +85,7 @@ export default function Hero({ onOpenInquiry }) {
                 className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-3.5 rounded-xl font-medium text-xs text-slate-300 hover:text-cyan-300 hover:bg-slate-900/60 border border-transparent hover:border-slate-800 transition-all"
               >
                 <PhoneCall className="w-3.5 h-3.5 mr-1.5 text-cyan-400" />
-                <span>+91 8929851130</span>
+                <span>{COMPANY_INFO.phone}</span>
               </a>
             </div>
 
@@ -85,10 +93,10 @@ export default function Hero({ onOpenInquiry }) {
             <div className="pt-3 flex items-center justify-center lg:justify-start space-x-4 text-xs text-slate-400">
               <span className="flex items-center">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 mr-1.5"></span>
-                Official Registration: Bihar (State Code 10)
+                Pan-India Tender Strategy & Bid Advisory
               </span>
               <span>•</span>
-              <span>Prompt BOQ Turnaround</span>
+              <span>CVC & GFR 2017 Procurement Compliant</span>
             </div>
 
           </div>
@@ -114,56 +122,52 @@ export default function Hero({ onOpenInquiry }) {
                       />
                     </div>
                     <div>
-                      <div className="text-xs font-bold uppercase tracking-wider text-cyan-400">Official Profile</div>
+                      <div className="text-xs font-bold uppercase tracking-wider text-cyan-400">Proposal Profile</div>
                       <div className="text-base font-bold text-white tracking-tight">D NANDANI TECH</div>
-                      <div className="text-xs text-slate-400">Begusarai, Bihar</div>
+                      <div className="text-xs text-slate-400">Tender Bidding & GeM Advisors</div>
                     </div>
                   </div>
                   <div className="text-right">
-                    <span className="inline-block px-2.5 py-1 rounded-md bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 text-[11px] font-bold">
-                      VERIFIED
+                    <span className="inline-block px-2.5 py-1 rounded-md bg-cyan-500/20 border border-cyan-500/40 text-cyan-400 text-[11px] font-bold">
+                      ADVISOR
                     </span>
-                  </div>
-                </div>
-
-                {/* GST Details Box */}
-                <div className="p-3.5 rounded-xl bg-slate-950/70 border border-slate-800/80 space-y-1.5 font-mono text-xs">
-                  <div className="flex justify-between items-center text-slate-400">
-                    <span>GSTIN / TAX IDENTIFIER</span>
-                    <span className="text-emerald-400 text-[10px] font-sans font-bold">ACTIVE</span>
-                  </div>
-                  <div className="text-cyan-300 font-bold text-sm tracking-widest break-all">
-                    {COMPANY_INFO.gstin}
-                  </div>
-                  <div className="text-[11px] text-slate-400 flex justify-between font-sans">
-                    <span>Jurisdiction: Begusarai, Bihar</span>
-                    <span>State Code: 10</span>
                   </div>
                 </div>
 
                 {/* Scope & Capabilities Quick Grid */}
                 <div className="space-y-3">
                   <div className="text-xs font-semibold text-slate-300 uppercase tracking-wider">
-                    Core Operational Domains:
+                    Core Bid Processing Capabilities:
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-xs">
                     <div className="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 flex items-center space-x-2">
-                      <Building2 className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                      <span className="text-slate-200">Govt. Tender Execution</span>
+                      <FileSpreadsheet className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                      <span className="text-slate-200">GeM / CPPP Portals</span>
                     </div>
                     <div className="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 flex items-center space-x-2">
-                      <FileSpreadsheet className="w-4 h-4 text-blue-400 flex-shrink-0" />
-                      <span className="text-slate-200">GeM Custom Bids</span>
+                      <ShieldCheck className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                      <span className="text-slate-200">Vendor Assessment</span>
                     </div>
                     <div className="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 flex items-center space-x-2">
-                      <ShieldCheck className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                      <span className="text-slate-200">CCTV & Network AMC</span>
+                      <Building2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
+                      <span className="text-slate-200">PSU Empanelment</span>
                     </div>
                     <div className="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 flex items-center space-x-2">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                      <span className="text-slate-200">Hardware Supply</span>
+                      <Award className="w-4 h-4 text-purple-400 flex-shrink-0" />
+                      <span className="text-slate-200">Reverse Auction (RA)</span>
                     </div>
                   </div>
+                </div>
+
+                {/* Outsourced Bid Manager Benefit Banner */}
+                <div className="p-3.5 rounded-xl bg-slate-950/70 border border-slate-800/80 text-xs space-y-1">
+                  <div className="flex items-center text-cyan-400 font-bold">
+                    <Users className="w-4 h-4 mr-1.5" />
+                    <span>Dedicated Outsourced Bid Management</span>
+                  </div>
+                  <p className="text-slate-400 text-[11px] leading-relaxed">
+                    Designed for manufacturers, MSMEs & traders who do not have an in-house bid team. We strategize, draft, bid, and follow up end-to-end.
+                  </p>
                 </div>
 
                 {/* Direct Connect Action inside Card */}
@@ -174,7 +178,7 @@ export default function Hero({ onOpenInquiry }) {
                     rel="noopener noreferrer"
                     className="w-full py-2.5 px-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 hover:bg-emerald-500/20 text-emerald-300 font-semibold text-xs flex items-center justify-center space-x-2 transition-colors"
                   >
-                    <span>Connect with Managing Director via WhatsApp</span>
+                    <span>Connect for Tender Feasibility via WhatsApp</span>
                   </a>
                 </div>
 
@@ -183,7 +187,7 @@ export default function Hero({ onOpenInquiry }) {
               {/* Floating Pill - Top Right */}
               <div className="absolute -top-4 -right-4 bg-slate-900 border border-cyan-400/40 text-cyan-300 px-3 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center space-x-1.5">
                 <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
-                <span>GeM & CPPP Ready</span>
+                <span>Pan-India Tender Coverage</span>
               </div>
 
               {/* Floating Pill - Bottom Left */}
