@@ -15,7 +15,7 @@ import { COMPANY_INFO } from './data/companyData';
 
 export default function App() {
   const [isInquiryOpen, setIsInquiryOpen] = useState(false);
-  const [selectedService, setSelectedService] = useState('GeM Tender Execution');
+  const [selectedService, setSelectedService] = useState('Full 13-Service Outsourced Bid Manager Package');
 
   const handleOpenInquiry = (serviceName) => {
     if (typeof serviceName === 'string') {
@@ -25,13 +25,13 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#070D1E] text-slate-100 flex flex-col font-sans selection:bg-cyan-500 selection:text-black">
+    <div className="min-h-screen bg-[#F8FAFC] text-slate-800 flex flex-col font-sans selection:bg-sky-500 selection:text-white">
       {/* Sticky Top Header */}
       <Navbar onOpenInquiry={() => handleOpenInquiry('General Tender Inquiry')} />
 
       {/* Main Page Content */}
       <main className="flex-grow">
-        <Hero onOpenInquiry={() => handleOpenInquiry('Turnkey Tender Execution')} />
+        <Hero onOpenInquiry={() => handleOpenInquiry('Full 13-Service Outsourced Bid Manager Package')} />
         <TrustStats />
         <AboutUs />
         <Services onSelectService={handleOpenInquiry} />
@@ -56,10 +56,10 @@ export default function App() {
         {/* Call Pill */}
         <a
           href={`tel:${COMPANY_INFO.phoneRaw}`}
-          className="flex items-center space-x-2 bg-slate-900/90 text-cyan-400 border border-slate-700/80 hover:border-cyan-400 px-3 py-2 rounded-full shadow-lg backdrop-blur-md transition-all hover:scale-105 text-xs font-bold"
+          className="flex items-center space-x-2 bg-white text-slate-800 border border-slate-300 hover:border-blue-500 hover:text-blue-600 px-3.5 py-2 rounded-full shadow-lg backdrop-blur-md transition-all hover:scale-105 text-xs font-bold"
           title="Call Now"
         >
-          <Phone className="w-4 h-4" />
+          <Phone className="w-3.5 h-3.5 text-blue-600" />
           <span className="hidden sm:inline">+91 8929851130</span>
         </a>
 
@@ -68,11 +68,11 @@ export default function App() {
           href={COMPANY_INFO.whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center w-13 h-13 p-3.5 rounded-full bg-emerald-500 text-slate-950 shadow-xl shadow-emerald-500/30 hover:bg-emerald-400 hover:scale-110 transition-all duration-300 group"
+          className="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-600 text-white shadow-xl shadow-emerald-600/30 hover:bg-emerald-500 hover:scale-110 transition-all duration-300 group"
           title="Direct WhatsApp Inquiry"
           aria-label="Chat on WhatsApp"
         >
-          <MessageSquare className="w-6 h-6 fill-current text-slate-950" />
+          <MessageSquare className="w-6 h-6 fill-current text-white" />
         </a>
       </div>
     </div>

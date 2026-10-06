@@ -6,7 +6,7 @@ export default function TrustStats() {
   const icons = [Shield, FileCheck, CheckCircle, Clock];
 
   return (
-    <section className="relative z-10 py-10 bg-[#0C1733]/80 border-y border-slate-800/80">
+    <section className="relative z-10 py-10 bg-slate-100/70 border-y border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Metric Cards Grid */}
@@ -16,20 +16,20 @@ export default function TrustStats() {
             return (
               <div 
                 key={idx}
-                className="p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/30 transition-all duration-300 group"
+                className="p-5 rounded-2xl bg-white border border-slate-200/90 hover:border-blue-300 hover:shadow-md transition-all duration-300 group"
               >
                 <div className="flex items-center space-x-3 mb-2">
-                  <div className="p-2 rounded-lg bg-cyan-500/10 text-cyan-400 group-hover:scale-110 transition-transform">
+                  <div className="p-2 rounded-lg bg-blue-50 text-blue-600 group-hover:scale-110 transition-transform">
                     <Icon className="w-5 h-5" />
                   </div>
-                  <div className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                  <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                     {item.value}
                   </div>
                 </div>
-                <div className="font-semibold text-sm text-slate-200">
+                <div className="font-bold text-sm text-slate-800">
                   {item.label}
                 </div>
-                <div className="text-xs text-slate-400 mt-1">
+                <div className="text-xs text-slate-500 mt-1">
                   {item.subtext}
                 </div>
               </div>
@@ -38,16 +38,16 @@ export default function TrustStats() {
         </div>
 
         {/* Quick Portal & Authority Assurance Strip */}
-        <div className="mt-8 pt-6 border-t border-slate-800/60 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-400">
+        <div className="mt-8 pt-6 border-t border-slate-200/80 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-600">
           <div className="flex items-center space-x-2">
-            <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
-            <span className="text-slate-300 font-medium">Serving:</span>
-            <span>Bihar State Departments • Central Ministries • PSUs • Municipal Corporations • Educational Institutions</span>
+            <span className="w-2 h-2 rounded-full bg-blue-600"></span>
+            <span className="text-slate-800 font-bold">Empanelment & Tenders:</span>
+            <span>BHEL • EIL • Indian Railways • NTPC • IOCL • CPPP • GeM State & Central Bids</span>
           </div>
           <div className="flex items-center space-x-4">
-            <span className="text-cyan-400 font-mono">GSTIN: {COMPANY_INFO.gstin}</span>
-            <span className="text-slate-500">|</span>
-            <span className="text-slate-300">Begusarai, Bihar</span>
+            <span className="text-blue-700 font-mono font-semibold">GSTIN: {COMPANY_INFO.gstin}</span>
+            <span className="text-slate-300">|</span>
+            <span className="text-slate-700 font-medium">Begusarai, Bihar</span>
           </div>
         </div>
 

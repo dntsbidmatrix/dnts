@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { COMPANY_INFO, FAQS } from '../data/companyData';
-import { ShieldCheck, ChevronDown, ChevronUp, CheckCircle, FileCheck, Building, HelpCircle, Scale } from 'lucide-react';
+import { ShieldCheck, ChevronDown, ChevronUp, FileCheck, Building, HelpCircle, Scale } from 'lucide-react';
 
 export default function ComplianceSection() {
   const [openFaq, setOpenFaq] = useState(0);
@@ -29,19 +29,19 @@ export default function ComplianceSection() {
   ];
 
   return (
-    <section id="compliance" className="py-20 lg:py-28 relative bg-[#070D1E] border-t border-slate-800/80">
+    <section id="compliance" className="py-20 lg:py-28 relative bg-[#F8FAFC] border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold uppercase tracking-wider">
-            <ShieldCheck className="w-3.5 h-3.5 mr-1" />
+          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold uppercase tracking-wider">
+            <ShieldCheck className="w-3.5 h-3.5 mr-1 text-emerald-600" />
             <span>Policy Compliance & FAQs</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
             Governance, Public Policy & <span className="text-gradient">FAQs</span>
           </h2>
-          <p className="text-slate-300 text-base sm:text-lg">
+          <p className="text-slate-600 text-base sm:text-lg">
             Advisors well-versed in central public procurement guidelines, vigilance norms, and portal frameworks.
           </p>
         </div>
@@ -51,7 +51,7 @@ export default function ComplianceSection() {
           
           {/* Left Column: 4 Compliance Cards */}
           <div className="lg:col-span-6 space-y-4">
-            <h3 className="text-xl font-bold text-white mb-2 flex items-center">
+            <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center">
               <span>Public Procurement Expertise</span>
             </h3>
 
@@ -60,17 +60,17 @@ export default function ComplianceSection() {
               return (
                 <div 
                   key={idx}
-                  className="p-5 rounded-2xl bg-[#0C1733] border border-slate-800 hover:border-emerald-500/40 transition-colors"
+                  className="p-5 rounded-2xl bg-white border border-slate-200 hover:border-emerald-300 hover:shadow-sm transition-all"
                 >
                   <div className="flex items-start space-x-4">
-                    <div className="p-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex-shrink-0 mt-1">
+                    <div className="p-2.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-700 flex-shrink-0 mt-1">
                       <Icon className="w-5 h-5" />
                     </div>
                     <div>
-                      <h4 className="text-base font-bold text-white mb-1">
+                      <h4 className="text-base font-bold text-slate-900 mb-1">
                         {item.title}
                       </h4>
-                      <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
+                      <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                         {item.desc}
                       </p>
                     </div>
@@ -80,16 +80,16 @@ export default function ComplianceSection() {
             })}
 
             {/* Official Tax Badge Box */}
-            <div className="p-4 rounded-xl bg-slate-900 border border-cyan-500/30 flex items-center justify-between text-xs">
-              <span className="text-slate-300">GSTIN Registered Identification:</span>
-              <span className="font-mono text-cyan-300 font-bold text-sm">{COMPANY_INFO.gstin}</span>
+            <div className="p-4 rounded-xl bg-slate-50 border border-blue-200 flex items-center justify-between text-xs">
+              <span className="text-slate-600 font-medium">GSTIN Registered Identification:</span>
+              <span className="font-mono text-blue-700 font-bold text-sm">{COMPANY_INFO.gstin}</span>
             </div>
           </div>
 
           {/* Right Column: FAQs */}
           <div className="lg:col-span-6 space-y-4">
-            <h3 className="text-xl font-bold text-white mb-2 flex items-center">
-              <HelpCircle className="w-5 h-5 mr-2 text-cyan-400" />
+            <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center">
+              <HelpCircle className="w-5 h-5 mr-2 text-blue-600" />
               <span>Frequently Asked Questions</span>
             </h3>
 
@@ -99,22 +99,22 @@ export default function ComplianceSection() {
                 return (
                   <div
                     key={idx}
-                    className="rounded-2xl bg-[#0C1733] border border-slate-800 overflow-hidden transition-all duration-200"
+                    className="rounded-2xl bg-white border border-slate-200 overflow-hidden transition-all duration-200 shadow-sm"
                   >
                     <button
                       onClick={() => setOpenFaq(isOpen ? -1 : idx)}
-                      className="w-full p-5 text-left flex items-center justify-between space-x-4 focus:outline-none hover:bg-slate-900/40"
+                      className="w-full p-5 text-left flex items-center justify-between space-x-4 focus:outline-none hover:bg-slate-50"
                     >
-                      <span className="text-sm sm:text-base font-bold text-white">
+                      <span className="text-sm sm:text-base font-bold text-slate-900">
                         {faq.q}
                       </span>
-                      <div className="text-cyan-400 flex-shrink-0">
+                      <div className="text-blue-600 flex-shrink-0">
                         {isOpen ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
                       </div>
                     </button>
 
                     {isOpen && (
-                      <div className="px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/80 pt-4 font-normal">
+                      <div className="px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4 font-normal">
                         {faq.a}
                       </div>
                     )}
@@ -124,12 +124,12 @@ export default function ComplianceSection() {
             </div>
 
             {/* Quick Proposal Callout */}
-            <div className="p-5 rounded-2xl bg-gradient-to-r from-cyan-950/40 to-blue-950/40 border border-cyan-500/30 text-xs space-y-2 mt-6">
-              <div className="font-bold text-white text-sm">
+            <div className="p-5 rounded-2xl bg-sky-50 border border-sky-200 text-xs space-y-2 mt-6">
+              <div className="font-bold text-slate-900 text-sm">
                 Need a tailored proposal letter for your company?
               </div>
-              <p className="text-slate-300">
-                Email us your company profile to <a href={`mailto:${COMPANY_INFO.email}`} className="text-cyan-300 underline font-medium">{COMPANY_INFO.email}</a> or call our advisors directly at <span className="text-cyan-300 font-semibold">{COMPANY_INFO.phone}</span> / <span className="text-cyan-300 font-semibold">{COMPANY_INFO.altPhone}</span>.
+              <p className="text-slate-600">
+                Email us your company profile to <a href={`mailto:${COMPANY_INFO.email}`} className="text-blue-700 underline font-semibold">{COMPANY_INFO.email}</a> or call our advisors directly at <span className="text-blue-700 font-bold">{COMPANY_INFO.phone}</span> / <span className="text-blue-700 font-bold">{COMPANY_INFO.altPhone}</span>.
               </p>
             </div>
 
