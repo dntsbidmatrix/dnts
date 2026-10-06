@@ -30,7 +30,7 @@ export default function Footer() {
             </div>
 
             <p className="text-xs text-slate-300 leading-relaxed max-w-sm">
-              <strong>Systematic Approach to Government Operations.</strong> End-to-end bid processing management services for Government tenders on GeM, CPPP, Indian Railways, and PSUs.
+              <strong>Systematic Approach to Government Operations.</strong> End-to-end bid processing management services for Government tenders on GeM, CPPP, UNGM, and PSUs (BHEL, EIL & Indian Railways etc).
             </p>
 
             {/* Official GSTIN Box */}
@@ -71,10 +71,10 @@ export default function Footer() {
               Key Capabilities
             </h4>
             <ul className="space-y-2 text-xs">
-              <li><span className="text-slate-300">GeM & CPPP Registration</span></li>
+              <li><span className="text-slate-300">GeM, CPPP & UNGM Registration</span></li>
               <li><span className="text-slate-300">Vendor Assessment (QCI)</span></li>
               <li><span className="text-slate-300">BIS Assessment Exemption</span></li>
-              <li><span className="text-slate-300">PSU Empanelment (BHEL, EIL)</span></li>
+              <li><span className="text-slate-300">PSU Empanelment (BHEL, EIL & Indian Railways etc)</span></li>
               <li><span className="text-slate-300">OEM Panel & Brand Approval</span></li>
               <li><span className="text-slate-300">Live Reverse Auction (RA)</span></li>
               <li><span className="text-slate-300">L1 PO & EMD Refund Follow-up</span></li>
@@ -131,7 +131,7 @@ export default function Footer() {
           <div className="text-slate-400 text-center sm:text-left">
             © {new Date().getFullYear()} <strong>D NANDANI TECH SOLUTIONS</strong>. All Rights Reserved.
             <div className="text-[11px] text-slate-500 mt-0.5">
-              Tender bidding & procurement strategy advisory. All portal trademarks (GeM, CPPP, IREPS, BHEL, EIL) belong to respective authorities.
+              Tender bidding & procurement strategy advisory. All portal trademarks (GeM, CPPP, UNGM, IREPS, BHEL, EIL etc) belong to respective authorities.
             </div>
           </div>
 

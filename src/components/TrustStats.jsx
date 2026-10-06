@@ -42,7 +42,7 @@ export default function TrustStats() {
           <div className="flex items-center space-x-2">
             <span className="w-2 h-2 rounded-full bg-blue-600"></span>
             <span className="text-slate-800 font-bold">Empanelment & Tenders:</span>
-            <span>BHEL • EIL • Indian Railways • NTPC • IOCL • CPPP • GeM State & Central Bids</span>
+            <span>BHEL, EIL & Indian Railways etc • NTPC • IOCL • CPPP • UNGM • GeM State & Central Bids</span>
           </div>
           <div className="flex items-center space-x-4">
             <span className="text-blue-700 font-mono font-semibold">GSTIN: {COMPANY_INFO.gstin}</span>

@@ -69,7 +69,7 @@ export default function PortalsCovered() {
             <span>Specialized Supplier Registration & Empanelment</span>
           </div>
           <div className="text-sm sm:text-base font-bold text-slate-900">
-            BHEL • Engineers India Limited (EIL) • Indian Railways (IREPS) • NTPC • IOCL • GAIL • Defence & State Portals
+            BHEL, EIL & Indian Railways etc • NTPC • IOCL • GAIL • Defence & State Portals
           </div>
           <p className="text-xs text-slate-600 max-w-2xl mx-auto">
             We prepare vendor dossiers, balance sheet compilations, technical capability declarations, and handle complete department liaisoning.

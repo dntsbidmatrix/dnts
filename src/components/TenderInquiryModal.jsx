@@ -156,10 +156,10 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
                 className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-blue-600 focus:bg-white"
               >
                 <option>Full 13-Service Outsourced Bid Manager Package</option>
-                <option>GeM Portal & CPPP Registration</option>
+                <option>GeM Portal, CPPP, UNGM and Other e-procurement Portals Registration</option>
                 <option>Vendor Assessment (QCI) on GeM</option>
                 <option>Vendor Assessment Exemption (BIS License)</option>
-                <option>PSU Empanelment (BHEL, EIL, Indian Railways)</option>
+                <option>PSU Empanelment (BHEL, EIL & Indian Railways etc)</option>
                 <option>OEM Panel & Brand Approval Setup</option>
                 <option>Product Upload & Catalogue Approval</option>
                 <option>Tender Document Study & Eligibility Summary</option>

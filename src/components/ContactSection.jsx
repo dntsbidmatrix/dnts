@@ -247,10 +247,10 @@ export default function ContactSection() {
                         className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-blue-600 focus:bg-white transition-colors"
                       >
                         <option>Full 13-Service Outsourced Bid Manager Package</option>
-                        <option>GeM & CPPP Portal Registration</option>
+                        <option>GeM Portal, CPPP, UNGM and Other e-procurement Portals Registration</option>
                         <option>Vendor Assessment (QCI) on GeM</option>
                         <option>Vendor Assessment Exemption (BIS License)</option>
-                        <option>PSU Empanelment (BHEL, EIL, Railways)</option>
+                        <option>PSU Empanelment (BHEL, EIL & Indian Railways etc)</option>
                         <option>OEM Panel & Brand Approval Setup</option>
                         <option>Product Upload & Catalogue Approval</option>
                         <option>Tender Document Study & Eligibility Summary</option>
@@ -269,8 +269,9 @@ export default function ContactSection() {
                       >
                         <option>GeM Portal (gem.gov.in)</option>
                         <option>CPPP (eprocure.gov.in)</option>
+                        <option>UNGM (United Nations Global Marketplace)</option>
                         <option>PSU Portals (BHEL, EIL, IOCL, NTPC)</option>
-                        <option>Indian Railways (IREPS)</option>
+                        <option>Indian Railways (IREPS) etc</option>
                         <option>State e-Procurement Portals</option>
                         <option>International / Non-GeM Tenders</option>
                       </select>

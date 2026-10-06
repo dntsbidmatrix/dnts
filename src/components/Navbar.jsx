@@ -42,7 +42,7 @@ export default function Navbar({ onOpenInquiry }) {
             <span className="text-slate-300 hidden xl:inline">|</span>
             <span className="text-emerald-700 font-semibold flex items-center bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5 animate-pulse"></span>
-              GeM, CPPP & PSU Advisors
+              GeM, CPPP, UNGM & PSU Advisors
             </span>
           </div>
 

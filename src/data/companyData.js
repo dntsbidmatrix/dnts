@@ -28,12 +28,12 @@ export const SERVICES = [
   {
     id: "gem-registration",
     category: "Portal Registration",
-    title: "GeM & e-Procurement Portal Registration",
+    title: "GeM Portal, CPPP, UNGM and Other e-procurement Portals Registration",
     badge: "Service #1 & #9",
-    description: "Complete onboarding and account setup across Government e-Marketplace (GeM), Central Public Procurement Portal (CPPP), and state e-procurement platforms using client credentials with Class-3 DSC integration.",
+    description: "Complete onboarding and account setup across Government e-Marketplace (GeM), Central Public Procurement Portal (CPPP), United Nations Global Marketplace (UNGM), and other e-procurement platforms using client credentials with Class-3 DSC integration.",
     features: [
       "GeM Primary & Secondary Seller account configuration",
-      "CPPP (eprocure.gov.in) & State GePNIC registrations",
+      "CPPP (eprocure.gov.in), UNGM & State GePNIC registrations",
       "Class-3 Digital Signature Certificate (DSC) mapping",
       "Organization profiling, tax & statutory data verification"
     ],
@@ -60,7 +60,7 @@ export const SERVICES = [
     badge: "Service #3 & #8",
     description: "Getting manufacturers and suppliers registered and empaneled as approved vendors across major Public Sector Undertakings (PSUs) and core government departments.",
     features: [
-      "Supplier registration in BHEL, EIL, and Indian Railways (IREPS)",
+      "Supplier registration in BHEL, EIL & Indian Railways etc (IREPS)",
       "Empanelment in NTPC, IOCL, GAIL, and Defence establishments",
       "Preparation of vendor registration dossiers, CA certificates & affidavits",
       "Follow-up with department procurement committees until approval"
@@ -112,9 +112,9 @@ export const SERVICES = [
 ];
 
 export const DETAILED_13_SERVICES = [
-  { no: 1, title: "GeM, CPPP & Other e-Procurement Portals Registration", desc: "Setting up verified primary & secondary accounts on central & state portals." },
+  { no: 1, title: "GeM Portal, CPPP, UNGM and Other e-procurement Portals Registration", desc: "Setting up verified primary & secondary accounts on central, global (UNGM) & state portals." },
   { no: 2, title: "Vendor Assessment on GeM Portal", desc: "Facilitating QCI vendor assessment process, documentation & site audit readiness." },
-  { no: 3, title: "PSU & Government Sector Empanelment", desc: "Approved supplier registration in BHEL, EIL, Indian Railways, NTPC, IOCL." },
+  { no: 3, title: "PSU & Government Sector Empanelment", desc: "Approved supplier registration in BHEL, EIL & Indian Railways etc." },
   { no: 4, title: "Vendor Assessment Exemption (BIS)", desc: "Securing official GeM assessment exemptions for sellers with active BIS licenses." },
   { no: 5, title: "OEM Panel Creation & Brand Approval", desc: "Setting up OEM dashboards, brand registry, reseller authorization & catalogue control." },
   { no: 6, title: "Products Upload & Catalogue Approval", desc: "Uploading product SKUs, mapping specifications, and granting reseller catalogue approvals." },
@@ -136,18 +136,18 @@ export const PORTALS_COVERED = [
     highlight: "OEM Panel & Reseller Control"
   },
   {
-    name: "Central Public Procurement Portal (CPPP)",
-    domain: "eprocure.gov.in",
-    type: "Central Govt Ministries & PSUs",
-    description: "End-to-end bid processing, technical envelope preparation, DSC Class-3 submission for central ministries and autonomous bodies.",
-    highlight: "Comprehensive NIT Study"
+    name: "CPPP & UNGM Portals",
+    domain: "eprocure.gov.in / ungm.org",
+    type: "Central Govt & United Nations",
+    description: "End-to-end bid processing, technical envelope preparation, DSC Class-3 submission for central ministries and UNGM global tenders.",
+    highlight: "Domestic & Global Coverage"
   },
   {
     name: "PSUs & Engineering Enterprises",
     domain: "BHEL, EIL, NTPC, IOCL, GAIL",
     type: "Core PSU Empanelment",
     description: "Specialized supplier registration dossiers, technical capability approvals, and empanelment across India's largest PSUs.",
-    highlight: "BHEL & EIL Approved Supplier"
+    highlight: "BHEL, EIL & Railways Approved"
   },
   {
     name: "Indian Railways (IREPS)",
@@ -162,7 +162,7 @@ export const WORKFLOW_STEPS = [
   {
     step: "01",
     title: "Portal Onboarding & Vendor Assessment",
-    description: "Registration on GeM, CPPP & PSUs, QCI vendor assessment, BIS exemptions, and OEM brand setup."
+    description: "Registration on GeM, CPPP, UNGM & PSUs, QCI vendor assessment, BIS exemptions, and OEM brand setup."
   },
   {
     step: "02",
@@ -196,8 +196,8 @@ export const FAQS = [
     a: "Yes. We handle complete GeM seller registration, secondary user setup, and QCI Vendor Assessment file preparation. If you possess a BIS license, we also assist in getting official exemption from Vendor Assessment."
   },
   {
-    q: "Do you assist with PSU empanelment like BHEL, EIL, and Indian Railways?",
-    a: "Yes. We prepare specialized vendor registration dossiers for major PSUs including BHEL, Engineers India Limited (EIL), Indian Railways (IREPS), IOCL, NTPC, and state engineering corporations."
+    q: "Do you assist with PSU empanelment like BHEL, EIL & Indian Railways etc?",
+    a: "Yes. We prepare specialized vendor registration dossiers for major PSUs including BHEL, Engineers India Limited (EIL), Indian Railways (IREPS) etc, as well as IOCL, NTPC, and state engineering corporations."
   },
   {
     q: "What happens after the tender is submitted? Do you participate in Reverse Auctions?",

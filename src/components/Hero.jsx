@@ -31,14 +31,14 @@ export default function Hero({ onOpenInquiry }) {
 
             {/* Subtitle */}
             <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              <strong>D Nandani Tech Solutions</strong> provides end-to-end bid processing management and strategic tendering services. We act as your <strong>dedicated Virtual Bid Manager</strong>—handling portal registrations, GeM vendor assessment, PSU empanelment (BHEL, EIL, Railways), catalogue approvals, and live reverse auctions.
+              <strong>D Nandani Tech Solutions</strong> provides end-to-end bid processing management and strategic tendering services. We act as your <strong>dedicated Virtual Bid Manager</strong>—handling portal registrations (GeM, CPPP, UNGM), GeM vendor assessment, PSU empanelment (BHEL, EIL & Indian Railways etc), catalogue approvals, and live reverse auctions.
             </p>
 
             {/* Key Assurance Bullet Points from Official Proposal */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2 text-left max-w-xl mx-auto lg:mx-0">
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-700">
                 <CheckCircle2 className="w-4 h-4 text-blue-600 flex-shrink-0" />
-                <span>GeM & CPPP Portal Registration & DSC Setup</span>
+                <span>GeM Portal, CPPP, UNGM & e-Procurement Registration</span>
               </div>
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-700">
                 <CheckCircle2 className="w-4 h-4 text-blue-600 flex-shrink-0" />
@@ -46,7 +46,7 @@ export default function Hero({ onOpenInquiry }) {
               </div>
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-700">
                 <CheckCircle2 className="w-4 h-4 text-blue-600 flex-shrink-0" />
-                <span>PSU Empanelment (BHEL, EIL, Indian Railways)</span>
+                <span>PSU Empanelment (BHEL, EIL & Indian Railways etc)</span>
               </div>
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-700">
                 <CheckCircle2 className="w-4 h-4 text-blue-600 flex-shrink-0" />
@@ -142,7 +142,7 @@ export default function Hero({ onOpenInquiry }) {
                   <div className="grid grid-cols-2 gap-2 text-xs">
                     <div className="p-2.5 rounded-lg bg-slate-50 border border-slate-200 flex items-center space-x-2">
                       <FileSpreadsheet className="w-4 h-4 text-blue-600 flex-shrink-0" />
-                      <span className="text-slate-800 font-medium">GeM / CPPP Portals</span>
+                      <span className="text-slate-800 font-medium">GeM, CPPP & UNGM</span>
                     </div>
                     <div className="p-2.5 rounded-lg bg-slate-50 border border-slate-200 flex items-center space-x-2">
                       <ShieldCheck className="w-4 h-4 text-emerald-600 flex-shrink-0" />
