@@ -1,18 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { COMPANY_INFO } from '../data/companyData';
 import { 
   ArrowUp, 
-  X, 
-  ShieldCheck, 
-  FileText, 
-  ExternalLink, 
-  CheckCircle2, 
-  Download, 
+  Phone, 
+  Mail, 
   MessageSquare, 
-  Phone 
+  Clock, 
+  ShieldCheck, 
+  Send,
+  ChevronRight
 } from 'lucide-react';
 
-// Custom Brand SVGs matching official social icon designs
+// Custom Brand SVGs for the circular social buttons
 const FacebookIcon = () => (
   <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
@@ -37,21 +36,7 @@ const YoutubeIcon = () => (
   </svg>
 );
 
-const AppleIcon = () => (
-  <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.07 1.72-.94 2.74 1.01.08 2.03-.49 2.65-1.24z"/>
-  </svg>
-);
-
-const GooglePlayIcon = () => (
-  <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-    <path d="M3.609 1.814L13.792 12 3.61 22.186a1.597 1.597 0 0 1-.61-.716 1.63 1.63 0 0 1-.1-.77V3.3a1.644 1.644 0 0 1 .1-.77 1.6 1.6 0 0 1 .609-.716zm11.248 11.251l2.454 2.454-12.38 7.151 9.926-9.605zm2.454-2.454l-2.454 2.454-9.926-9.605 12.38 7.151zm1.065 1.065l3.228 1.865a1.18 1.18 0 0 1 0 2.046l-3.228 1.865-1.989-1.989 1.989-1.787z"/>
-  </svg>
-);
-
 export default function Footer({ onOpenInquiry }) {
-  const [activeModal, setActiveModal] = useState(null); // 'terms' | 'privacy' | 'app' | 'media'
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -70,19 +55,26 @@ export default function Footer({ onOpenInquiry }) {
       <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/20 pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
-        {/* Main 4-Column Grid exactly matching the design */}
+        
+        {/* Main 4-Column Grid matching reference design */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 items-start">
           
-          {/* Column 1: Company Name & Offices (lg:col-span-5) */}
+          {/* Column 1: Company Profile & Dual Offices (lg:col-span-5) */}
           <div className="lg:col-span-5 space-y-6">
-            {/* Company Title */}
+            
+            {/* Company Branding */}
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md p-1.5 border border-white/20 flex items-center justify-center shadow-md">
                 <img src="/logo.png" alt="D Nandani Tech Solutions" className="w-full h-full object-contain" />
               </div>
-              <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-white drop-shadow-sm">
-                D Nandani Tech Solutions
-              </h3>
+              <div>
+                <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-white drop-shadow-sm">
+                  D Nandani Tech Solutions
+                </h3>
+                <p className="text-[11px] text-cyan-100 font-semibold uppercase tracking-wider">
+                  Systematic Approach to Government Operations
+                </p>
+              </div>
             </div>
 
             {/* Head Office */}
@@ -105,8 +97,8 @@ export default function Footer({ onOpenInquiry }) {
               </p>
             </div>
 
-            {/* Social Media & Contact Circular Buttons */}
-            <div className="pt-2 flex items-center space-x-3">
+            {/* Circular Social Buttons & WhatsApp Connect */}
+            <div className="pt-2 flex flex-wrap items-center gap-3">
               <a
                 href="https://facebook.com"
                 target="_blank"
@@ -147,185 +139,124 @@ export default function Footer({ onOpenInquiry }) {
                 <YoutubeIcon />
               </a>
 
-              {/* Direct WhatsApp Pill */}
               <a
                 href={COMPANY_INFO.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-3 py-1.5 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-bold shadow-md transition-all hover:scale-105 ml-2"
+                className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-bold shadow-md transition-all hover:scale-105"
               >
-                <MessageSquare className="w-3.5 h-3.5 mr-1" />
-                <span>WhatsApp</span>
+                <MessageSquare className="w-3.5 h-3.5 mr-1.5" />
+                <span>WhatsApp Desk</span>
               </a>
             </div>
-          </div>
 
-          {/* Column 2: COMPANY & MOBILE APPS (lg:col-span-3) */}
-          <div className="lg:col-span-3 space-y-6">
-            <div className="space-y-3">
-              <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white">
-                COMPANY
-              </h4>
-              <ul className="space-y-2 text-sm text-cyan-50">
-                <li>
-                  <a 
-                    href="#about" 
-                    onClick={(e) => handleLinkClick(e, 'about')}
-                    className="hover:text-white hover:underline transition-colors block"
-                  >
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <button 
-                    onClick={() => setActiveModal('news')}
-                    className="hover:text-white hover:underline transition-colors text-left"
-                  >
-                    News & Updates
-                  </button>
-                </li>
-                <li>
-                  <button 
-                    onClick={() => setActiveModal('blogs')}
-                    className="hover:text-white hover:underline transition-colors text-left"
-                  >
-                    Blogs & Articles
-                  </button>
-                </li>
-                <li>
-                  <a 
-                    href="#compliance" 
-                    onClick={(e) => handleLinkClick(e, 'compliance')}
-                    className="hover:text-white hover:underline transition-colors block"
-                  >
-                    Answers & FAQs
-                  </a>
-                </li>
-                <li>
-                  <a 
-                    href="#contact" 
-                    onClick={(e) => handleLinkClick(e, 'contact')}
-                    className="hover:text-white hover:underline transition-colors block"
-                  >
-                    Contact Us
-                  </a>
-                </li>
-                <li>
-                  <button 
-                    onClick={() => setActiveModal('media')}
-                    className="hover:text-white hover:underline transition-colors text-left"
-                  >
-                    Download Media Kit
-                  </button>
-                </li>
-              </ul>
-            </div>
-
-            {/* MOBILE APPS Sub-section */}
-            <div className="pt-2 space-y-2.5">
-              <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white">
-                MOBILE APPS
-              </h4>
-
-              <div className="flex flex-col space-y-2.5 max-w-[170px]">
-                {/* App Store Button with 4.6 Stars Badge */}
-                <div className="space-y-1">
-                  <button
-                    onClick={() => setActiveModal('app')}
-                    className="w-full bg-black hover:bg-neutral-900 text-white rounded-lg px-3 py-1.5 flex items-center space-x-2.5 border border-white/20 shadow-md transition-all transform hover:scale-[1.02]"
-                  >
-                    <AppleIcon />
-                    <div className="text-left leading-tight">
-                      <div className="text-[9px] uppercase tracking-wider text-neutral-300">Download on the</div>
-                      <div className="text-xs font-bold text-white tracking-tight">App Store</div>
-                    </div>
-                  </button>
-                  
-                  {/* Rating Tag */}
-                  <div className="inline-flex items-center space-x-1.5 px-2 py-0.5 rounded bg-white/95 text-slate-800 text-[10px] font-bold shadow-sm">
-                    <span>4.6</span>
-                    <span className="text-amber-500 text-xs">★★★★★</span>
-                  </div>
-                </div>
-
-                {/* Google Play Button */}
-                <button
-                  onClick={() => setActiveModal('app')}
-                  className="w-full bg-black hover:bg-neutral-900 text-white rounded-lg px-3 py-1.5 flex items-center space-x-2.5 border border-white/20 shadow-md transition-all transform hover:scale-[1.02]"
-                >
-                  <GooglePlayIcon />
-                  <div className="text-left leading-tight">
-                    <div className="text-[9px] uppercase tracking-wider text-neutral-300">GET IT ON</div>
-                    <div className="text-xs font-bold text-white tracking-tight">Google Play</div>
-                  </div>
-                </button>
+            {/* Official GSTIN Badge */}
+            <div className="pt-2">
+              <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-black/20 border border-white/20 text-xs text-white">
+                <ShieldCheck className="w-4 h-4 text-emerald-300" />
+                <span>GSTIN: <strong className="font-mono text-cyan-200">{COMPANY_INFO.gstin}</strong></span>
+                <span className="text-white/40">|</span>
+                <span className="text-cyan-100">State: Bihar (10)</span>
               </div>
             </div>
+
           </div>
 
-          {/* Column 3: POLICIES (lg:col-span-2) */}
-          <div className="lg:col-span-2 space-y-3">
+          {/* Column 2: COMPANY (Real sections on our website) (lg:col-span-3) */}
+          <div className="lg:col-span-3 space-y-3">
             <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white">
-              POLICIES
+              COMPANY
             </h4>
-            <ul className="space-y-2 text-sm text-cyan-50">
+            <ul className="space-y-2.5 text-sm text-cyan-50">
               <li>
-                <button
-                  onClick={() => setActiveModal('terms')}
-                  className="hover:text-white hover:underline transition-colors text-left"
+                <a 
+                  href="#about" 
+                  onClick={(e) => handleLinkClick(e, 'about')}
+                  className="hover:text-white hover:underline transition-colors flex items-center group"
                 >
-                  Terms of Use
-                </button>
+                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-cyan-200 group-hover:translate-x-0.5 transition-transform" />
+                  <span>About Our Advisors</span>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => setActiveModal('privacy')}
-                  className="hover:text-white hover:underline transition-colors text-left"
+                <a 
+                  href="#services" 
+                  onClick={(e) => handleLinkClick(e, 'services')}
+                  className="hover:text-white hover:underline transition-colors flex items-center group"
                 >
-                  Privacy Policy
-                </button>
+                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-cyan-200 group-hover:translate-x-0.5 transition-transform" />
+                  <span>13 Core Bidding Services</span>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => setActiveModal('refund')}
-                  className="hover:text-white hover:underline transition-colors text-left"
+                <a 
+                  href="#portals" 
+                  onClick={(e) => handleLinkClick(e, 'portals')}
+                  className="hover:text-white hover:underline transition-colors flex items-center group"
                 >
-                  Refund & EMD Policy
-                </button>
+                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-cyan-200 group-hover:translate-x-0.5 transition-transform" />
+                  <span>Portals & PSUs Covered</span>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => setActiveModal('confidentiality')}
-                  className="hover:text-white hover:underline transition-colors text-left"
+                <a 
+                  href="#workflow" 
+                  onClick={(e) => handleLinkClick(e, 'workflow')}
+                  className="hover:text-white hover:underline transition-colors flex items-center group"
                 >
-                  Bid Confidentiality
-                </button>
+                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-cyan-200 group-hover:translate-x-0.5 transition-transform" />
+                  <span>5-Stage Bidding Lifecycle</span>
+                </a>
               </li>
-            </ul>
-          </div>
-
-          {/* Column 4: SUPPORT (lg:col-span-2) */}
-          <div className="lg:col-span-2 space-y-3">
-            <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white">
-              SUPPORT
-            </h4>
-            <ul className="space-y-2 text-sm text-cyan-50">
               <li>
                 <a 
                   href="#compliance" 
                   onClick={(e) => handleLinkClick(e, 'compliance')}
-                  className="hover:text-white hover:underline transition-colors block"
+                  className="hover:text-white hover:underline transition-colors flex items-center group"
                 >
-                  FAQ
+                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-cyan-200 group-hover:translate-x-0.5 transition-transform" />
+                  <span>Compliance & FAQs</span>
                 </a>
               </li>
               <li>
-                <button
-                  onClick={() => onOpenInquiry && onOpenInquiry('Tender Advisory Pricing & Plans')}
-                  className="hover:text-white hover:underline transition-colors text-left"
+                <a 
+                  href="#contact" 
+                  onClick={(e) => handleLinkClick(e, 'contact')}
+                  className="hover:text-white hover:underline transition-colors flex items-center group"
                 >
-                  Pricing
-                </button>
+                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-cyan-200 group-hover:translate-x-0.5 transition-transform" />
+                  <span>Contact Proposal Desk</span>
+                </a>
+              </li>
+            </ul>
+
+            {/* Quick Virtual Bid Manager Callout */}
+            <div className="pt-4">
+              <div className="p-3.5 rounded-xl bg-black/20 border border-white/20 text-xs space-y-1.5">
+                <div className="font-bold text-white flex items-center">
+                  <span>Outsourced Bid Management</span>
+                </div>
+                <p className="text-[11px] text-cyan-100 leading-relaxed">
+                  Dedicated virtual department for MSMEs & OEMs without in-house bid managers.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Column 3: CORE CAPABILITIES (The actual 13 services offered) (lg:col-span-2) */}
+          <div className="lg:col-span-2 space-y-3">
+            <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white">
+              CORE SERVICES
+            </h4>
+            <ul className="space-y-2 text-xs sm:text-sm text-cyan-50">
+              <li>
+                <a 
+                  href="#services" 
+                  onClick={(e) => handleLinkClick(e, 'services')}
+                  className="hover:text-white hover:underline transition-colors block"
+                >
+                  GeM & CPPP Registration
+                </a>
               </li>
               <li>
                 <a 
@@ -333,45 +264,153 @@ export default function Footer({ onOpenInquiry }) {
                   onClick={(e) => handleLinkClick(e, 'services')}
                   className="hover:text-white hover:underline transition-colors block"
                 >
-                  GEM & Bid Advisory
+                  UNGM Global Registration
                 </a>
               </li>
               <li>
-                <button
-                  onClick={() => onOpenInquiry && onOpenInquiry('Request Virtual Bid Manager Demo')}
-                  className="hover:text-white hover:underline transition-colors text-left"
+                <a 
+                  href="#services" 
+                  onClick={(e) => handleLinkClick(e, 'services')}
+                  className="hover:text-white hover:underline transition-colors block"
                 >
-                  Request Demo
-                </button>
+                  Vendor Assessment (QCI)
+                </a>
               </li>
               <li>
                 <a 
-                  href="#workflow" 
-                  onClick={(e) => handleLinkClick(e, 'workflow')}
+                  href="#services" 
+                  onClick={(e) => handleLinkClick(e, 'services')}
                   className="hover:text-white hover:underline transition-colors block"
                 >
-                  How It Works
+                  BIS License Exemption
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#services" 
+                  onClick={(e) => handleLinkClick(e, 'services')}
+                  className="hover:text-white hover:underline transition-colors block"
+                >
+                  PSU Empanelment (BHEL, EIL etc)
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#services" 
+                  onClick={(e) => handleLinkClick(e, 'services')}
+                  className="hover:text-white hover:underline transition-colors block"
+                >
+                  OEM Panel & Brand Setup
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#services" 
+                  onClick={(e) => handleLinkClick(e, 'services')}
+                  className="hover:text-white hover:underline transition-colors block"
+                >
+                  BOQ Study & Rate Strategy
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#services" 
+                  onClick={(e) => handleLinkClick(e, 'services')}
+                  className="hover:text-white hover:underline transition-colors block"
+                >
+                  Live Reverse Auction (RA)
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#services" 
+                  onClick={(e) => handleLinkClick(e, 'services')}
+                  className="hover:text-white hover:underline transition-colors block"
+                >
+                  PO & EMD Refund Follow-up
                 </a>
               </li>
             </ul>
           </div>
 
+          {/* Column 4: DIRECT CONNECT & PROPOSAL DESK (lg:col-span-2) */}
+          <div className="lg:col-span-2 space-y-4">
+            <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white">
+              PROPOSAL DESK
+            </h4>
+            
+            <div className="space-y-3 text-xs sm:text-sm text-cyan-50">
+              {/* Phone 1 */}
+              <div>
+                <div className="text-[11px] text-cyan-200 uppercase font-semibold">Begusarai HQ:</div>
+                <a 
+                  href={`tel:${COMPANY_INFO.phoneRaw}`} 
+                  className="font-bold text-white hover:text-cyan-200 transition-colors flex items-center mt-0.5"
+                >
+                  <Phone className="w-3.5 h-3.5 mr-1.5 flex-shrink-0" />
+                  <span>{COMPANY_INFO.phone}</span>
+                </a>
+              </div>
+
+              {/* Phone 2 */}
+              <div>
+                <div className="text-[11px] text-cyan-200 uppercase font-semibold">Delhi Sales Desk:</div>
+                <a 
+                  href={`tel:${COMPANY_INFO.altPhoneRaw}`} 
+                  className="font-bold text-white hover:text-cyan-200 transition-colors flex items-center mt-0.5"
+                >
+                  <Phone className="w-3.5 h-3.5 mr-1.5 flex-shrink-0" />
+                  <span>{COMPANY_INFO.altPhone}</span>
+                </a>
+              </div>
+
+              {/* Email */}
+              <div>
+                <div className="text-[11px] text-cyan-200 uppercase font-semibold">Official Email:</div>
+                <a 
+                  href={`mailto:${COMPANY_INFO.email}`} 
+                  className="font-medium text-white hover:text-cyan-200 transition-colors break-all flex items-center mt-0.5"
+                >
+                  <Mail className="w-3.5 h-3.5 mr-1.5 flex-shrink-0" />
+                  <span>{COMPANY_INFO.email}</span>
+                </a>
+              </div>
+
+              {/* Working Hours */}
+              <div className="flex items-start space-x-1.5 text-[11px] text-cyan-100 pt-1">
+                <Clock className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" />
+                <span>{COMPANY_INFO.workingHours}</span>
+              </div>
+            </div>
+
+            {/* Request Proposal Action Button */}
+            <div className="pt-2">
+              <button
+                onClick={() => onOpenInquiry && onOpenInquiry('Full 13-Service Outsourced Bid Manager Package')}
+                className="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-white text-[#0284C7] hover:bg-cyan-50 font-bold text-xs shadow-lg transition-all hover:scale-105"
+              >
+                <Send className="w-3.5 h-3.5 mr-1.5" />
+                <span>Request Proposal</span>
+              </button>
+            </div>
+          </div>
+
         </div>
 
-        {/* Bottom Bar: Statutory Disclaimer & Copyright */}
+        {/* Bottom Bar: Statutory Summary & Copyright */}
         <div className="mt-14 pt-8 border-t border-white/20 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-cyan-50">
           <div className="text-center md:text-left space-y-1">
             <p className="font-semibold text-white">
               © {new Date().getFullYear()} D NANDANI TECH SOLUTIONS. All Rights Reserved.
             </p>
-            <p className="text-[11px] text-cyan-100/80">
-              Statutory Taxpayer Identification: <span className="font-mono font-bold text-white">GSTIN {COMPANY_INFO.gstin}</span> • State Code: 10 (Bihar) & Delhi NCR Regional Office
+            <p className="text-[11px] text-cyan-100/90">
+              Begusarai (Bihar) • Delhi NCR • Pan-India Government Tender Advisory & Bid Processing Management.
             </p>
           </div>
 
           <div className="flex items-center space-x-4">
             <span className="hidden sm:inline-block text-[11px] text-cyan-100">
-              Systematic Approach to Government Operations
+              ⚡ Systematic Approach to Government Operations
             </span>
             <button
               onClick={scrollToTop}
@@ -385,159 +424,6 @@ export default function Footer({ onOpenInquiry }) {
         </div>
 
       </div>
-
-      {/* Interactive Modals for Policies & Downloads */}
-      {activeModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
-          <div className="relative w-full max-w-2xl bg-white text-slate-800 rounded-2xl shadow-2xl border border-slate-200 overflow-hidden max-h-[90vh] flex flex-col">
-            
-            {/* Modal Header */}
-            <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 bg-slate-50">
-              <h3 className="text-lg font-bold text-slate-900 flex items-center space-x-2">
-                {activeModal === 'terms' && <span>Terms of Use — D Nandani Tech Solutions</span>}
-                {activeModal === 'privacy' && <span>Privacy Policy & Data Security</span>}
-                {activeModal === 'refund' && <span>Refund & EMD Assistance Policy</span>}
-                {activeModal === 'confidentiality' && <span>Bid Confidentiality & NDA Framework</span>}
-                {activeModal === 'app' && <span>D Nandani Bid Matrix — Mobile App</span>}
-                {activeModal === 'media' && <span>Company Profile & Official Media Kit</span>}
-                {activeModal === 'news' && <span>Government Procurement News & Circulars</span>}
-                {activeModal === 'blogs' && <span>Government Tendering Articles & Insights</span>}
-              </h3>
-              <button
-                onClick={() => setActiveModal(null)}
-                className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-200 transition-colors"
-              >
-                <X className="w-5 h-5" />
-              </button>
-            </div>
-
-            {/* Modal Body */}
-            <div className="p-6 overflow-y-auto text-sm text-slate-600 leading-relaxed space-y-4">
-              {activeModal === 'terms' && (
-                <>
-                  <p>
-                    <strong>1. Scope of Services:</strong> D Nandani Tech Solutions provides professional bid processing management, GeM onboarding, CPPP/UNGM registration, tender document study, BOQ analysis, and reverse auction consultancy as an outsourced advisory firm.
-                  </p>
-                  <p>
-                    <strong>2. Client Responsibilities:</strong> The client is solely responsible for the authenticity, legality, and accuracy of company credentials, DSC tokens, financial balance sheets, and technical certifications provided for bid preparation.
-                  </p>
-                  <p>
-                    <strong>3. Public Procurement Decisions:</strong> All tender evaluations and awards rest exclusively with the relevant government procuring authority. D Nandani Tech Solutions provides strategic preparation and execution support but does not guarantee tender award outcomes.
-                  </p>
-                </>
-              )}
-
-              {activeModal === 'privacy' && (
-                <>
-                  <p>
-                    <strong>1. Confidentiality of Client Data:</strong> We maintain strict confidentiality regarding client financial statements, margin structures, proprietary pricing, and Digital Signature Certificates (DSC Class-3).
-                  </p>
-                  <p>
-                    <strong>2. Zero Data Sharing:</strong> Your bidding documents, product catalogues, and commercial bids are never shared with competitor bidders or third-party organizations.
-                  </p>
-                  <p>
-                    <strong>3. Data Retention:</strong> Client credentials and tender files are stored in secure encrypted storage and used solely for authorized bid submission activities on Government portals.
-                  </p>
-                </>
-              )}
-
-              {activeModal === 'refund' && (
-                <>
-                  <p>
-                    <strong>1. EMD (Earnest Money Deposit) Retrieval:</strong> For non-L1 bids or cancelled tenders, our team provides proactive follow-up with the procuring officer/portal finance desk to ensure prompt release of your bank guarantee or FDR.
-                  </p>
-                  <p>
-                    <strong>2. Professional Retainer Fees:</strong> Advisory and preparation fees cover dedicated time and expert bid analysis. Retainer arrangements are governed by individual service agreements executed prior to bid submission.
-                  </p>
-                </>
-              )}
-
-              {activeModal === 'confidentiality' && (
-                <>
-                  <p>
-                    All strategic tender advisory engagements are covered under our Non-Disclosure framework. We ensure that pricing intelligence, OEM authorisation letters, and BOQ costing remain strictly confidential between our advisors and your management.
-                  </p>
-                </>
-              )}
-
-              {activeModal === 'app' && (
-                <div className="text-center py-4 space-y-3">
-                  <div className="w-16 h-16 rounded-2xl bg-blue-50 border border-blue-200 flex items-center justify-center mx-auto text-blue-600">
-                    <AppleIcon />
-                  </div>
-                  <h4 className="text-base font-bold text-slate-900">Mobile Companion App Coming Soon!</h4>
-                  <p className="text-xs sm:text-sm text-slate-600 max-w-md mx-auto">
-                    The <strong>D Nandani Bid Matrix</strong> mobile app for iOS and Android is currently in development. You will soon receive instant tender notifications, reverse auction alerts, and L1 updates directly on your phone.
-                  </p>
-                  <div className="pt-2">
-                    <a
-                      href={COMPANY_INFO.whatsappUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center px-4 py-2 rounded-xl bg-emerald-600 text-white text-xs font-bold hover:bg-emerald-700 shadow-md transition-all"
-                    >
-                      <MessageSquare className="w-4 h-4 mr-1.5" />
-                      <span>Get Instant Updates on WhatsApp</span>
-                    </a>
-                  </div>
-                </div>
-              )}
-
-              {activeModal === 'media' && (
-                <div className="space-y-3">
-                  <p>
-                    Download our official Corporate Profile and Bid Processing Scope of Work dossier:
-                  </p>
-                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between">
-                    <div>
-                      <div className="font-bold text-slate-900">D Nandani Tech Solutions — Scope of Work & Services</div>
-                      <div className="text-xs text-slate-500">Official 13-Point Virtual Bid Manager Proposal</div>
-                    </div>
-                    <button
-                      onClick={() => {
-                        setActiveModal(null);
-                        if (onOpenInquiry) onOpenInquiry('Proposal / Media Kit Request');
-                      }}
-                      className="px-3.5 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs flex items-center space-x-1.5 shadow"
-                    >
-                      <Download className="w-4 h-4" />
-                      <span>Request Kit</span>
-                    </button>
-                  </div>
-                </div>
-              )}
-
-              {(activeModal === 'news' || activeModal === 'blogs') && (
-                <div className="space-y-3">
-                  <p>
-                    We actively track amendments across General Financial Rules (GFR), CVC guidelines, GeM Incident Management policies, and UNGM global tenders.
-                  </p>
-                  <div className="p-4 rounded-xl bg-blue-50/60 border border-blue-200 text-xs text-blue-900 space-y-1.5">
-                    <div className="font-bold">Latest Tender Advisory Circulars:</div>
-                    <ul className="list-disc list-inside space-y-1 text-slate-700">
-                      <li>Mandatory QCI Vendor Assessment guidelines on GeM for OEM catalogue uploads.</li>
-                      <li>BIS license exemption application procedures for MSME manufacturers.</li>
-                      <li>IREPS (Indian Railways) e-Reverse Auction rule updates.</li>
-                    </ul>
-                  </div>
-                </div>
-              )}
-            </div>
-
-            {/* Modal Footer */}
-            <div className="px-6 py-3 border-t border-slate-100 bg-slate-50 flex justify-end">
-              <button
-                onClick={() => setActiveModal(null)}
-                className="px-4 py-2 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-800 text-xs font-bold transition-colors"
-              >
-                Close
-              </button>
-            </div>
-
-          </div>
-        </div>
-      )}
-
     </footer>
   );
 }
