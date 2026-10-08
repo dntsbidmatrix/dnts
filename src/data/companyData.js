@@ -6,6 +6,8 @@ export const COMPANY_INFO = {
   gstin: "10CDBPR1005E1ZH",
   stateCode: "10 (Bihar)",
   location: "Begusarai, Bihar, India",
+  headOffice: "Begusarai, Bihar, 851130",
+  salesOffice: "F-171A/2, Ground Floor, F Block, Gali No.17, Ayanagar Extn, PH-6, Delhi 110047",
   phone: "+91 8929851130",
   phoneRaw: "+918929851130",
   altPhone: "+91 7250064325",

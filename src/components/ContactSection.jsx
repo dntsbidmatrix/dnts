@@ -125,17 +125,31 @@ export default function ContactSection() {
                 </div>
               </a>
 
-              {/* Office Location */}
+              {/* Head Office Location */}
               <div className="flex items-start space-x-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
                 <div className="p-3 rounded-xl bg-purple-100 text-purple-700">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-xs text-slate-600 font-bold uppercase tracking-wider">REGISTERED HEADQUARTERS</div>
-                  <div className="text-base font-bold text-slate-900">
-                    Begusarai, Bihar, India
+                  <div className="text-xs text-slate-600 font-bold uppercase tracking-wider">HEAD OFFICE</div>
+                  <div className="text-sm sm:text-base font-bold text-slate-900">
+                    {COMPANY_INFO.headOffice}
                   </div>
                   <div className="text-xs text-slate-500 mt-0.5">GSTIN: {COMPANY_INFO.gstin}</div>
+                </div>
+              </div>
+
+              {/* Sales Office Location */}
+              <div className="flex items-start space-x-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                <div className="p-3 rounded-xl bg-amber-100 text-amber-700">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                <div>
+                  <div className="text-xs text-slate-600 font-bold uppercase tracking-wider">SALES OFFICE</div>
+                  <div className="text-xs sm:text-sm font-semibold text-slate-900 leading-snug">
+                    {COMPANY_INFO.salesOffice}
+                  </div>
+                  <div className="text-xs text-slate-500 mt-0.5">Regional Liaison & Client Meetings</div>
                 </div>
               </div>
 

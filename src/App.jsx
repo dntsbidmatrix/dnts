@@ -42,7 +42,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <Footer />
+      <Footer onOpenInquiry={handleOpenInquiry} />
 
       {/* Interactive Modal */}
       <TenderInquiryModal
