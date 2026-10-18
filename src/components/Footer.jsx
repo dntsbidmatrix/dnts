@@ -318,6 +318,15 @@ export default function Footer({ onOpenInquiry }) {
                   onClick={(e) => handleLinkClick(e, 'services')}
                   className="hover:text-white hover:underline transition-colors block"
                 >
+                  Bid Submission & Pre/Post-Bid
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#services" 
+                  onClick={(e) => handleLinkClick(e, 'services')}
+                  className="hover:text-white hover:underline transition-colors block"
+                >
                   Live Reverse Auction (RA)
                 </a>
               </li>

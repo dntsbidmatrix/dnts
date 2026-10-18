@@ -58,7 +58,7 @@ export default function Hero({ onOpenInquiry }) {
               </div>
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-700">
                 <CheckCircle2 className="w-4 h-4 text-blue-600 flex-shrink-0" />
-                <span>Live Reverse Auction, PO & EMD Refund Follow-up</span>
+                <span>Bid Submission, Pre-Bid & Post-Bid Clarification/Representation</span>
               </div>
             </div>
 

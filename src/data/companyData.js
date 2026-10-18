@@ -100,14 +100,14 @@ export const SERVICES = [
   {
     id: "submission-reverse-auction",
     category: "Execution & Post-Bid",
-    title: "Bid Submission, Reverse Auction & Post-Bid Follow-up",
+    title: "Bid Submission, Pre-Bid & Post-Bid Clarification/Representation",
     badge: "Service #10, #12 & #13",
-    description: "Hands-on submission of online/offline bids, live participation in Reverse Auctions (RA), and complete post-bid handholding for Purchase Order issuance or EMD refund retrieval.",
+    description: "Hands-on submission of online/offline bids, pre-bid representations, query clarifications, and complete post-bid handholding for Purchase Order issuance or EMD refund retrieval.",
     features: [
-      "Online bid submission & offline envelope drafting before deadline",
+      "Online bid submission & technical envelope drafting before deadline",
+      "Pre-bid query clarification & official departmental representation",
       "Live participation & tactical strategy in GeM Reverse Auctions (RA)",
-      "L1 position support: Purchase Order (PO) facilitation & payment follow-ups",
-      "EMD refund follow-up with departments in case of non-award"
+      "Post-bid representations, L1 PO facilitation & prompt EMD refund follow-up"
     ],
     icon: "BadgePercent"
   }

@@ -268,6 +268,7 @@ export default function ContactSection() {
                         <option>OEM Panel and OEM Dashboard</option>
                         <option>Product Upload & Catalogue Approval</option>
                         <option>Tender Document Study & Eligibility Summary</option>
+                        <option>Bid Submission, Pre-Bid & Post-Bid Clarification/Representation</option>
                         <option>Live Bidding & Reverse Auction (RA) Management</option>
                         <option>EMD Refund & L1 PO Follow-up</option>
                       </select>
