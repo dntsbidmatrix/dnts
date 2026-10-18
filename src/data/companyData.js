@@ -175,7 +175,7 @@ export const PORTALS_COVERED = [
   },
   {
     name: "PSUs & Engineering Enterprises",
-    domain: "BHEL, EIL, NTPC, IOCL, GAIL",
+    domain: "BHEL, EIL, NTPC, IOCL, GAIL etc",
     type: "Core PSU Empanelment",
     description: "Specialized supplier registration dossiers, technical capability approvals, and empanelment across India's largest PSUs.",
     highlight: "BHEL, EIL & Railways Approved"
