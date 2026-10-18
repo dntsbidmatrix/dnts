@@ -21,7 +21,7 @@ export const COMPANY_INFO = {
 export const TRUST_METRICS = [
   { value: "End-to-End", label: "Bid Management", subtext: "From Tender Study to EMD Refund" },
   { value: "GeM & CPPP", label: "Pan-India Portals", subtext: "Central, State, Railways & PSUs" },
-  { value: "PSUs Empanelment", label: "Vendor Registration", subtext: "BHEL, EIL, Railways, NTPC" },
+  { value: "PSUs Empanelment", label: "Vendor Registration", subtext: "BHEL, EIL, Railways, NTPC etc" },
   { value: "Dedicated", label: "Virtual Bid Manager", subtext: "For MSMEs, OEMs & Contractors" }
 ];
 
@@ -63,7 +63,7 @@ export const SERVICES = [
     description: "Getting manufacturers and suppliers registered and empaneled as approved vendors across major Public Sector Undertakings (PSUs) and core government departments.",
     features: [
       "Supplier registration in BHEL, EIL & Indian Railways etc (IREPS)",
-      "Empanelment in NTPC, IOCL, GAIL, and Defence establishments",
+      "Empanelment in NTPC, IOCL, GAIL etc, and Defence establishments",
       "Preparation of vendor registration dossiers, CA certificates & affidavits",
       "Follow-up with department procurement committees until approval"
     ],
@@ -178,7 +178,7 @@ export const PORTALS_COVERED = [
     domain: "BHEL, EIL, NTPC, IOCL, GAIL etc",
     type: "Core PSUs Empanelment",
     description: "Specialized supplier registration dossiers, technical capability approvals, and empanelment across India's largest PSUs.",
-    highlight: "BHEL, EIL & Railways Approved"
+    highlight: "BHEL, EIL & Railways etc Approved"
   },
   {
     name: "Indian Railways (IREPS)",
@@ -228,7 +228,7 @@ export const FAQS = [
   },
   {
     q: "Do you assist with PSUs empanelment like BHEL, EIL & Indian Railways etc?",
-    a: "Yes. We prepare specialized vendor registration dossiers for major PSUs including BHEL, Engineers India Limited (EIL), Indian Railways (IREPS) etc, as well as IOCL, NTPC, and state engineering corporations."
+    a: "Yes. We prepare specialized vendor registration dossiers for major PSUs including BHEL, Engineers India Limited (EIL), Indian Railways (IREPS) etc, as well as IOCL, NTPC etc, and state engineering corporations."
   },
   {
     q: "What happens after the tender is submitted? Do you participate in Reverse Auctions?",

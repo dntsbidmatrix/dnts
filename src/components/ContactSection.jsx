@@ -285,7 +285,7 @@ export default function ContactSection() {
                         <option>GeM Portal (gem.gov.in)</option>
                         <option>CPPP (eprocure.gov.in)</option>
                         <option>UNGM (United Nations Global Marketplace)</option>
-                        <option>PSUs Portals (BHEL, EIL, IOCL, NTPC)</option>
+                        <option>PSUs Portals (BHEL, EIL, IOCL, NTPC etc)</option>
                         <option>Indian Railways (IREPS) etc</option>
                         <option>State e-Procurement Portals</option>
                         <option>International / Non-GeM Tenders</option>
