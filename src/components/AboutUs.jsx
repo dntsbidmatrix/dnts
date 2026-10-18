@@ -45,14 +45,18 @@ export default function AboutUs() {
           {/* Left Column: Official Proposal Text & Pillars */}
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-4 text-slate-600 text-base leading-relaxed">
+              <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-blue-50 border border-blue-200/80 text-blue-900 text-xs font-medium">
+                <span className="w-2 h-2 rounded-full bg-blue-600 inline-block animate-pulse"></span>
+                <span>BidMatrix is managed & operated by <strong>D Nandani Tech Solutions</strong></span>
+              </div>
               <p>
-                Here at <strong className="text-slate-900">BidMatrix</strong>, we offer dedicated assistance in expanding your business through <strong className="text-slate-900">Tendering and Bidding</strong>. Our team comprises young, energetic, and experienced professionals, technical experts, and strategy advisors with expertise in providing bid processing management services for Government tenders on <strong className="text-slate-900">GeM</strong>, <strong className="text-slate-900">CPPP</strong>, <strong className="text-slate-900">UNGM</strong>, and other e-procurement portals for both domestic and international opportunities.
+                <strong className="text-slate-900">BidMatrix</strong> is a specialized bid management and public procurement advisory initiative operated and managed by <strong className="text-slate-900">D Nandani Tech Solutions</strong>. We provide dedicated, end-to-end assistance to help enterprises, MSMEs, OEMs, and contractors expand their presence across public sector procurement through strategic <strong className="text-slate-900">Tendering and Bidding</strong>.
               </p>
               <p>
-                Our aim is to provide <strong className="text-slate-900">low-cost, high-quality, innovative, and prompt tender bidding support</strong>, allowing you enough time to manage your business operations effectively. With an experienced strategy advisor who has successfully bid on tenders from most departments and portals in pan-India networks, our team is always prepared to offer unique online bidding support.
+                Backed by the operational backbone and technical expertise of <strong className="text-slate-900">D Nandani Tech Solutions</strong>, our team brings together experienced strategy advisors, technical analysts, and bid specialists. We manage complete bid processing operations across <strong className="text-slate-900">GeM</strong>, <strong className="text-slate-900">CPPP</strong>, <strong className="text-slate-900">UNGM</strong>, Indian Railways (IREPS), and state e-procurement portals for both domestic and global opportunities.
               </p>
               <p>
-                We formulate effective bidding processes and implementation methodologies for members who do not have a dedicated Bid Manager. We offer end-to-end solutions for e-Tendering and e-Procurement, covering the entire procurement lifecycle—such as <strong className="text-slate-900">Tender evaluation, Bid Management, Vendor Registration, Licensing, and Reverse Auctions</strong>.
+                Under the management of D Nandani Tech Solutions, our mission is to deliver low-cost, high-precision, and prompt bid support—giving business owners complete peace of mind and freeing up their time to focus on core operations. We formulate robust bidding strategies for organizations without an in-house bid department, covering the entire procurement lifecycle from <strong className="text-slate-900">Tender Evaluation, Vendor Registration, and BOQ Costing to Live Reverse Auctions and L1 Purchase Order clearance</strong>.
               </p>
             </div>
 
@@ -85,6 +89,9 @@ export default function AboutUs() {
                   <h3 className="text-xl font-bold text-slate-900 tracking-tight">
                     BidMatrix
                   </h3>
+                  <p className="text-xs text-slate-500 font-medium mt-0.5">
+                    Managed by D Nandani Tech Solutions
+                  </p>
                 </div>
                 <div className="w-12 h-12 rounded-xl bg-slate-50 border border-slate-200 p-1.5 flex items-center justify-center">
                   <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
@@ -94,6 +101,11 @@ export default function AboutUs() {
               {/* Data Rows */}
               <div className="space-y-4 text-xs">
                 
+                <div className="p-3 rounded-lg bg-slate-50 border border-slate-200">
+                  <div className="text-slate-500 text-[11px] mb-0.5 font-medium">MANAGING LEGAL ENTITY</div>
+                  <div className="text-slate-900 font-bold text-sm">D Nandani Tech Solutions</div>
+                </div>
+
                 <div className="p-3 rounded-lg bg-slate-50 border border-slate-200">
                   <div className="text-slate-500 text-[11px] mb-0.5 font-medium">CORE SPECIALIZATION</div>
                   <div className="text-slate-900 font-bold text-sm">Govt. Tender & GeM Bid Processing Management</div>
