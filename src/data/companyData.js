@@ -31,7 +31,7 @@ export const SERVICES = [
     id: "gem-registration",
     category: "Portal Registration",
     title: "GeM Portal, CPPP, UNGM and Other e-procurement Portals Registration",
-    badge: "Service #1 & #9",
+    badge: "Portal Onboarding",
     description: "Complete onboarding and account setup across Government e-Marketplace (GeM), Central Public Procurement Portal (CPPP), United Nations Global Marketplace (UNGM), and other e-procurement platforms using client credentials with Class-3 DSC integration.",
     features: [
       "GeM Primary & Secondary Seller account configuration",
@@ -45,7 +45,7 @@ export const SERVICES = [
     id: "vendor-assessment",
     category: "GeM Compliance",
     title: "Vendor Assessment & Vendor Exemption",
-    badge: "Service #2 & #4",
+    badge: "Assessment & Exemption",
     description: "End-to-end guidance for vendor assessment on GeM. We prepare desktop audit documentation and assist eligible sellers in obtaining official vendor exemptions.",
     features: [
       "Vendor Assessment initiation & fee guidance",
@@ -59,7 +59,7 @@ export const SERVICES = [
     id: "psu-empanelment",
     category: "Empanelment",
     title: "PSUs & Government Sector Empanelment",
-    badge: "Service #3 & #8",
+    badge: "PSUs Empanelment",
     description: "Getting manufacturers and suppliers registered and empaneled as approved vendors across major Public Sector Undertakings (PSUs) and core government departments.",
     features: [
       "Supplier registration in BHEL, EIL & Indian Railways etc (IREPS)",
@@ -73,7 +73,7 @@ export const SERVICES = [
     id: "oem-brand-management",
     category: "Catalogue Management",
     title: "OEM Panel and OEM Dashboard",
-    badge: "Service #5 & #6",
+    badge: "OEM & Dashboard",
     description: "Assisting manufacturers in creating OEM dashboards on GeM, securing official brand approvals, managing authorized reseller networks, and uploading compliant product catalogues.",
     features: [
       "OEM Panel creation & Brand Registration on GeM",
@@ -87,7 +87,7 @@ export const SERVICES = [
     id: "tender-bidding-study",
     category: "Bid Strategy",
     title: "Tender Scrutiny, BOQ Study & Rate Strategy",
-    badge: "Service #7 & #11",
+    badge: "Tender & BOQ Study",
     description: "In-depth study of complete tender documents (NIT / RFP). We extract eligibility criteria, payment terms, and critical conditions, and formulate strategic BOQ rate recommendations.",
     features: [
       "Comprehensive tender study summary: eligibility, terms & timeline",
@@ -101,7 +101,7 @@ export const SERVICES = [
     id: "submission-reverse-auction",
     category: "Execution & Post-Bid",
     title: "Bid Submission, Pre-Bid & Post-Bid Clarification/Representation",
-    badge: "Service #10, #12 & #13",
+    badge: "Bid & Representation",
     description: "Hands-on submission of online/offline bids, pre-bid representations, query clarifications, and complete post-bid handholding for Purchase Order issuance or EMD refund retrieval.",
     features: [
       "Online bid submission & technical envelope drafting before deadline",
