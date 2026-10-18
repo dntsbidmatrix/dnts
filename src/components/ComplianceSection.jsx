@@ -12,8 +12,8 @@ export default function ComplianceSection() {
       icon: Scale
     },
     {
-      title: "QCI Vendor Assessment & BIS Exemption",
-      desc: "Comprehensive expertise in preparing desktop audit document packs for Quality Council of India (QCI) assessment and securing exemptions for BIS licensees.",
+      title: "Vendor Assessment & Vendor Exemption",
+      desc: "Comprehensive expertise in preparing desktop audit document packs for vendor assessment on GeM and securing official vendor exemptions.",
       icon: ShieldCheck
     },
     {

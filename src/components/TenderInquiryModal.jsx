@@ -157,8 +157,8 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
               >
                 <option>Our Outsourced Bid Manager Package</option>
                 <option>GeM Portal, CPPP, UNGM and Other e-procurement Portals Registration</option>
-                <option>Vendor Assessment (QCI) on GeM</option>
-                <option>Vendor Assessment Exemption (BIS License)</option>
+                <option>Vendor Assessment on GeM</option>
+                <option>Vendor Exemption</option>
                 <option>PSU Empanelment (BHEL, EIL & Indian Railways etc)</option>
                 <option>OEM Panel & Brand Approval Setup</option>
                 <option>Product Upload & Catalogue Approval</option>

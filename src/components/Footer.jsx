@@ -273,7 +273,7 @@ export default function Footer({ onOpenInquiry }) {
                   onClick={(e) => handleLinkClick(e, 'services')}
                   className="hover:text-white hover:underline transition-colors block"
                 >
-                  Vendor Assessment (QCI)
+                  Vendor Assessment
                 </a>
               </li>
               <li>
@@ -282,7 +282,7 @@ export default function Footer({ onOpenInquiry }) {
                   onClick={(e) => handleLinkClick(e, 'services')}
                   className="hover:text-white hover:underline transition-colors block"
                 >
-                  BIS License Exemption
+                  Vendor Exemption
                 </a>
               </li>
               <li>

@@ -44,14 +44,14 @@ export const SERVICES = [
   {
     id: "vendor-assessment",
     category: "GeM Compliance",
-    title: "Vendor Assessment & BIS Exemption",
+    title: "Vendor Assessment & Vendor Exemption",
     badge: "Service #2 & #4",
-    description: "End-to-end guidance for Quality Council of India (QCI) vendor assessment on GeM. We prepare desktop audit documentation and assist sellers with BIS licenses in obtaining official assessment exemptions.",
+    description: "End-to-end guidance for vendor assessment on GeM. We prepare desktop audit documentation and assist eligible sellers in obtaining official vendor exemptions.",
     features: [
       "Vendor Assessment initiation & fee guidance",
       "Desktop audit file preparation & financial parameter proofing",
-      "Vendor Assessment Exemption filing for BIS license holders",
-      "QCI query resolution & final rating approval"
+      "Vendor Assessment & Vendor Exemption filing assistance",
+      "Vendor assessment query resolution & final rating approval"
     ],
     icon: "ShieldCheck"
   },
@@ -115,9 +115,9 @@ export const SERVICES = [
 
 export const DETAILED_13_SERVICES = [
   { no: 1, title: "GeM Portal, CPPP, UNGM and Other e-procurement Portals Registration", desc: "Setting up verified primary & secondary accounts on central, global (UNGM) & state portals." },
-  { no: 2, title: "Vendor Assessment on GeM Portal", desc: "Facilitating QCI vendor assessment process, documentation & site audit readiness." },
+  { no: 2, title: "Vendor Assessment on GeM Portal", desc: "Facilitating vendor assessment process, documentation & site audit readiness." },
   { no: 3, title: "PSU & Government Sector Empanelment", desc: "Approved supplier registration in BHEL, EIL & Indian Railways etc." },
-  { no: 4, title: "Vendor Assessment Exemption (BIS)", desc: "Securing official GeM assessment exemptions for sellers with active BIS licenses." },
+  { no: 4, title: "Vendor Exemption", desc: "Securing official GeM vendor exemptions for eligible sellers and manufacturers." },
   { no: 5, title: "OEM Panel Creation & Brand Approval", desc: "Setting up OEM dashboards, brand registry, reseller authorization & catalogue control." },
   { no: 6, title: "Products Upload & Catalogue Approval", desc: "Uploading product SKUs, mapping specifications, and granting reseller catalogue approvals." },
   { no: 7, title: "Tender Bidding & Document Study", desc: "Comprehensive summary reports covering eligibility, payment milestones & technical criteria." },
@@ -134,7 +134,7 @@ export const PORTALS_COVERED = [
     name: "Government e-Marketplace (GeM)",
     domain: "gem.gov.in",
     type: "National Public Procurement",
-    description: "Complete account setup, QCI vendor assessment, brand registry, product cataloguing, Custom Bids, and Reverse Auctions.",
+    description: "Complete account setup, vendor assessment, brand registry, product cataloguing, Custom Bids, and Reverse Auctions.",
     highlight: "OEM Panel & Reseller Control"
   },
   {
@@ -164,7 +164,7 @@ export const WORKFLOW_STEPS = [
   {
     step: "01",
     title: "Portal Onboarding & Vendor Assessment",
-    description: "Registration on GeM, CPPP, UNGM & PSUs, QCI vendor assessment, BIS exemptions, and OEM brand setup."
+    description: "Registration on GeM, CPPP, UNGM & PSUs, vendor assessment, vendor exemptions, and OEM brand setup."
   },
   {
     step: "02",
@@ -195,7 +195,7 @@ export const FAQS = [
   },
   {
     q: "Can you help our company get registered on GeM and complete Vendor Assessment?",
-    a: "Yes. We handle complete GeM seller registration, secondary user setup, and QCI Vendor Assessment file preparation. If you possess a BIS license, we also assist in getting official exemption from Vendor Assessment."
+    a: "Yes. We handle complete GeM seller registration, secondary user setup, and Vendor Assessment file preparation. If you qualify, we also assist in getting official Vendor Exemption."
   },
   {
     q: "Do you assist with PSU empanelment like BHEL, EIL & Indian Railways etc?",
