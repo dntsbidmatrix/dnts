@@ -167,11 +167,11 @@ export const PORTALS_COVERED = [
     highlight: "OEM Panel & Reseller Control"
   },
   {
-    name: "CPPP & UNGM Portals",
-    domain: "eprocure.gov.in / ungm.org",
-    type: "Central Govt & United Nations",
-    description: "End-to-end bid processing, technical envelope preparation, DSC Class-3 submission for central ministries and UNGM global tenders.",
-    highlight: "Domestic & Global Coverage"
+    name: "CPPP & State e-procurement portal",
+    domain: "eprocure.gov.in & State Portals",
+    type: "Central Govt & State GePNIC",
+    description: "End-to-end bid processing, technical envelope preparation, DSC Class-3 submission for central ministries and state procurement portals across India.",
+    highlight: "Domestic Pan-India Coverage"
   },
   {
     name: "PSUs & Engineering Enterprises",
@@ -181,11 +181,25 @@ export const PORTALS_COVERED = [
     highlight: "BHEL, EIL & Railways etc Approved"
   },
   {
-    name: "Indian Railways (IREPS)",
+    name: "Indian Railways (IREPS), Zone wise empanelment registration & bidding",
     domain: "ireps.gov.in",
-    type: "Railways Procurement",
-    description: "Zonal railway vendor registration, stores & works tenders, IREPS digital token mapping, and bid execution.",
+    type: "Railways Procurement & Empanelment",
+    description: "Complete zonal railway vendor registration, stores & works tenders, IREPS digital token mapping, and zone-wise supplier bidding.",
     highlight: "Zonal Vendor Empanelment"
+  },
+  {
+    name: "UNGM & UNDP",
+    domain: "ungm.org / undp.org",
+    type: "Global UN Procurement",
+    description: "International vendor registration, technical compliance, Expression of Interest (EOI), and RFQ/tender submissions for United Nations agencies and UNDP.",
+    highlight: "Global UN & UNDP Registry"
+  },
+  {
+    name: "PSUs e-invoice management portals",
+    domain: "GeM, Bill Watch & PSU Portals",
+    type: "Post-Award Billing & Invoice",
+    description: "Seamless generation and upload of digital invoices, CRAC clearance, bill milestone tracking, and payment follow-ups across PSU portals and GeM.",
+    highlight: "e-Invoice & Payment Tracking"
   }
 ];
 
