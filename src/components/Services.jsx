@@ -7,6 +7,8 @@ import {
   Layers, 
   Briefcase, 
   BadgePercent, 
+  PackageCheck,
+  Gavel,
   Check, 
   ArrowRight,
   ListOrdered
@@ -18,7 +20,9 @@ const iconMap = {
   Building2,
   Layers,
   Briefcase,
-  BadgePercent
+  BadgePercent,
+  PackageCheck,
+  Gavel
 };
 
 export default function Services({ onSelectService }) {

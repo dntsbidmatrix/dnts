@@ -111,6 +111,34 @@ export const SERVICES = [
       "Contract management and invoice management"
     ],
     icon: "BadgePercent"
+  },
+  {
+    id: "brand-catalogue-reseller",
+    category: "Catalogue Management",
+    title: "Brand Approval, New Box Catalogue Management & Reseller Management",
+    badge: "Brand & Catalogue",
+    description: "End-to-end assistance in securing official brand approvals, creating compliant new box product catalogues, specification mapping, and managing authorized reseller distribution networks on GeM.",
+    features: [
+      "Official Brand Approval application & trademark validation on GeM",
+      "New box catalogue creation, category tagging & parameter mapping",
+      "Reseller authorization code generation & distributor network control",
+      "Catalogue pairing, error rectification & category approval tracking"
+    ],
+    icon: "PackageCheck"
+  },
+  {
+    id: "reverse-forward-auction",
+    category: "Execution & Post-Bid",
+    title: "Reverse Auction / Forward Auction & Post-Bid Follow-up",
+    badge: "Auction & Settlement",
+    description: "Real-time tactical bidding during live electronic Reverse Auctions (RA) and Forward Auctions, followed by vigorous administrative follow-up for Purchase Order clearance and prompt EMD refund retrieval.",
+    features: [
+      "Real-time tactical bidding strategy during GeM & CPPP Reverse Auctions (RA)",
+      "Forward Auction execution for departmental scrap, salvage & asset disposal",
+      "L1 bidder confirmation, formal Purchase Order (PO) facilitation & acceptance",
+      "Post-bid departmental liaison, billing follow-up & prompt EMD refund retrieval"
+    ],
+    icon: "Gavel"
   }
 ];
 
