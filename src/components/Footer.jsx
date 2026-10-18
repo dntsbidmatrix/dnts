@@ -255,7 +255,7 @@ export default function Footer({ onOpenInquiry }) {
                   onClick={(e) => handleLinkClick(e, 'services')}
                   className="hover:text-white hover:underline transition-colors block"
                 >
-                  GeM & CPPP Registration
+                  GEM & NON-GEM Registration/Bid Management
                 </a>
               </li>
               <li>
@@ -264,7 +264,7 @@ export default function Footer({ onOpenInquiry }) {
                   onClick={(e) => handleLinkClick(e, 'services')}
                   className="hover:text-white hover:underline transition-colors block"
                 >
-                  UNGM Global Registration
+                  UNGM Registration/RFQ Management
                 </a>
               </li>
               <li>
@@ -318,7 +318,7 @@ export default function Footer({ onOpenInquiry }) {
                   onClick={(e) => handleLinkClick(e, 'services')}
                   className="hover:text-white hover:underline transition-colors block"
                 >
-                  Bid Submission & Pre/Post-Bid
+                  Live Reverse & Forward Auction
                 </a>
               </li>
               <li>
@@ -327,16 +327,7 @@ export default function Footer({ onOpenInquiry }) {
                   onClick={(e) => handleLinkClick(e, 'services')}
                   className="hover:text-white hover:underline transition-colors block"
                 >
-                  Live Reverse Auction (RA)
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#services" 
-                  onClick={(e) => handleLinkClick(e, 'services')}
-                  className="hover:text-white hover:underline transition-colors block"
-                >
-                  PO & EMD Refund Follow-up
+                  Contract Management
                 </a>
               </li>
             </ul>
