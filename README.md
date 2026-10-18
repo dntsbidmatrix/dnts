@@ -1,6 +1,6 @@
-# D Nandani Tech Solutions - Corporate & Tender Execution Website
+# BidMatrix - Corporate & Tender Execution Platform
 
-Modern, high-performance corporate portfolio and tender execution platform for **D Nandani Tech Solutions** (Begusarai, Bihar).
+Modern, high-performance corporate portfolio and tender execution platform for **BidMatrix** (D Nandani Tech Solutions • Begusarai, Bihar).
 
 Built with **React 18 + Vite + Tailwind CSS**, designed to output a pure static website (`dist/`) ready for instant automated deployment to **Cloudflare Pages** via **GitHub**.
 
@@ -8,12 +8,13 @@ Built with **React 18 + Vite + Tailwind CSS**, designed to output a pure static 
 
 ## 🏢 Business Identity & Credentials
 
-* **Company Name:** D NANDANI TECH SOLUTIONS
+* **Brand Name:** BidMatrix
+* **Legal Entity:** D NANDANI TECH SOLUTIONS (Footer Statutory Profile)
 * **Registered Location:** Begusarai, Bihar, India (State Code: 10)
+* **Sales Office:** Delhi NCR (Ayanagar Extn, PH-6, Delhi 110047)
 * **GSTIN:** `10CDBPR1005E1ZH`
-* **Contact Phone:** +91 8929851130
+* **Contact Phone:** +91 8929851130 / +91 7250064325
 * **Official Email:** dnandanitech@gmail.com
-* **Core Domains:** GeM & CPPP Tender Execution, Enterprise IT Hardware Supply, CCTV & Campus Networking, Smart Classrooms, SLA-Backed Annual Maintenance Contracts (AMC).
 
 ---
 

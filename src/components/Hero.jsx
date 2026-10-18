@@ -31,7 +31,7 @@ export default function Hero({ onOpenInquiry }) {
 
             {/* Subtitle */}
             <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              <strong>D Nandani Tech Solutions</strong> provides end-to-end bid processing management and strategic tendering services. We act as your <strong>dedicated Virtual Bid Manager</strong>—handling portal registrations (GeM, CPPP, UNGM), GeM vendor assessment, PSU empanelment (BHEL, EIL & Indian Railways etc), catalogue approvals, and live reverse auctions.
+              <strong>BidMatrix</strong> provides end-to-end bid processing management and strategic tendering services. We act as your <strong>dedicated Virtual Bid Manager</strong>—handling portal registrations (GeM, CPPP, UNGM), GeM vendor assessment, PSU empanelment (BHEL, EIL & Indian Railways etc), catalogue approvals, and live reverse auctions.
             </p>
 
             {/* Key Assurance Bullet Points from Official Proposal */}
@@ -117,13 +117,13 @@ export default function Hero({ onOpenInquiry }) {
                     <div className="w-16 h-16 rounded-2xl bg-slate-50 border border-slate-200 p-2 shadow-inner flex items-center justify-center">
                       <img 
                         src="/logo.png" 
-                        alt="D Nandani Tech Solutions" 
+                        alt="BidMatrix" 
                         className="w-full h-full object-contain"
                       />
                     </div>
                     <div>
                       <div className="text-xs font-bold uppercase tracking-wider text-blue-600">Proposal Profile</div>
-                      <div className="text-base font-bold text-slate-900 tracking-tight">D NANDANI TECH</div>
+                      <div className="text-base font-bold text-slate-900 tracking-tight">BidMatrix</div>
                       <div className="text-xs text-slate-500">Tender Bidding & GeM Advisors</div>
                     </div>
                   </div>

@@ -65,7 +65,7 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
               Tender & GeM Proposal Consultation
             </h3>
             <p className="text-xs text-slate-500">
-              D Nandani Tech Solutions • Call: {COMPANY_INFO.phone} / {COMPANY_INFO.altPhone}
+              BidMatrix • Call: {COMPANY_INFO.phone} / {COMPANY_INFO.altPhone}
             </p>
           </div>
         </div>

@@ -75,14 +75,14 @@ export default function Navbar({ onOpenInquiry }) {
               <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white border border-slate-200 p-1 flex items-center justify-center overflow-hidden shadow-sm group-hover:border-blue-500 transition-colors">
                 <img 
                   src="/logo.png" 
-                  alt="D Nandani Tech Solutions Logo" 
+                  alt="BidMatrix Logo" 
                   className="w-full h-full object-contain"
                 />
               </div>
             </div>
             <div className="flex flex-col">
               <span className="font-extrabold text-sm sm:text-base xl:text-lg tracking-tight text-slate-900 group-hover:text-blue-600 transition-colors leading-tight whitespace-nowrap">
-                D NANDANI <span className="text-sky-600">TECH</span>
+                Bid<span className="text-sky-600">Matrix</span>
               </span>
               <span className="text-[9px] sm:text-[10px] xl:text-xs text-slate-500 tracking-wider uppercase font-semibold whitespace-nowrap">
                 Tender Bidding & GeM Advisors

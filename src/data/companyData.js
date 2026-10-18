@@ -1,6 +1,6 @@
 export const COMPANY_INFO = {
-  name: "D NANDANI TECH SOLUTIONS",
-  legalName: "D Nandani Tech Solutions",
+  name: "BidMatrix",
+  legalName: "BidMatrix",
   tagline: "Systematic Approach to Government Operations",
   subtitle: "End-to-End Government Tender Bidding, GeM Portal Management & Bid Processing Consultancy.",
   gstin: "10CDBPR1005E1ZH",
@@ -13,7 +13,7 @@ export const COMPANY_INFO = {
   altPhone: "+91 7250064325",
   altPhoneRaw: "+917250064325",
   email: "dnandanitech@gmail.com",
-  whatsappUrl: "https://wa.me/918929851130?text=Hello%20D%20Nandani%20Tech%20Solutions%2C%20I%20need%20assistance%20with%20GeM%20%2F%20Government%20Tender%20Bidding.",
+  whatsappUrl: "https://wa.me/918929851130?text=Hello%20BidMatrix%2C%20I%20need%20assistance%20with%20GeM%20%2F%20Government%20Tender%20Bidding.",
   workingHours: "Monday - Saturday: 9:00 AM - 7:30 PM IST",
   established: "Begusarai, Bihar"
 };
@@ -190,7 +190,7 @@ export const WORKFLOW_STEPS = [
 
 export const FAQS = [
   {
-    q: "How does D Nandani Tech Solutions help companies with no dedicated Bid Manager?",
+    q: "How does BidMatrix help companies with no dedicated Bid Manager?",
     a: "We act as your complete outsourced Virtual Bid Management team. From finding relevant tenders, studying NIT documents, and checking eligibility to uploading bids, participating in Reverse Auctions, and following up for POs and EMD refunds—we handle the entire lifecycle so you can focus on your core business."
   },
   {
