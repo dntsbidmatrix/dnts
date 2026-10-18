@@ -29,7 +29,7 @@ export default function ComplianceSection() {
   ];
 
   return (
-    <section id="compliance" className="py-20 lg:py-28 relative bg-[#F8FAFC] border-t border-slate-200">
+    <section id="compliance" className="py-20 lg:py-28 relative bg-slate-100/60 border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}

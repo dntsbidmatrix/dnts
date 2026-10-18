@@ -170,16 +170,6 @@ export default function Footer({ onOpenInquiry }) {
             <ul className="space-y-2.5 text-sm text-cyan-50">
               <li>
                 <a 
-                  href="#about" 
-                  onClick={(e) => handleLinkClick(e, 'about')}
-                  className="hover:text-white hover:underline transition-colors flex items-center group"
-                >
-                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-cyan-200 group-hover:translate-x-0.5 transition-transform" />
-                  <span>About Our Advisors</span>
-                </a>
-              </li>
-              <li>
-                <a 
                   href="#services" 
                   onClick={(e) => handleLinkClick(e, 'services')}
                   className="hover:text-white hover:underline transition-colors flex items-center group"
@@ -226,6 +216,16 @@ export default function Footer({ onOpenInquiry }) {
                 >
                   <ChevronRight className="w-3.5 h-3.5 mr-1 text-cyan-200 group-hover:translate-x-0.5 transition-transform" />
                   <span>Contact Proposal Desk</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#about" 
+                  onClick={(e) => handleLinkClick(e, 'about')}
+                  className="hover:text-white hover:underline transition-colors flex items-center group"
+                >
+                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-cyan-200 group-hover:translate-x-0.5 transition-transform" />
+                  <span>About Our Firm</span>
                 </a>
               </li>
             </ul>

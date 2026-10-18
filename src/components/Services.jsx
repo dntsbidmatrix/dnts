@@ -31,7 +31,7 @@ export default function Services({ onSelectService }) {
     : SERVICES.filter(s => s.category === activeFilter);
 
   return (
-    <section id="services" className="py-20 lg:py-28 relative bg-slate-100/60 border-t border-slate-200">
+    <section id="services" className="py-20 lg:py-28 relative bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         
         {/* Section Header */}

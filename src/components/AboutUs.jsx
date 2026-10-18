@@ -23,7 +23,7 @@ export default function AboutUs() {
   ];
 
   return (
-    <section id="about" className="py-20 lg:py-28 relative overflow-hidden bg-[#F8FAFC]">
+    <section id="about" className="py-20 lg:py-28 relative overflow-hidden bg-slate-100/60 border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         
         {/* Section Heading */}

@@ -15,12 +15,12 @@ export default function Navbar({ onOpenInquiry }) {
   }, []);
 
   const navLinks = [
-    { name: 'About', href: '#about' },
     { name: 'Our Services', href: '#services' },
     { name: 'Portals', href: '#portals' },
     { name: 'Process', href: '#workflow' },
     { name: 'Compliance', href: '#compliance' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Contact', href: '#contact' },
+    { name: 'About', href: '#about' }
   ];
 
   return (

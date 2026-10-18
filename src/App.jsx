@@ -33,12 +33,12 @@ export default function App() {
       <main className="flex-grow">
         <Hero onOpenInquiry={() => handleOpenInquiry('Our Outsourced Bid Manager Package')} />
         <TrustStats />
-        <AboutUs />
         <Services onSelectService={handleOpenInquiry} />
         <PortalsCovered />
         <TenderWorkflow />
         <ComplianceSection />
         <ContactSection />
+        <AboutUs />
       </main>
 
       {/* Footer */}
