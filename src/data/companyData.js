@@ -107,7 +107,8 @@ export const SERVICES = [
       "Online bid submission & technical envelope drafting before deadline",
       "Pre-bid query clarification & official departmental representation",
       "Live participation & tactical strategy in GeM Reverse Auctions (RA)",
-      "Post-bid representations, L1 PO facilitation & prompt EMD refund follow-up"
+      "Post-bid representations, L1 PO facilitation & prompt EMD refund follow-up",
+      "Contract management and invoice management"
     ],
     icon: "BadgePercent"
   }
