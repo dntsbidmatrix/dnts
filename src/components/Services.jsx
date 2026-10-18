@@ -120,7 +120,7 @@ export default function Services({ onSelectService }) {
           })}
         </div>
 
-        {/* The Exact 13 Services from the Official Quotation Proposal */}
+        {/* Our Services from the Official Quotation Proposal */}
         <div className="rounded-3xl bg-white border border-slate-200 p-8 sm:p-10 shadow-lg relative">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 border-b border-slate-100 pb-6">
             <div className="space-y-1">
@@ -129,7 +129,7 @@ export default function Services({ onSelectService }) {
                 <span>Proposal Checklist</span>
               </div>
               <h3 className="text-2xl font-bold text-slate-900 tracking-tight">
-                Complete 13-Point Scope of Work
+                Our Complete Scope of Services
               </h3>
               <p className="text-xs sm:text-sm text-slate-500">
                 As detailed in our official technical proposal for public & private sector tendering.
@@ -137,10 +137,10 @@ export default function Services({ onSelectService }) {
             </div>
             <div>
               <button
-                onClick={() => onSelectService('Complete 13-Point Tender Package')}
+                onClick={() => onSelectService('Complete Tender Services Package')}
                 className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-sky-500 via-blue-600 to-indigo-600 text-white font-bold text-xs shadow-md shadow-blue-500/20 hover:from-sky-600 hover:to-indigo-700 transition-all"
               >
-                Request Proposal For All 13 Services
+                Request Proposal For Our Services
               </button>
             </div>
           </div>

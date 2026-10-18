@@ -185,7 +185,7 @@ export default function Footer({ onOpenInquiry }) {
                   className="hover:text-white hover:underline transition-colors flex items-center group"
                 >
                   <ChevronRight className="w-3.5 h-3.5 mr-1 text-cyan-200 group-hover:translate-x-0.5 transition-transform" />
-                  <span>13 Core Bidding Services</span>
+                  <span>Our Services</span>
                 </a>
               </li>
               <li>
@@ -243,7 +243,7 @@ export default function Footer({ onOpenInquiry }) {
             </div>
           </div>
 
-          {/* Column 3: CORE CAPABILITIES (The actual 13 services offered) (lg:col-span-2) */}
+          {/* Column 3: CORE CAPABILITIES (Our services offered) (lg:col-span-2) */}
           <div className="lg:col-span-2 space-y-3">
             <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white">
               CORE SERVICES
@@ -386,7 +386,7 @@ export default function Footer({ onOpenInquiry }) {
             {/* Request Proposal Action Button */}
             <div className="pt-2">
               <button
-                onClick={() => onOpenInquiry && onOpenInquiry('Full 13-Service Outsourced Bid Manager Package')}
+                onClick={() => onOpenInquiry && onOpenInquiry('Our Outsourced Bid Manager Package')}
                 className="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-white text-[#0284C7] hover:bg-cyan-50 font-bold text-xs shadow-lg transition-all hover:scale-105"
               >
                 <Send className="w-3.5 h-3.5 mr-1.5" />

@@ -15,7 +15,7 @@ import { COMPANY_INFO } from './data/companyData';
 
 export default function App() {
   const [isInquiryOpen, setIsInquiryOpen] = useState(false);
-  const [selectedService, setSelectedService] = useState('Full 13-Service Outsourced Bid Manager Package');
+  const [selectedService, setSelectedService] = useState('Our Outsourced Bid Manager Package');
 
   const handleOpenInquiry = (serviceName) => {
     if (typeof serviceName === 'string') {
@@ -31,7 +31,7 @@ export default function App() {
 
       {/* Main Page Content */}
       <main className="flex-grow">
-        <Hero onOpenInquiry={() => handleOpenInquiry('Full 13-Service Outsourced Bid Manager Package')} />
+        <Hero onOpenInquiry={() => handleOpenInquiry('Our Outsourced Bid Manager Package')} />
         <TrustStats />
         <AboutUs />
         <Services onSelectService={handleOpenInquiry} />

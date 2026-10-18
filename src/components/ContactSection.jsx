@@ -16,7 +16,7 @@ export default function ContactSection() {
     organization: '',
     phone: '',
     email: '',
-    category: 'Full 13-Service Outsourced Bid Manager Package',
+    category: 'Our Outsourced Bid Manager Package',
     portal: 'GeM Portal (gem.gov.in)',
     message: ''
   });
@@ -260,7 +260,7 @@ export default function ContactSection() {
                         onChange={(e) => setFormData({ ...formData, category: e.target.value })}
                         className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-blue-600 focus:bg-white transition-colors"
                       >
-                        <option>Full 13-Service Outsourced Bid Manager Package</option>
+                        <option>Our Outsourced Bid Manager Package</option>
                         <option>GeM Portal, CPPP, UNGM and Other e-procurement Portals Registration</option>
                         <option>Vendor Assessment (QCI) on GeM</option>
                         <option>Vendor Assessment Exemption (BIS License)</option>

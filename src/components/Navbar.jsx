@@ -16,7 +16,7 @@ export default function Navbar({ onOpenInquiry }) {
 
   const navLinks = [
     { name: 'About', href: '#about' },
-    { name: '13 Services', href: '#services' },
+    { name: 'Our Services', href: '#services' },
     { name: 'Portals', href: '#portals' },
     { name: 'Process', href: '#workflow' },
     { name: 'Compliance', href: '#compliance' },

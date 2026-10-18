@@ -76,7 +76,7 @@ export default function Hero({ onOpenInquiry }) {
                 href="#services"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-semibold text-sm text-slate-700 bg-white border border-slate-300 hover:border-blue-500 hover:text-blue-600 transition-all hover:bg-slate-50 shadow-sm"
               >
-                <span>View All 13 Services</span>
+                <span>View Our Services</span>
                 <ArrowRight className="w-4 h-4 ml-2 text-blue-600" />
               </a>
 

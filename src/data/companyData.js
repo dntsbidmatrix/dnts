@@ -25,7 +25,7 @@ export const TRUST_METRICS = [
   { value: "Dedicated", label: "Virtual Bid Manager", subtext: "For MSMEs, OEMs & Contractors" }
 ];
 
-// Exact 13 services grouped logically into 6 comprehensive consultancy verticals
+// Our services grouped logically into 6 comprehensive consultancy verticals
 export const SERVICES = [
   {
     id: "gem-registration",
