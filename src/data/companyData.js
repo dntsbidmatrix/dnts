@@ -72,7 +72,7 @@ export const SERVICES = [
   {
     id: "oem-brand-management",
     category: "Catalogue Management",
-    title: "OEM Panel, Brand Approval & Reseller Management",
+    title: "OEM Panel and OEM Dashboard",
     badge: "Service #5 & #6",
     description: "Assisting manufacturers in creating OEM dashboards on GeM, securing official brand approvals, managing authorized reseller networks, and uploading compliant product catalogues.",
     features: [

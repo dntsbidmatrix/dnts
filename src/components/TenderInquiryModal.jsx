@@ -160,7 +160,7 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
                 <option>Vendor Assessment on GeM</option>
                 <option>Vendor Exemption</option>
                 <option>PSU Empanelment (BHEL, EIL & Indian Railways etc)</option>
-                <option>OEM Panel & Brand Approval Setup</option>
+                <option>OEM Panel and OEM Dashboard</option>
                 <option>Product Upload & Catalogue Approval</option>
                 <option>Tender Document Study & Eligibility Summary</option>
                 <option>Live Bidding & Reverse Auction (RA) Management</option>

@@ -300,7 +300,7 @@ export default function Footer({ onOpenInquiry }) {
                   onClick={(e) => handleLinkClick(e, 'services')}
                   className="hover:text-white hover:underline transition-colors block"
                 >
-                  OEM Panel & Brand Setup
+                  OEM Panel and OEM Dashboard
                 </a>
               </li>
               <li>
