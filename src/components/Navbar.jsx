@@ -57,10 +57,6 @@ export default function Navbar({ onOpenInquiry }) {
               <a href={`tel:${COMPANY_INFO.phoneRaw}`} className="hover:text-blue-600 transition-colors">
                 {COMPANY_INFO.phone}
               </a>
-              <span className="text-slate-400">/</span>
-              <a href={`tel:${COMPANY_INFO.altPhoneRaw}`} className="hover:text-blue-600 transition-colors">
-                {COMPANY_INFO.altPhone}
-              </a>
             </div>
           </div>
         </div>
@@ -176,13 +172,6 @@ export default function Navbar({ onOpenInquiry }) {
             >
               <Phone className="w-3.5 h-3.5 mr-2 text-blue-600" />
               Call: {COMPANY_INFO.phone}
-            </a>
-            <a
-              href={`tel:${COMPANY_INFO.altPhoneRaw}`}
-              className="flex items-center justify-center py-2.5 px-4 rounded-lg bg-slate-100 text-slate-800 text-xs font-semibold border border-slate-200 hover:bg-slate-200"
-            >
-              <Phone className="w-3.5 h-3.5 mr-2 text-blue-600" />
-              Call: {COMPANY_INFO.altPhone}
             </a>
             <a
               href={COMPANY_INFO.whatsappUrl}
