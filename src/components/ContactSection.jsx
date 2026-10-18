@@ -264,7 +264,7 @@ export default function ContactSection() {
                         <option>GeM Portal, CPPP, UNGM and Other e-procurement Portals Registration</option>
                         <option>Vendor Assessment on GeM</option>
                         <option>Vendor Exemption</option>
-                        <option>PSU Empanelment (BHEL, EIL & Indian Railways etc)</option>
+                        <option>PSUs Empanelment (BHEL, EIL & Indian Railways etc)</option>
                         <option>OEM Panel and OEM Dashboard</option>
                         <option>Product Upload & Catalogue Approval</option>
                         <option>Tender Document Study & Eligibility Summary</option>
@@ -285,7 +285,7 @@ export default function ContactSection() {
                         <option>GeM Portal (gem.gov.in)</option>
                         <option>CPPP (eprocure.gov.in)</option>
                         <option>UNGM (United Nations Global Marketplace)</option>
-                        <option>PSU Portals (BHEL, EIL, IOCL, NTPC)</option>
+                        <option>PSUs Portals (BHEL, EIL, IOCL, NTPC)</option>
                         <option>Indian Railways (IREPS) etc</option>
                         <option>State e-Procurement Portals</option>
                         <option>International / Non-GeM Tenders</option>

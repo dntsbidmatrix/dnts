@@ -159,7 +159,7 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
                 <option>GeM Portal, CPPP, UNGM and Other e-procurement Portals Registration</option>
                 <option>Vendor Assessment on GeM</option>
                 <option>Vendor Exemption</option>
-                <option>PSU Empanelment (BHEL, EIL & Indian Railways etc)</option>
+                <option>PSUs Empanelment (BHEL, EIL & Indian Railways etc)</option>
                 <option>OEM Panel and OEM Dashboard</option>
                 <option>Product Upload & Catalogue Approval</option>
                 <option>Tender Document Study & Eligibility Summary</option>

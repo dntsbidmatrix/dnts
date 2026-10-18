@@ -62,7 +62,7 @@ export default function PortalsCovered() {
           ))}
         </div>
 
-        {/* PSU Empanelment Banner */}
+        {/* PSUs Empanelment Banner */}
         <div className="mt-12 p-6 rounded-2xl bg-slate-100/80 border border-slate-200 text-center space-y-3">
           <div className="inline-flex items-center space-x-1.5 text-xs font-bold uppercase tracking-wider text-blue-700">
             <Award className="w-4 h-4" />

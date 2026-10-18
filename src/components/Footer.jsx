@@ -291,7 +291,7 @@ export default function Footer({ onOpenInquiry }) {
                   onClick={(e) => handleLinkClick(e, 'services')}
                   className="hover:text-white hover:underline transition-colors block"
                 >
-                  PSU Empanelment (BHEL, EIL etc)
+                  PSUs Empanelment (BHEL, EIL etc)
                 </a>
               </li>
               <li>

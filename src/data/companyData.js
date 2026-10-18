@@ -21,7 +21,7 @@ export const COMPANY_INFO = {
 export const TRUST_METRICS = [
   { value: "End-to-End", label: "Bid Management", subtext: "From Tender Study to EMD Refund" },
   { value: "GeM & CPPP", label: "Pan-India Portals", subtext: "Central, State, Railways & PSUs" },
-  { value: "PSU Empanelment", label: "Vendor Registration", subtext: "BHEL, EIL, Railways, NTPC" },
+  { value: "PSUs Empanelment", label: "Vendor Registration", subtext: "BHEL, EIL, Railways, NTPC" },
   { value: "Dedicated", label: "Virtual Bid Manager", subtext: "For MSMEs, OEMs & Contractors" }
 ];
 
@@ -58,7 +58,7 @@ export const SERVICES = [
   {
     id: "psu-empanelment",
     category: "Empanelment",
-    title: "PSU & Government Sector Empanelment",
+    title: "PSUs & Government Sector Empanelment",
     badge: "Service #3 & #8",
     description: "Getting manufacturers and suppliers registered and empaneled as approved vendors across major Public Sector Undertakings (PSUs) and core government departments.",
     features: [
@@ -145,7 +145,7 @@ export const SERVICES = [
 export const DETAILED_13_SERVICES = [
   { no: 1, title: "GeM Portal, CPPP, UNGM and Other e-procurement Portals Registration", desc: "Setting up verified primary & secondary accounts on central, global (UNGM) & state portals." },
   { no: 2, title: "Vendor Assessment on GeM Portal", desc: "Facilitating vendor assessment process, documentation & site audit readiness." },
-  { no: 3, title: "PSU & Government Sector Empanelment", desc: "Approved supplier registration in BHEL, EIL & Indian Railways etc." },
+  { no: 3, title: "PSUs & Government Sector Empanelment", desc: "Approved supplier registration in BHEL, EIL & Indian Railways etc." },
   { no: 4, title: "Vendor Exemption", desc: "Securing official GeM vendor exemptions for eligible sellers and manufacturers." },
   { no: 5, title: "OEM Panel Creation & Brand Approval", desc: "Setting up OEM dashboards, brand registry, reseller authorization & catalogue control." },
   { no: 6, title: "Products Upload & Catalogue Approval", desc: "Uploading product SKUs, mapping specifications, and granting reseller catalogue approvals." },
@@ -176,7 +176,7 @@ export const PORTALS_COVERED = [
   {
     name: "PSUs & Engineering Enterprises",
     domain: "BHEL, EIL, NTPC, IOCL, GAIL etc",
-    type: "Core PSU Empanelment",
+    type: "Core PSUs Empanelment",
     description: "Specialized supplier registration dossiers, technical capability approvals, and empanelment across India's largest PSUs.",
     highlight: "BHEL, EIL & Railways Approved"
   },
@@ -227,7 +227,7 @@ export const FAQS = [
     a: "Yes. We handle complete GeM seller registration, secondary user setup, and Vendor Assessment file preparation. If you qualify, we also assist in getting official Vendor Exemption."
   },
   {
-    q: "Do you assist with PSU empanelment like BHEL, EIL & Indian Railways etc?",
+    q: "Do you assist with PSUs empanelment like BHEL, EIL & Indian Railways etc?",
     a: "Yes. We prepare specialized vendor registration dossiers for major PSUs including BHEL, Engineers India Limited (EIL), Indian Railways (IREPS) etc, as well as IOCL, NTPC, and state engineering corporations."
   },
   {

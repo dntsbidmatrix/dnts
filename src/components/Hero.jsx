@@ -31,7 +31,7 @@ export default function Hero({ onOpenInquiry }) {
 
             {/* Subtitle */}
             <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              <strong>BidMatrix</strong> provides end-to-end bid processing management and strategic tendering services. We act as your <strong>dedicated Virtual Bid Manager</strong>—handling portal registrations (GeM, CPPP, UNGM), GeM vendor assessment, PSU empanelment (BHEL, EIL & Indian Railways etc), catalogue approvals, and live reverse auctions.
+              <strong>BidMatrix</strong> provides end-to-end bid processing management and strategic tendering services. We act as your <strong>dedicated Virtual Bid Manager</strong>—handling portal registrations (GeM, CPPP, UNGM), GeM vendor assessment, PSUs empanelment (BHEL, EIL & Indian Railways etc), catalogue approvals, and live reverse auctions.
             </p>
 
             {/* Key Assurance Bullet Points from Official Proposal */}
@@ -46,7 +46,7 @@ export default function Hero({ onOpenInquiry }) {
               </div>
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-700">
                 <CheckCircle2 className="w-4 h-4 text-blue-600 flex-shrink-0" />
-                <span>PSU Empanelment (BHEL, EIL & Indian Railways etc)</span>
+                <span>PSUs Empanelment (BHEL, EIL & Indian Railways etc)</span>
               </div>
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-700">
                 <CheckCircle2 className="w-4 h-4 text-blue-600 flex-shrink-0" />
@@ -150,7 +150,7 @@ export default function Hero({ onOpenInquiry }) {
                     </div>
                     <div className="p-2.5 rounded-lg bg-slate-50 border border-slate-200 flex items-center space-x-2">
                       <Building2 className="w-4 h-4 text-amber-600 flex-shrink-0" />
-                      <span className="text-slate-800 font-medium">PSU Empanelment</span>
+                      <span className="text-slate-800 font-medium">PSUs Empanelment</span>
                     </div>
                     <div className="p-2.5 rounded-lg bg-slate-50 border border-slate-200 flex items-center space-x-2">
                       <Award className="w-4 h-4 text-purple-600 flex-shrink-0" />
