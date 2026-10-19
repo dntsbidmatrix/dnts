@@ -225,7 +225,7 @@ export default function Footer({ onOpenInquiry }) {
                   className="hover:text-white hover:underline transition-colors flex items-center group"
                 >
                   <ChevronRight className="w-3.5 h-3.5 mr-1 text-cyan-200 group-hover:translate-x-0.5 transition-transform" />
-                  <span>About Our Firm</span>
+                  <span>About Us</span>
                 </a>
               </li>
             </ul>
