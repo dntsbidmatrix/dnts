@@ -9,6 +9,7 @@ import {
   BadgePercent, 
   PackageCheck,
   Gavel,
+  Receipt,
   Check, 
   ArrowRight,
   ListOrdered
@@ -22,7 +23,8 @@ const iconMap = {
   Briefcase,
   BadgePercent,
   PackageCheck,
-  Gavel
+  Gavel,
+  Receipt
 };
 
 export default function Services({ onSelectService }) {
@@ -69,7 +71,7 @@ export default function Services({ onSelectService }) {
           ))}
         </div>
 
-        {/* Services Grid (6 Core Domains) */}
+        {/* Services Grid (9 Core Domains) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {filteredServices.map((service) => {
             const Icon = iconMap[service.icon] || FileCheck2;

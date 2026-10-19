@@ -25,7 +25,7 @@ export const TRUST_METRICS = [
   { value: "Dedicated", label: "Virtual Bid Manager", subtext: "For MSMEs, OEMs & Contractors" }
 ];
 
-// Our services grouped logically into 6 comprehensive consultancy verticals
+// Our services grouped logically into 9 comprehensive consultancy verticals
 export const SERVICES = [
   {
     id: "gem-registration",
@@ -139,6 +139,20 @@ export const SERVICES = [
       "Post-bid departmental liaison, billing follow-up & prompt EMD refund retrieval"
     ],
     icon: "Gavel"
+  },
+  {
+    id: "contract-invoice-management",
+    category: "Execution & Post-Bid",
+    title: "Contract Management & PSUs e-Invoice Portal Processing",
+    badge: "Contract & Invoicing",
+    description: "End-to-end post-award contract administration, Performance Security (PBG) documentation, digital invoice uploads, CRAC clearances, milestone delivery tracking, and payment disbursements across GeM and PSU portals.",
+    features: [
+      "Official contract acceptance, e-PBG / security deposit documentation",
+      "GeM digital invoice submission, GST e-invoicing & CRAC clearance facilitation",
+      "PSU vendor portal bill submission (Bill Watch, NTPC, BHEL, Railways etc)",
+      "Milestone payment follow-up, deduction reconciliation & final settlement"
+    ],
+    icon: "Receipt"
   }
 ];
 
