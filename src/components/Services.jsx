@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SERVICES, DETAILED_13_SERVICES } from '../data/companyData';
+import { SERVICES, DETAILED_15_SERVICES } from '../data/companyData';
 import { 
   FileCheck2, 
   ShieldCheck, 
@@ -150,7 +150,7 @@ export default function Services({ onSelectService }) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {DETAILED_13_SERVICES.map((item) => (
+            {DETAILED_15_SERVICES.map((item) => (
               <div 
                 key={item.no}
                 className="p-4 rounded-xl bg-slate-50/80 border border-slate-200/80 hover:border-blue-300 hover:bg-white transition-all flex items-start space-x-3.5"

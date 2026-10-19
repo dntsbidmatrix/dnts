@@ -142,7 +142,7 @@ export const SERVICES = [
   }
 ];
 
-export const DETAILED_13_SERVICES = [
+export const DETAILED_15_SERVICES = [
   { no: 1, title: "GeM Portal, CPPP, UNGM and Other e-procurement Portals Registration", desc: "Setting up verified primary & secondary accounts on central, global (UNGM) & state portals." },
   { no: 2, title: "Vendor Assessment on GeM Portal", desc: "Facilitating vendor assessment process, documentation & site audit readiness." },
   { no: 3, title: "PSUs & Government Sector Empanelment", desc: "Approved supplier registration in BHEL, EIL & Indian Railways etc." },
@@ -154,9 +154,13 @@ export const DETAILED_13_SERVICES = [
   { no: 9, title: "Portal Registration with Customer Credentials", desc: "Secure portal registration handled transparently using client login credentials." },
   { no: 10, title: "Department Follow-up & Liaison", desc: "Acting as an active communication bridge between your business and government officers." },
   { no: 11, title: "Tender Document Upload & Rate Suggestion", desc: "Systematic document uploads, compliance matrices, and competitive rate recommendations." },
-  { no: 12, title: "Bid Submission & Live Reverse Auction (RA)", desc: "Timely bid submission and real-time live bidding management during Reverse Auctions." },
-  { no: 13, title: "L1 Purchase Order & EMD Refund Follow-up", desc: "Securing PO & payment follow-up if L1; prompt EMD refund retrieval if tender not won." }
+  { no: 12, title: "Bid Submission & Live Reverse / Forward Auction", desc: "Timely bid submission, live bidding in Reverse Auctions (RA), and Forward Auctions for departmental asset disposal." },
+  { no: 13, title: "L1 Purchase Order & EMD Refund Follow-up", desc: "Securing PO & payment follow-up if L1; prompt EMD refund retrieval if tender not won." },
+  { no: 14, title: "Pre-Bid Clarification & Departmental Representation", desc: "Drafting pre-bid queries, attending official pre-bid meetings, seeking corrigendum amendments, and representing client interests against restrictive clauses." },
+  { no: 15, title: "Contract Management & e-Invoice Management", desc: "Post-award contract administration, milestone delivery tracking, digital invoice uploads, CRAC clearances, and payment disbursements across GeM & PSU portals." }
 ];
+
+export const DETAILED_13_SERVICES = DETAILED_15_SERVICES;
 
 export const PORTALS_COVERED = [
   {

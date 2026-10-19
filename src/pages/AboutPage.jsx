@@ -319,7 +319,7 @@ export default function AboutPage({ onNavigate, onOpenInquiry }) {
               onClick={() => onNavigate('/', 'services')}
               className="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold text-xs sm:text-sm transition-all"
             >
-              Browse 13 Core Services
+              Explore All Scope of Services
             </button>
           </div>
         </div>
