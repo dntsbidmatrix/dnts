@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MessageSquare, Menu, X, ArrowUpRight, ShieldCheck, Mail } from 'lucide-react';
+import { Phone, MessageSquare, Menu, X, ArrowUpRight, ShieldCheck, Mail, Home as HomeIcon } from 'lucide-react';
 import { COMPANY_INFO } from '../data/companyData';
 
-export default function Navbar({ onOpenInquiry }) {
+export default function Navbar({ onOpenInquiry, currentRoute = 'home', onNavigate }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -14,13 +14,55 @@ export default function Navbar({ onOpenInquiry }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: 'Our Services', href: '#services' },
-    { name: 'Portals', href: '#portals' },
-    { name: 'Process', href: '#workflow' },
-    { name: 'Compliance', href: '#compliance' },
-    { name: 'Contact', href: '#contact' }
+  const homeNavLinks = [
+    { name: 'Our Services', href: '#services', targetId: 'services' },
+    { name: 'Portals', href: '#portals', targetId: 'portals' },
+    { name: 'Process', href: '#workflow', targetId: 'workflow' },
+    { name: 'Compliance', href: '#compliance', targetId: 'compliance' },
+    { name: 'Contact', href: '#contact', targetId: 'contact' }
   ];
+
+  const aboutNavLinks = [
+    { name: 'Home', href: '/', isHome: true },
+    { name: 'Our Services', href: '/#services', targetId: 'services' },
+    { name: 'Portals', href: '/#portals', targetId: 'portals' },
+    { name: 'Process', href: '/#workflow', targetId: 'workflow' },
+    { name: 'Compliance', href: '/#compliance', targetId: 'compliance' },
+    { name: 'Contact', href: '/#contact', targetId: 'contact' }
+  ];
+
+  const navLinks = currentRoute === 'about' ? aboutNavLinks : homeNavLinks;
+
+  const handleLinkClick = (e, link) => {
+    e.preventDefault();
+    setMobileMenuOpen(false);
+
+    if (link.isHome) {
+      if (onNavigate) {
+        onNavigate('/');
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    } else if (currentRoute === 'about') {
+      if (onNavigate) {
+        onNavigate('/', link.targetId);
+      }
+    } else {
+      const elem = document.getElementById(link.targetId);
+      if (elem) {
+        elem.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
+  const handleLogoClick = (e) => {
+    e.preventDefault();
+    if (currentRoute === 'about') {
+      if (onNavigate) onNavigate('/');
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -65,7 +107,11 @@ export default function Navbar({ onOpenInquiry }) {
         <div className="flex items-center justify-between gap-4">
           
           {/* Logo & Brand Name */}
-          <a href="#" className="flex items-center space-x-3 group flex-shrink-0">
+          <a 
+            href="/" 
+            onClick={handleLogoClick}
+            className="flex items-center space-x-3 group flex-shrink-0"
+          >
             <div className="relative">
               <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white border border-slate-200 p-1 flex items-center justify-center overflow-hidden shadow-sm group-hover:border-blue-500 transition-colors">
                 <img 
@@ -91,9 +137,15 @@ export default function Navbar({ onOpenInquiry }) {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-xs xl:text-sm font-semibold text-slate-700 hover:text-blue-600 transition-colors relative py-1 hover:after:w-full after:w-0 after:h-0.5 after:bg-blue-600 after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-300 whitespace-nowrap"
+                onClick={(e) => handleLinkClick(e, link)}
+                className={`text-xs xl:text-sm font-semibold transition-colors relative py-1 hover:after:w-full after:w-0 after:h-0.5 after:bg-blue-600 after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-300 whitespace-nowrap ${
+                  link.isHome 
+                    ? 'text-blue-600 flex items-center' 
+                    : 'text-slate-700 hover:text-blue-600'
+                }`}
               >
-                {link.name}
+                {link.isHome && <HomeIcon className="w-3.5 h-3.5 mr-1" />}
+                <span>{link.name}</span>
               </a>
             ))}
           </nav>
@@ -156,10 +208,15 @@ export default function Navbar({ onOpenInquiry }) {
               <a
                 key={link.name}
                 href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="text-slate-800 hover:text-blue-600 text-sm font-medium py-2 border-b border-slate-100"
+                onClick={(e) => handleLinkClick(e, link)}
+                className={`text-sm font-medium py-2 border-b border-slate-100 flex items-center ${
+                  link.isHome 
+                    ? 'text-blue-600 font-bold' 
+                    : 'text-slate-800 hover:text-blue-600'
+                }`}
               >
-                {link.name}
+                {link.isHome && <HomeIcon className="w-4 h-4 mr-1.5" />}
+                <span>{link.name}</span>
               </a>
             ))}
           </div>

@@ -36,16 +36,31 @@ const YoutubeIcon = () => (
   </svg>
 );
 
-export default function Footer({ onOpenInquiry }) {
+export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigate }) {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleLinkClick = (e, targetId) => {
     e.preventDefault();
-    const elem = document.getElementById(targetId);
-    if (elem) {
-      elem.scrollIntoView({ behavior: 'smooth' });
+    if (currentRoute === 'about') {
+      if (onNavigate) {
+        onNavigate('/', targetId);
+      }
+    } else {
+      const elem = document.getElementById(targetId);
+      if (elem) {
+        elem.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
+  const handleAboutClick = (e) => {
+    e.preventDefault();
+    if (onNavigate) {
+      onNavigate('/about');
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
@@ -63,12 +78,21 @@ export default function Footer({ onOpenInquiry }) {
           <div className="lg:col-span-5 space-y-6">
             
             {/* Company Branding */}
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md p-1.5 border border-white/20 flex items-center justify-center shadow-md">
+            <div 
+              onClick={() => {
+                if (currentRoute === 'about' && onNavigate) {
+                  onNavigate('/');
+                } else {
+                  scrollToTop();
+                }
+              }}
+              className="flex items-center space-x-3 cursor-pointer group"
+            >
+              <div className="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md p-1.5 border border-white/20 flex items-center justify-center shadow-md group-hover:bg-white/20 transition-colors">
                 <img src="/logo.png" alt="D Nandani Tech Solutions" className="w-full h-full object-contain" />
               </div>
               <div>
-                <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-white drop-shadow-sm">
+                <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-white drop-shadow-sm group-hover:text-cyan-200 transition-colors">
                   D Nandani Tech Solutions
                 </h3>
                 <p className="text-[11px] text-cyan-100 font-semibold uppercase tracking-wider">
@@ -220,9 +244,11 @@ export default function Footer({ onOpenInquiry }) {
               </li>
               <li>
                 <a 
-                  href="#about" 
-                  onClick={(e) => handleLinkClick(e, 'about')}
-                  className="hover:text-white hover:underline transition-colors flex items-center group"
+                  href="/about" 
+                  onClick={handleAboutClick}
+                  className={`hover:text-white hover:underline transition-colors flex items-center group ${
+                    currentRoute === 'about' ? 'text-white font-bold' : ''
+                  }`}
                 >
                   <ChevronRight className="w-3.5 h-3.5 mr-1 text-cyan-200 group-hover:translate-x-0.5 transition-transform" />
                   <span>About Us</span>
