@@ -199,6 +199,13 @@ export const PORTALS_COVERED = [
     highlight: "BHEL, EIL & Railways etc Approved"
   },
   {
+    name: "PSUs e-invoice management portals",
+    domain: "GeM, Bill Watch & PSU Portals",
+    type: "Post-Award Billing & Invoice",
+    description: "Seamless generation and upload of digital invoices, CRAC clearance, bill milestone tracking, and payment follow-ups across PSU portals and GeM.",
+    highlight: "e-Invoice & Payment Tracking"
+  },
+  {
     name: "Indian Railways (IREPS), Zone wise empanelment registration & bidding",
     domain: "ireps.gov.in",
     type: "Railways Procurement & Empanelment",
@@ -211,13 +218,6 @@ export const PORTALS_COVERED = [
     type: "Global UN Procurement",
     description: "International vendor registration, technical compliance, Expression of Interest (EOI), and RFQ/tender submissions for United Nations agencies and UNDP.",
     highlight: "Global UN & UNDP Registry"
-  },
-  {
-    name: "PSUs e-invoice management portals",
-    domain: "GeM, Bill Watch & PSU Portals",
-    type: "Post-Award Billing & Invoice",
-    description: "Seamless generation and upload of digital invoices, CRAC clearance, bill milestone tracking, and payment follow-ups across PSU portals and GeM.",
-    highlight: "e-Invoice & Payment Tracking"
   }
 ];
 
