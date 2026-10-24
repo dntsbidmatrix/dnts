@@ -207,8 +207,8 @@ export default function AboutPage({ onNavigate, onOpenInquiry }) {
                     Managed by D Nandani Tech Solutions
                   </p>
                 </div>
-                <div className="w-12 h-12 rounded-xl bg-slate-50 border border-slate-200 p-1.5 flex items-center justify-center shadow-inner">
-                  <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
+                <div className="w-14 h-14 rounded-full flex items-center justify-center overflow-hidden drop-shadow-md">
+                  <img src="/logo.png" alt="Logo" className="w-full h-full object-contain rounded-full" />
                 </div>
               </div>
 

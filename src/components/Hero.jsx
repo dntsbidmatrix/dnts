@@ -114,11 +114,11 @@ export default function Hero({ onOpenInquiry }) {
                 {/* Header with Logo */}
                 <div className="flex items-center justify-between border-b border-slate-100 pb-5">
                   <div className="flex items-center space-x-4">
-                    <div className="w-16 h-16 rounded-2xl bg-slate-50 border border-slate-200 p-2 shadow-inner flex items-center justify-center">
+                    <div className="w-16 h-16 rounded-full flex items-center justify-center overflow-hidden drop-shadow-md">
                       <img 
                         src="/logo.png" 
                         alt="BidMatrix" 
-                        className="w-full h-full object-contain"
+                        className="w-full h-full object-contain rounded-full"
                       />
                     </div>
                     <div>

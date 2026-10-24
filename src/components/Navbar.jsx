@@ -113,11 +113,11 @@ export default function Navbar({ onOpenInquiry, currentRoute = 'home', onNavigat
             className="flex items-center space-x-3 group flex-shrink-0"
           >
             <div className="relative">
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white border border-slate-200 p-1 flex items-center justify-center overflow-hidden shadow-sm group-hover:border-blue-500 transition-colors">
+              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full flex items-center justify-center overflow-hidden drop-shadow-sm group-hover:scale-105 transition-transform">
                 <img 
                   src="/logo.png" 
                   alt="BidMatrix Logo" 
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain rounded-full"
                 />
               </div>
             </div>

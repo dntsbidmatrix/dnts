@@ -88,8 +88,8 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
               }}
               className="flex items-center space-x-3 cursor-pointer group"
             >
-              <div className="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md p-1.5 border border-white/20 flex items-center justify-center shadow-md group-hover:bg-white/20 transition-colors">
-                <img src="/logo.png" alt="D Nandani Tech Solutions" className="w-full h-full object-contain" />
+              <div className="w-11 h-11 rounded-full flex items-center justify-center drop-shadow-md group-hover:scale-105 transition-transform overflow-hidden">
+                <img src="/logo.png" alt="D Nandani Tech Solutions" className="w-full h-full object-contain rounded-full" />
               </div>
               <div>
                 <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-white drop-shadow-sm group-hover:text-cyan-200 transition-colors">

@@ -57,8 +57,8 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
 
         {/* Modal Header */}
         <div className="flex items-center space-x-3 mb-5 border-b border-slate-100 pb-4">
-          <div className="w-10 h-10 rounded-xl bg-slate-50 border border-slate-200 p-1 flex items-center justify-center">
-            <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
+          <div className="w-11 h-11 rounded-full flex items-center justify-center overflow-hidden drop-shadow-sm flex-shrink-0">
+            <img src="/logo.png" alt="Logo" className="w-full h-full object-contain rounded-full" />
           </div>
           <div>
             <h3 className="text-lg font-bold text-slate-900">
