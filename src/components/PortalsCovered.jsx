@@ -26,8 +26,12 @@ export default function PortalsCovered() {
           {PORTALS_COVERED.map((portal, idx) => (
             <div
               key={idx}
-              className="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all duration-300 group"
+              className="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200/90 hover:border-blue-400 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between"
             >
+              {/* Top Hover Accent Bar */}
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-teal-400 via-sky-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+              <div>
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <span className="inline-block px-2.5 py-1 rounded-md bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold mb-2">
@@ -49,6 +53,7 @@ export default function PortalsCovered() {
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5 font-normal">
                 {portal.description}
               </p>
+              </div>
 
               <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
                 <span className="flex items-center text-xs font-bold text-emerald-700">
