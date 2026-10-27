@@ -186,7 +186,7 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
             <div className="pt-2">
               <button
                 type="submit"
-                className="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 hover:from-blue-700 hover:to-indigo-700 transition-all shadow-md shadow-blue-600/25 flex items-center justify-center space-x-2"
+                className="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 hover:from-blue-700 hover:to-indigo-700 transition-all shadow-md shadow-blue-500/25 flex items-center justify-center space-x-2"
               >
                 <Send className="w-4 h-4" />
                 <span>Submit & Dispatch to WhatsApp Strategy Desk</span>

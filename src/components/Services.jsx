@@ -81,7 +81,7 @@ export default function Services({ onSelectService }) {
                 className="group relative rounded-2xl bg-white border border-slate-200/90 hover:border-blue-400 p-7 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl hover:shadow-blue-600/10 overflow-hidden"
               >
                 {/* Top Glowing Hover Accent Line */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-indigo-500 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                 {/* Top Badge & Icon */}
                 <div>
@@ -131,7 +131,7 @@ export default function Services({ onSelectService }) {
 
         {/* Our Services from the Official Quotation Proposal */}
         <div className="rounded-3xl bg-white border border-slate-200 p-8 sm:p-10 shadow-xl shadow-slate-200/50 relative overflow-hidden">
-          <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-700 via-indigo-600 to-amber-500" />
+          <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600" />
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 border-b border-slate-100 pb-6">
             <div className="space-y-1">
               <div className="inline-flex items-center text-xs font-bold text-blue-600 uppercase tracking-wider">

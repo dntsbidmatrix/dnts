@@ -19,7 +19,7 @@ export default function TrustStats() {
                 className="relative p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:border-blue-300 hover:shadow-lg hover:shadow-blue-600/5 transition-all duration-300 group flex flex-col items-center justify-center text-center overflow-hidden"
               >
                 {/* Top Subtle Hover Accent Line */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-indigo-500 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                 {/* Centered Icon */}
                 <div className="p-2 sm:p-2.5 rounded-xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 text-blue-700 mb-2 sm:mb-2.5 group-hover:scale-110 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-indigo-600 group-hover:text-white transition-all flex items-center justify-center shadow-sm">

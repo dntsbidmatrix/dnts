@@ -28,7 +28,7 @@ export default function TenderWorkflow() {
               className="relative p-6 rounded-2xl bg-white border border-slate-200/90 hover:border-blue-400 hover:shadow-xl hover:shadow-blue-600/10 transition-all duration-300 group flex flex-col justify-between overflow-hidden"
             >
               {/* Top Hover Accent Bar */}
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-indigo-500 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               {/* Step Number with glowing ring */}
               <div>
@@ -61,7 +61,7 @@ export default function TenderWorkflow() {
 
         {/* Post-Bid Assurance Box */}
         <div className="mt-14 p-6 sm:p-7 rounded-2xl bg-white border border-blue-200/90 shadow-lg shadow-blue-900/5 flex flex-col sm:flex-row items-center justify-between gap-6 relative overflow-hidden">
-          <div className="absolute top-0 left-0 bottom-0 w-1.5 bg-gradient-to-b from-blue-600 via-indigo-600 to-amber-500" />
+          <div className="absolute top-0 left-0 bottom-0 w-1.5 bg-gradient-to-b from-blue-600 via-indigo-600 to-violet-600" />
           <div className="space-y-1 text-center sm:text-left pl-0 sm:pl-2">
             <h4 className="text-base font-bold text-slate-900">
               End-to-End Commitment: L1 Purchase Order & EMD Refund Assurance

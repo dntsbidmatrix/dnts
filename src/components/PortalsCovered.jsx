@@ -29,7 +29,7 @@ export default function PortalsCovered() {
               className="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200/90 hover:border-blue-400 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between"
             >
               {/* Top Hover Accent Bar */}
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-indigo-500 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               <div>
               <div className="flex items-start justify-between mb-4">
@@ -68,16 +68,15 @@ export default function PortalsCovered() {
         </div>
 
         {/* PSUs Empanelment Banner */}
-        <div className="mt-12 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-[#0B0F19] via-[#0F1E3D] to-[#172554] text-white border border-slate-800 text-center space-y-3 shadow-xl relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/10 rounded-full blur-2xl pointer-events-none" />
-          <div className="inline-flex items-center space-x-1.5 text-xs font-bold uppercase tracking-wider text-amber-300 bg-amber-400/10 border border-amber-400/25 px-3 py-1 rounded-full">
-            <Award className="w-4 h-4 text-amber-400" />
+        <div className="mt-12 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-blue-50/90 via-indigo-50/60 to-purple-50/70 text-slate-900 border border-blue-200/90 text-center space-y-3 shadow-md relative overflow-hidden">
+          <div className="inline-flex items-center space-x-1.5 text-xs font-bold uppercase tracking-wider text-blue-700 bg-white border border-blue-200 px-3.5 py-1.5 rounded-full shadow-sm">
+            <Award className="w-4 h-4 text-blue-600" />
             <span>Specialized Supplier Registration & Empanelment</span>
           </div>
-          <div className="text-base sm:text-lg font-bold text-white">
+          <div className="text-base sm:text-lg font-bold text-slate-900">
             BHEL, EIL & Indian Railways etc • NTPC • IOCL • GAIL etc • Defence & State Portals
           </div>
-          <p className="text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed">
             We prepare vendor dossiers, balance sheet compilations, technical capability declarations, and handle complete department liaisoning.
           </p>
         </div>
