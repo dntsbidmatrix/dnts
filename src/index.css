@@ -34,13 +34,13 @@
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #24362C 0%, #3A5A40 40%, #5A9F68 100%);
+  background: linear-gradient(135deg, #245439 0%, #3E7D56 45%, #5A9F68 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-green {
-  background: linear-gradient(135deg, #FFFFFF 0%, #D8ECB6 50%, #BBD58E 100%);
+  background: linear-gradient(135deg, #FFFFFF 0%, #E2F2C5 50%, #BBD58E 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

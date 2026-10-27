@@ -82,7 +82,7 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
                 setSubmitted(false);
                 onClose();
               }}
-              className="px-5 py-2 rounded-xl bg-blue-600 text-white font-bold text-xs"
+              className="px-5 py-2 rounded-xl bg-[#245439] hover:bg-[#1B3E29] text-white font-bold text-xs"
             >
               Done
             </button>
@@ -186,7 +186,7 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
             <div className="pt-2">
               <button
                 type="submit"
-                className="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-[#344E41] via-[#3A5A40] to-[#588157] hover:from-[#24362C] hover:to-[#4D8F5A] transition-all shadow-md shadow-[#344E41]/25 flex items-center justify-center space-x-2 border border-[#BBD58E]/30"
+                className="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-[#245439] via-[#336848] to-[#468C5D] hover:from-[#1B3E29] hover:to-[#38764E] transition-all shadow-md shadow-[#245439]/25 flex items-center justify-center space-x-2 border border-[#BBD58E]/40"
               >
                 <Send className="w-4 h-4" />
                 <span>Submit & Dispatch to WhatsApp Strategy Desk</span>

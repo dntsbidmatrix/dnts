@@ -42,8 +42,8 @@ export default function Services({ onSelectService }) {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#EAF2E8] border border-[#588157]/30 text-[#344E41] text-xs font-semibold uppercase tracking-wider">
-            <Briefcase className="w-3.5 h-3.5 mr-1 text-[#3A5A40]" />
+          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#EAF5ED] border border-[#BCDDC4] text-[#245439] text-xs font-semibold uppercase tracking-wider">
+            <Briefcase className="w-3.5 h-3.5 mr-1 text-[#387850]" />
             <span>End-to-End Bid Processing Solutions</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
@@ -62,8 +62,8 @@ export default function Services({ onSelectService }) {
               onClick={() => setActiveFilter(cat)}
               className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${
                 activeFilter === cat
-                  ? 'bg-gradient-to-r from-[#344E41] via-[#3A5A40] to-[#588157] text-white shadow-md shadow-[#344E41]/20 scale-105 border border-[#BBD58E]/30'
-                  : 'bg-[#F4F7F4] text-slate-700 border border-[#D8E6D8] hover:border-[#5A9F68] hover:bg-[#EAF2E8]'
+                  ? 'bg-gradient-to-r from-[#245439] via-[#336848] to-[#468C5D] text-white shadow-md shadow-[#245439]/20 scale-105 border border-[#BBD58E]/40'
+                  : 'bg-[#F4F9F5] text-slate-700 border border-[#D5EADB] hover:border-[#5A9F68] hover:bg-[#EAF5ED]'
               }`}
             >
               {cat}
@@ -78,23 +78,23 @@ export default function Services({ onSelectService }) {
             return (
               <div
                 key={service.id}
-                className="group relative rounded-2xl bg-white border border-[#D8E6D8] hover:border-[#5A9F68] p-7 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl hover:shadow-[#3A5A40]/10 overflow-hidden"
+                className="group relative rounded-2xl bg-white border border-[#D5EADB] hover:border-[#5A9F68] p-7 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl hover:shadow-[#245439]/10 overflow-hidden"
               >
                 {/* Top Glowing Hover Accent Line */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#344E41] via-[#5A9F68] to-[#BBD58E] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#245439] via-[#468C5D] to-[#BBD58E] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                 {/* Top Badge & Icon */}
                 <div>
                   <div className="flex items-center justify-between mb-5">
-                    <div className="w-12 h-12 rounded-xl bg-[#EAF2E8] border border-[#C5D8C5] flex items-center justify-center text-[#344E41] group-hover:scale-110 group-hover:bg-gradient-to-r group-hover:from-[#344E41] group-hover:to-[#588157] group-hover:text-white transition-all shadow-sm">
+                    <div className="w-12 h-12 rounded-xl bg-[#EAF5ED] border border-[#BCDDC4] flex items-center justify-center text-[#245439] group-hover:scale-110 group-hover:bg-gradient-to-r group-hover:from-[#245439] group-hover:to-[#468C5D] group-hover:text-white transition-all shadow-sm">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <span className="px-2.5 py-1 rounded-full bg-[#F4F7F4] border border-[#D8E6D8] text-slate-700 text-[11px] font-semibold group-hover:bg-[#EAF2E8] group-hover:text-[#344E41] group-hover:border-[#C5D8C5] transition-colors">
+                    <span className="px-2.5 py-1 rounded-full bg-[#F4F9F5] border border-[#D5EADB] text-slate-700 text-[11px] font-semibold group-hover:bg-[#EAF5ED] group-hover:text-[#245439] group-hover:border-[#BCDDC4] transition-colors">
                       {service.badge}
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#344E41] transition-colors">
+                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#245439] transition-colors">
                     {service.title}
                   </h3>
 
@@ -117,10 +117,10 @@ export default function Services({ onSelectService }) {
                 <div className="pt-2">
                   <button
                     onClick={() => onSelectService(service.title)}
-                    className="w-full py-2.5 px-4 rounded-xl bg-[#F4F7F4] border border-[#D8E6D8] group-hover:border-[#5A9F68] group-hover:bg-[#EAF2E8] text-slate-700 group-hover:text-[#24362C] text-xs font-bold flex items-center justify-center space-x-2 transition-all shadow-sm"
+                    className="w-full py-2.5 px-4 rounded-xl bg-[#F4F9F5] border border-[#D5EADB] group-hover:border-[#5A9F68] group-hover:bg-[#EAF5ED] text-slate-700 group-hover:text-[#1B3E29] text-xs font-bold flex items-center justify-center space-x-2 transition-all shadow-sm"
                   >
                     <span>Inquire About This Service</span>
-                    <ArrowRight className="w-3.5 h-3.5 text-[#3A5A40] group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="w-3.5 h-3.5 text-[#387850] group-hover:translate-x-1 transition-transform" />
                   </button>
                 </div>
 
@@ -130,8 +130,8 @@ export default function Services({ onSelectService }) {
         </div>
 
         {/* Our Services from the Official Quotation Proposal */}
-        <div className="rounded-3xl bg-gradient-to-br from-[#1C2C23] via-[#344E41] to-[#3A5A40] text-white border border-[#588157]/40 p-8 sm:p-10 shadow-2xl relative overflow-hidden">
-          <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#BBD58E] via-[#D8ECB6] to-[#5A9F68]" />
+        <div className="rounded-3xl bg-gradient-to-br from-[#245439] via-[#2F6D4A] to-[#3E895C] text-white border border-[#5A9F68]/40 p-8 sm:p-10 shadow-2xl relative overflow-hidden">
+          <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#BBD58E] via-[#D5EDA8] to-[#5A9F68]" />
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 border-b border-white/10 pb-6">
             <div className="space-y-1">
               <div className="inline-flex items-center text-xs font-bold text-[#BBD58E] uppercase tracking-wider">
@@ -141,14 +141,14 @@ export default function Services({ onSelectService }) {
               <h3 className="text-2xl font-bold text-white tracking-tight">
                 Our Complete Scope of Services
               </h3>
-              <p className="text-xs sm:text-sm text-[#D6E5D7]">
+              <p className="text-xs sm:text-sm text-[#E2EFE4]">
                 As detailed in our official technical proposal for public & private sector tendering.
               </p>
             </div>
             <div>
               <button
                 onClick={() => onSelectService('Complete Tender Services Package')}
-                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#BBD58E] via-[#D8ECB6] to-[#A8C974] hover:from-[#C7E09E] hover:to-[#B4D381] text-[#1C2C23] font-bold text-xs shadow-md shadow-[#1C2C23]/40 transition-all hover:scale-105"
+                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#BBD58E] via-[#D5EDA8] to-[#9CD066] hover:from-[#C9E795] hover:to-[#8AC352] text-[#143220] font-extrabold text-xs shadow-md shadow-[#183E28]/40 transition-all hover:scale-105"
               >
                 Request Proposal For Our Services
               </button>
@@ -161,14 +161,14 @@ export default function Services({ onSelectService }) {
                 key={item.no}
                 className="p-4 rounded-xl bg-white/10 border border-white/15 hover:border-[#BBD58E]/60 hover:bg-white/15 transition-all flex items-start space-x-3.5"
               >
-                <span className="flex items-center justify-center w-7 h-7 rounded-lg bg-[#344E41] border border-[#BBD58E]/40 text-[#BBD58E] font-mono font-bold text-xs flex-shrink-0">
+                <span className="flex items-center justify-center w-7 h-7 rounded-lg bg-[#1B3E29]/70 border border-[#BBD58E]/50 text-[#BBD58E] font-mono font-bold text-xs flex-shrink-0">
                   {item.no < 10 ? `0${item.no}` : item.no}
                 </span>
                 <div className="space-y-1">
                   <div className="text-sm font-bold text-white leading-tight">
                     {item.title}
                   </div>
-                  <div className="text-xs text-[#D6E5D7] leading-relaxed font-normal">
+                  <div className="text-xs text-[#E2EFE4] leading-relaxed font-normal">
                     {item.desc}
                   </div>
                 </div>

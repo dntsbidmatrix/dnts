@@ -29,13 +29,13 @@ export default function ComplianceSection() {
   ];
 
   return (
-    <section id="compliance" className="py-20 lg:py-28 relative bg-[#F3F7F3] border-t border-[#DDE7DD]">
+    <section id="compliance" className="py-20 lg:py-28 relative bg-[#F4F9F5] border-t border-[#DCECDC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#EAF2E8] border border-[#588157]/30 text-[#344E41] text-xs font-semibold uppercase tracking-wider">
-            <ShieldCheck className="w-3.5 h-3.5 mr-1 text-[#3A5A40]" />
+          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#EAF5ED] border border-[#BCDDC4] text-[#245439] text-xs font-semibold uppercase tracking-wider">
+            <ShieldCheck className="w-3.5 h-3.5 mr-1 text-[#387850]" />
             <span>Policy Compliance & FAQs</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
@@ -60,14 +60,14 @@ export default function ComplianceSection() {
               return (
                 <div 
                   key={idx}
-                  className="p-5 rounded-2xl bg-white border border-[#D8E6D8] hover:border-[#5A9F68] hover:shadow-md transition-all group"
+                  className="p-5 rounded-2xl bg-white border border-[#D5EADB] hover:border-[#5A9F68] hover:shadow-md transition-all group"
                 >
                   <div className="flex items-start space-x-4">
-                    <div className="p-2.5 rounded-xl bg-[#EAF2E8] border border-[#C5D8C5] text-[#344E41] flex-shrink-0 mt-1 group-hover:scale-105 transition-transform">
+                    <div className="p-2.5 rounded-xl bg-[#EAF5ED] border border-[#BCDDC4] text-[#245439] flex-shrink-0 mt-1 group-hover:scale-105 transition-transform">
                       <Icon className="w-5 h-5" />
                     </div>
                     <div>
-                      <h4 className="text-base font-bold text-slate-900 mb-1 group-hover:text-[#344E41] transition-colors">
+                      <h4 className="text-base font-bold text-slate-900 mb-1 group-hover:text-[#245439] transition-colors">
                         {item.title}
                       </h4>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
@@ -80,16 +80,16 @@ export default function ComplianceSection() {
             })}
 
             {/* Official Tax Badge Box */}
-            <div className="p-4 rounded-xl bg-white border border-[#D8E6D8] flex items-center justify-between text-xs">
+            <div className="p-4 rounded-xl bg-white border border-[#D5EADB] flex items-center justify-between text-xs">
               <span className="text-slate-600 font-medium">GSTIN Registered Identification:</span>
-              <span className="font-mono text-[#344E41] font-bold text-sm">{COMPANY_INFO.gstin}</span>
+              <span className="font-mono text-[#245439] font-bold text-sm">{COMPANY_INFO.gstin}</span>
             </div>
           </div>
 
           {/* Right Column: FAQs */}
           <div className="lg:col-span-6 space-y-4">
             <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center">
-              <HelpCircle className="w-5 h-5 mr-2 text-[#3A5A40]" />
+              <HelpCircle className="w-5 h-5 mr-2 text-[#387850]" />
               <span>Frequently Asked Questions</span>
             </h3>
 
@@ -99,16 +99,16 @@ export default function ComplianceSection() {
                 return (
                   <div
                     key={idx}
-                    className="rounded-2xl bg-white border border-[#D8E6D8] overflow-hidden transition-all duration-200 shadow-sm"
+                    className="rounded-2xl bg-white border border-[#D5EADB] overflow-hidden transition-all duration-200 shadow-sm"
                   >
                     <button
                       onClick={() => setOpenFaq(isOpen ? -1 : idx)}
-                      className="w-full p-5 text-left flex items-center justify-between space-x-4 focus:outline-none hover:bg-[#F4F7F4]"
+                      className="w-full p-5 text-left flex items-center justify-between space-x-4 focus:outline-none hover:bg-[#F4F9F5]"
                     >
                       <span className="text-sm sm:text-base font-bold text-slate-900">
                         {faq.q}
                       </span>
-                      <div className="text-[#3A5A40] flex-shrink-0">
+                      <div className="text-[#387850] flex-shrink-0">
                         {isOpen ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
                       </div>
                     </button>
@@ -124,12 +124,12 @@ export default function ComplianceSection() {
             </div>
 
             {/* Quick Proposal Callout */}
-            <div className="p-5 rounded-2xl bg-[#EAF2E8] border border-[#C5D8C5] text-xs space-y-2 mt-6">
+            <div className="p-5 rounded-2xl bg-[#EAF5ED] border border-[#BCDDC4] text-xs space-y-2 mt-6">
               <div className="font-bold text-slate-900 text-sm">
                 Need a tailored proposal letter for your company?
               </div>
               <p className="text-slate-600">
-                Email us your company profile to <a href={`mailto:${COMPANY_INFO.email}`} className="text-[#344E41] underline font-semibold">{COMPANY_INFO.email}</a> or call our advisors directly at <span className="text-[#344E41] font-bold">{COMPANY_INFO.phone}</span> / <span className="text-[#344E41] font-bold">{COMPANY_INFO.altPhone}</span>.
+                Email us your company profile to <a href={`mailto:${COMPANY_INFO.email}`} className="text-[#245439] underline font-semibold">{COMPANY_INFO.email}</a> or call our advisors directly at <span className="text-[#245439] font-bold">{COMPANY_INFO.phone}</span> / <span className="text-[#245439] font-bold">{COMPANY_INFO.altPhone}</span>.
               </p>
             </div>
 

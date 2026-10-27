@@ -65,10 +65,10 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
   };
 
   return (
-    <footer className="relative bg-gradient-to-b from-[#1C2C23] via-[#142019] to-[#0D1510] text-white overflow-hidden shadow-2xl border-t border-[#3A5A40]/40">
+    <footer className="relative bg-gradient-to-b from-[#1E432E] via-[#163623] to-[#10271A] text-white overflow-hidden shadow-2xl border-t border-[#3E7D56]/50">
       {/* Subtle background glow for texture */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#5A9F68]/15 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[#BBD58E]/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#5A9F68]/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[#BBD58E]/15 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
         
@@ -89,7 +89,7 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
               }}
               className="flex items-center space-x-3 cursor-pointer group"
             >
-              <div className="w-11 h-11 rounded-full flex items-center justify-center drop-shadow-md group-hover:scale-105 transition-transform overflow-hidden ring-1 ring-[#588157]/40 shadow-sm">
+              <div className="w-11 h-11 rounded-full flex items-center justify-center drop-shadow-md group-hover:scale-105 transition-transform overflow-hidden ring-1 ring-[#5A9F68]/40 shadow-sm">
                 <img src="/logo.png" alt="D Nandani Tech Solutions" className="w-full h-full object-contain rounded-full" />
               </div>
               <div>
@@ -168,7 +168,7 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
                 href={COMPANY_INFO.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#344E41] hover:bg-[#3A5A40] text-[#BBD58E] border border-[#588157]/40 text-xs font-bold shadow-sm transition-all hover:scale-105"
+                className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#245439] hover:bg-[#2F6D4A] text-[#BBD58E] border border-[#5A9F68]/40 text-xs font-bold shadow-sm transition-all hover:scale-105"
               >
                 <MessageSquare className="w-3.5 h-3.5 mr-1.5" />
                 <span>WhatsApp Desk</span>
@@ -414,7 +414,7 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
             <div className="pt-2">
               <button
                 onClick={() => onOpenInquiry && onOpenInquiry('Our Outsourced Bid Manager Package')}
-                className="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#BBD58E] via-[#D8ECB6] to-[#A8C974] hover:from-[#C7E09E] hover:to-[#B4D381] text-[#1C2C23] font-bold text-xs shadow-md shadow-[#1C2C23]/40 transition-all hover:scale-105"
+                className="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#BBD58E] via-[#D5EDA8] to-[#9CD066] hover:from-[#C9E795] hover:to-[#8AC352] text-[#143220] font-extrabold text-xs shadow-md shadow-[#183E28]/40 transition-all hover:scale-105"
               >
                 <Send className="w-3.5 h-3.5 mr-1.5" />
                 <span>Request Proposal</span>
