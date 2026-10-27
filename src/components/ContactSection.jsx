@@ -44,12 +44,12 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 lg:py-28 relative bg-[#F8FAFC]">
+    <section id="contact" className="py-20 lg:py-28 relative bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider">
+          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#EAF2E8] border border-[#588157]/30 text-[#344E41] text-xs font-semibold uppercase tracking-wider">
             <span>Direct Liaison & Proposal Desk</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
@@ -66,23 +66,23 @@ export default function ContactSection() {
           {/* Left Column: Direct Communication Cards */}
           <div className="lg:col-span-5 space-y-6">
             
-            <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-6">
+            <div className="p-6 rounded-2xl bg-white border border-[#D8E6D8] shadow-sm space-y-6">
               <h3 className="text-xl font-bold text-slate-900 tracking-tight flex items-center">
                 <span>Direct Contact Directorate</span>
               </h3>
 
               {/* Phone Card with Both Numbers */}
-              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-blue-400 transition-all space-y-2">
-                <div className="flex items-center space-x-3 text-blue-600">
+              <div className="p-4 rounded-xl bg-[#F4F7F4] border border-[#D8E6D8] hover:border-[#5A9F68] transition-all space-y-2">
+                <div className="flex items-center space-x-3 text-[#3A5A40]">
                   <Phone className="w-5 h-5 flex-shrink-0" />
                   <span className="text-xs text-slate-600 font-bold uppercase tracking-wider">CALL DIRECTLY FOR PROPOSAL</span>
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-1 sm:space-y-0 pt-1">
-                  <a href={`tel:${COMPANY_INFO.phoneRaw}`} className="text-base font-bold text-slate-900 hover:text-blue-600 transition-colors">
+                  <a href={`tel:${COMPANY_INFO.phoneRaw}`} className="text-base font-bold text-slate-900 hover:text-[#3A5A40] transition-colors">
                     {COMPANY_INFO.phone}
                   </a>
                   <span className="hidden sm:inline text-slate-300">|</span>
-                  <a href={`tel:${COMPANY_INFO.altPhoneRaw}`} className="text-base font-bold text-slate-900 hover:text-blue-600 transition-colors">
+                  <a href={`tel:${COMPANY_INFO.altPhoneRaw}`} className="text-base font-bold text-slate-900 hover:text-[#3A5A40] transition-colors">
                     {COMPANY_INFO.altPhone}
                   </a>
                 </div>
@@ -94,31 +94,31 @@ export default function ContactSection() {
                 href={COMPANY_INFO.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-start space-x-4 p-4 rounded-xl bg-emerald-50/60 border border-emerald-200 hover:border-emerald-400 hover:bg-emerald-50 transition-all group"
+                className="flex items-start space-x-4 p-4 rounded-xl bg-[#EAF2E8]/70 border border-[#C5D8C5] hover:border-[#5A9F68] hover:bg-[#EAF2E8] transition-all group"
               >
-                <div className="p-3 rounded-xl bg-emerald-100 text-emerald-700 group-hover:scale-110 transition-transform">
+                <div className="p-3 rounded-xl bg-[#344E41] text-[#BBD58E] group-hover:scale-110 transition-transform">
                   <MessageSquare className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-xs text-emerald-800 font-bold uppercase tracking-wider">WHATSAPP INSTANT CHAT</div>
-                  <div className="text-base font-bold text-emerald-700">
+                  <div className="text-xs text-[#24362C] font-bold uppercase tracking-wider">WHATSAPP INSTANT CHAT</div>
+                  <div className="text-base font-bold text-[#344E41]">
                     +91 8929851130
                   </div>
-                  <div className="text-xs text-emerald-600 mt-0.5">Share tender documents & NIT links</div>
+                  <div className="text-xs text-slate-600 mt-0.5">Share tender documents & NIT links</div>
                 </div>
               </a>
 
               {/* Email Card */}
               <a
                 href={`mailto:${COMPANY_INFO.email}`}
-                className="flex items-start space-x-4 p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-blue-400 hover:bg-blue-50/50 transition-all group"
+                className="flex items-start space-x-4 p-4 rounded-xl bg-[#F4F7F4] border border-[#D8E6D8] hover:border-[#5A9F68] hover:bg-[#EAF2E8]/50 transition-all group"
               >
-                <div className="p-3 rounded-xl bg-blue-100 text-blue-700 group-hover:scale-110 transition-transform">
+                <div className="p-3 rounded-xl bg-[#EAF2E8] text-[#344E41] group-hover:scale-110 transition-transform">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
                   <div className="text-xs text-slate-600 font-bold uppercase tracking-wider">OFFICIAL PROPOSAL DESK</div>
-                  <div className="text-sm sm:text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors break-all">
+                  <div className="text-sm sm:text-base font-bold text-slate-900 group-hover:text-[#3A5A40] transition-colors break-all">
                     {COMPANY_INFO.email}
                   </div>
                   <div className="text-xs text-slate-500 mt-0.5">Send company profile & vendor details</div>
@@ -126,8 +126,8 @@ export default function ContactSection() {
               </a>
 
               {/* Head Office Location */}
-              <div className="flex items-start space-x-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
-                <div className="p-3 rounded-xl bg-purple-100 text-purple-700">
+              <div className="flex items-start space-x-4 p-4 rounded-xl bg-[#F4F7F4] border border-[#D8E6D8]">
+                <div className="p-3 rounded-xl bg-[#EAF2E8] text-[#344E41]">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
@@ -310,7 +310,7 @@ export default function ContactSection() {
                   <div className="pt-2">
                     <button
                       type="submit"
-                      className="w-full py-3.5 px-6 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 hover:from-blue-700 hover:to-indigo-700 transition-all shadow-md shadow-blue-500/25 flex items-center justify-center space-x-2"
+                      className="w-full py-3.5 px-6 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-[#344E41] via-[#3A5A40] to-[#588157] hover:from-[#24362C] hover:to-[#4D8F5A] transition-all shadow-md shadow-[#344E41]/25 flex items-center justify-center space-x-2 border border-[#BBD58E]/30"
                     >
                       <Send className="w-4 h-4" />
                       <span>Request Proposal & WhatsApp Strategy Desk</span>

@@ -56,52 +56,52 @@ export default function AboutPage({ onNavigate, onOpenInquiry }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
         <nav className="flex items-center space-x-2 text-xs sm:text-sm text-slate-500 font-medium">
           <button 
-            onClick={() => onNavigate('/')}
-            className="flex items-center hover:text-blue-600 transition-colors"
+            onClick={() => onNavigate('/')} 
+            className="flex items-center hover:text-[#3A5A40] transition-colors"
           >
-            <Home className="w-3.5 h-3.5 mr-1 text-slate-400 hover:text-blue-600" />
+            <Home className="w-3.5 h-3.5 mr-1 text-slate-400 hover:text-[#3A5A40]" />
             <span>Home</span>
           </button>
           <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
-          <span className="text-blue-600 font-semibold">About Us</span>
+          <span className="text-[#3A5A40] font-semibold">About Us</span>
         </nav>
       </div>
 
       {/* Main Page Header Banner */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 sm:mb-16">
-        <div className="bg-gradient-to-br from-blue-50/90 via-indigo-50/50 to-slate-50 rounded-3xl p-8 sm:p-12 lg:p-16 text-slate-900 shadow-xl relative overflow-hidden border border-blue-200/80">
+        <div className="bg-gradient-to-br from-[#1C2C23] via-[#344E41] to-[#3A5A40] rounded-3xl p-8 sm:p-12 lg:p-16 text-white shadow-2xl relative overflow-hidden border border-[#588157]/40">
           {/* Subtle decorative lighting */}
-          <div className="absolute top-0 right-0 -mt-12 -mr-12 w-96 h-96 bg-blue-100/40 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 left-0 -mb-12 -ml-12 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute top-0 right-0 -mt-12 -mr-12 w-96 h-96 bg-[#5A9F68]/20 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute bottom-0 left-0 -mb-12 -ml-12 w-96 h-96 bg-[#588157]/20 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative max-w-3xl space-y-4">
-            <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-blue-100/80 border border-blue-300/80 text-blue-800 text-xs font-semibold uppercase tracking-wider">
-              <Building2 className="w-3.5 h-3.5 mr-1 text-blue-700" />
+            <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-[#BBD58E]/40 text-[#BBD58E] text-xs font-semibold uppercase tracking-wider">
+              <Building2 className="w-3.5 h-3.5 mr-1 text-[#BBD58E]" />
               <span>Corporate Profile & Advisory Record</span>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
               Systematic Approach to <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#D8ECB6] to-[#BBD58E]">
                 Government Operations
               </span>
             </h1>
 
-            <p className="text-slate-600 text-base sm:text-lg leading-relaxed pt-2">
-              <strong className="text-slate-900">BidMatrix</strong> is a specialized public procurement advisory & tender bid management initiative, operated and managed by <strong className="text-slate-900">D Nandani Tech Solutions</strong>. We empower MSMEs, OEMs, and contractors across India with professional virtual bid desk solutions.
+            <p className="text-[#D6E5D7] text-base sm:text-lg leading-relaxed pt-2">
+              <strong className="text-white">BidMatrix</strong> is a specialized public procurement advisory & tender bid management initiative, operated and managed by <strong className="text-white">D Nandani Tech Solutions</strong>. We empower MSMEs, OEMs, and contractors across India with professional virtual bid desk solutions.
             </p>
 
             <div className="pt-4 flex flex-wrap gap-4">
               <button
                 onClick={() => onOpenInquiry('Outsourced Bid Management Advisory')}
-                className="inline-flex items-center px-6 py-3 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold text-sm shadow-md shadow-blue-500/20 border border-blue-400/30 transition-all hover:scale-105"
+                className="inline-flex items-center px-6 py-3 rounded-xl bg-gradient-to-r from-[#BBD58E] via-[#D8ECB6] to-[#A8C974] hover:from-[#C7E09E] hover:to-[#B4D381] text-[#1C2C23] font-bold text-sm shadow-md shadow-[#1C2C23]/40 border border-[#BBD58E]/40 transition-all hover:scale-105"
               >
                 <span>Request Free Tender Proposal</span>
                 <ArrowRight className="w-4 h-4 ml-2" />
               </button>
               <button
                 onClick={() => onNavigate('/', 'services')}
-                className="inline-flex items-center px-6 py-3 rounded-xl bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 font-semibold text-sm transition-all shadow-sm"
+                className="inline-flex items-center px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold text-sm transition-all"
               >
                 <span>Explore Core Services</span>
               </button>
@@ -114,8 +114,8 @@ export default function AboutPage({ onNavigate, onOpenInquiry }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           {highlights.map((h, i) => (
-            <div key={i} className="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-2xl sm:text-3xl font-extrabold text-blue-600 tracking-tight mb-1">
+            <div key={i} className="bg-white p-5 sm:p-6 rounded-2xl border border-[#D8E6D8] shadow-sm hover:border-[#5A9F68] hover:shadow-md transition-all">
+              <div className="text-2xl sm:text-3xl font-extrabold text-[#344E41] tracking-tight mb-1">
                 {h.value}
               </div>
               <div className="text-xs sm:text-sm font-bold text-slate-800">
@@ -282,10 +282,10 @@ export default function AboutPage({ onNavigate, onOpenInquiry }) {
                 <div className="pt-2">
                   <button
                     onClick={() => onOpenInquiry('Official Proposal Request')}
-                    className="w-full inline-flex items-center justify-center py-3 px-4 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold text-xs shadow-md shadow-blue-500/20 border border-blue-400/30 transition-all hover:scale-[1.02]"
+                    className="w-full inline-flex items-center justify-center py-3 px-4 rounded-xl bg-gradient-to-r from-[#344E41] via-[#3A5A40] to-[#588157] hover:from-[#24362C] hover:to-[#4D8F5A] text-white font-bold text-xs shadow-md shadow-[#344E41]/20 border border-[#BBD58E]/30 transition-all hover:scale-[1.02]"
                   >
                     <span>Connect with Our Bidding Team</span>
-                    <ArrowRight className="w-3.5 h-3.5 ml-1.5" />
+                    <ArrowRight className="w-3.5 h-3.5 ml-1.5 text-[#BBD58E]" />
                   </button>
                 </div>
 
@@ -299,26 +299,26 @@ export default function AboutPage({ onNavigate, onOpenInquiry }) {
 
       {/* Bottom Call to Action Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-br from-blue-50/90 via-indigo-50/60 to-purple-50/70 rounded-3xl p-8 sm:p-10 text-slate-900 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 border border-blue-200/90 relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-80 h-80 bg-blue-200/30 rounded-full blur-3xl pointer-events-none" />
+        <div className="bg-gradient-to-br from-[#1C2C23] via-[#344E41] to-[#3A5A40] rounded-3xl p-8 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 border border-[#588157]/40 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-80 h-80 bg-[#5A9F68]/20 rounded-full blur-3xl pointer-events-none" />
           <div className="space-y-2 text-center md:text-left relative z-10">
-            <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900">
+            <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-white">
               Ready to Win Your Next Public Tender?
             </h3>
-            <p className="text-slate-600 text-sm max-w-xl">
+            <p className="text-[#D6E5D7] text-sm max-w-xl">
               Get an end-to-end bid strategy audit or outsource your complete bidding desk to D Nandani Tech Solutions.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3 relative z-10">
             <button
               onClick={() => onOpenInquiry('Tender Proposal Inquiry')}
-              className="px-6 py-3 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold text-xs sm:text-sm shadow-md border border-blue-400/30 transition-all hover:scale-105"
+              className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#BBD58E] via-[#D8ECB6] to-[#A8C974] hover:from-[#C7E09E] hover:to-[#B4D381] text-[#1C2C23] font-bold text-xs sm:text-sm shadow-md transition-all hover:scale-105"
             >
               Request Free Consultation
             </button>
             <button
               onClick={() => onNavigate('/', 'services')}
-              className="px-6 py-3 rounded-xl bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 font-semibold text-xs sm:text-sm transition-all shadow-sm"
+              className="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold text-xs sm:text-sm transition-all shadow-sm"
             >
               Explore All Scope of Services
             </button>

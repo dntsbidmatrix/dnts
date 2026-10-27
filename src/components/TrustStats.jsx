@@ -6,7 +6,7 @@ export default function TrustStats() {
   const icons = [Shield, FileCheck, CheckCircle, Clock];
 
   return (
-    <section className="relative z-10 py-8 sm:py-10 bg-slate-50/80 border-y border-slate-200/90">
+    <section className="relative z-10 py-8 sm:py-10 bg-[#F3F7F3] border-y border-[#DDE7DD]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Metric Cards Grid - Centered items and responsive typography */}
@@ -16,18 +16,18 @@ export default function TrustStats() {
             return (
               <div 
                 key={idx}
-                className="relative p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:border-blue-300 hover:shadow-lg hover:shadow-blue-600/5 transition-all duration-300 group flex flex-col items-center justify-center text-center overflow-hidden"
+                className="relative p-4 sm:p-5 rounded-2xl bg-white border border-[#D8E6D8] shadow-sm hover:border-[#5A9F68] hover:shadow-lg hover:shadow-[#3A5A40]/10 transition-all duration-300 group flex flex-col items-center justify-center text-center overflow-hidden"
               >
                 {/* Top Subtle Hover Accent Line */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#344E41] via-[#5A9F68] to-[#BBD58E] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                 {/* Centered Icon */}
-                <div className="p-2 sm:p-2.5 rounded-xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 text-blue-700 mb-2 sm:mb-2.5 group-hover:scale-110 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-indigo-600 group-hover:text-white transition-all flex items-center justify-center shadow-sm">
+                <div className="p-2 sm:p-2.5 rounded-xl bg-[#EAF2E8] border border-[#C5D8C5] text-[#344E41] mb-2 sm:mb-2.5 group-hover:scale-110 group-hover:bg-gradient-to-r group-hover:from-[#344E41] group-hover:to-[#588157] group-hover:text-white transition-all flex items-center justify-center shadow-sm">
                   <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
 
                 {/* Primary Metric Value - Scaled down and center aligned */}
-                <h3 className="text-sm sm:text-base md:text-lg font-extrabold text-slate-900 group-hover:text-blue-700 tracking-tight leading-snug w-full text-center break-words transition-colors">
+                <h3 className="text-sm sm:text-base md:text-lg font-extrabold text-slate-900 group-hover:text-[#3A5A40] tracking-tight leading-snug w-full text-center break-words transition-colors">
                   {item.value}
                 </h3>
 
@@ -46,15 +46,15 @@ export default function TrustStats() {
         </div>
 
         {/* Quick Portal & Authority Assurance Strip */}
-        <div className="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-slate-600">
+        <div className="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-[#DDE7DD] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-slate-600">
           <div className="flex items-start sm:items-center space-x-2">
-            <span className="w-2 h-2 rounded-full bg-blue-600 flex-shrink-0 mt-1 sm:mt-0"></span>
+            <span className="w-2 h-2 rounded-full bg-[#5A9F68] flex-shrink-0 mt-1 sm:mt-0"></span>
             <span className="text-slate-800 font-bold whitespace-nowrap">Empanelment & Tenders:</span>
             <span className="leading-relaxed">BHEL, EIL & Indian Railways etc • NTPC • IOCL etc • CPPP • UNGM • GeM State & Central Bids</span>
           </div>
           <div className="flex items-center space-x-3 text-xs pt-1 sm:pt-0">
-            <span className="text-blue-700 font-mono font-semibold">GSTIN: {COMPANY_INFO.gstin}</span>
-            <span className="text-slate-300">|</span>
+            <span className="text-[#344E41] font-mono font-semibold">GSTIN: {COMPANY_INFO.gstin}</span>
+            <span className="text-[#A2BAA5]">|</span>
             <span className="text-slate-700 font-medium">Begusarai, Bihar</span>
           </div>
         </div>

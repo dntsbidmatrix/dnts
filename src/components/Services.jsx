@@ -37,13 +37,13 @@ export default function Services({ onSelectService }) {
     : SERVICES.filter(s => s.category === activeFilter);
 
   return (
-    <section id="services" className="py-20 lg:py-28 relative bg-[#F8FAFC]">
+    <section id="services" className="py-20 lg:py-28 relative bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider">
-            <Briefcase className="w-3.5 h-3.5 mr-1" />
+          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#EAF2E8] border border-[#588157]/30 text-[#344E41] text-xs font-semibold uppercase tracking-wider">
+            <Briefcase className="w-3.5 h-3.5 mr-1 text-[#3A5A40]" />
             <span>End-to-End Bid Processing Solutions</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
@@ -62,8 +62,8 @@ export default function Services({ onSelectService }) {
               onClick={() => setActiveFilter(cat)}
               className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${
                 activeFilter === cat
-                  ? 'bg-gradient-to-r from-blue-700 via-indigo-600 to-blue-600 text-white shadow-md shadow-blue-700/25 scale-105'
-                  : 'bg-white text-slate-700 border border-slate-200 hover:border-slate-300 hover:bg-slate-50'
+                  ? 'bg-gradient-to-r from-[#344E41] via-[#3A5A40] to-[#588157] text-white shadow-md shadow-[#344E41]/20 scale-105 border border-[#BBD58E]/30'
+                  : 'bg-[#F4F7F4] text-slate-700 border border-[#D8E6D8] hover:border-[#5A9F68] hover:bg-[#EAF2E8]'
               }`}
             >
               {cat}
@@ -78,23 +78,23 @@ export default function Services({ onSelectService }) {
             return (
               <div
                 key={service.id}
-                className="group relative rounded-2xl bg-white border border-slate-200/90 hover:border-blue-400 p-7 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl hover:shadow-blue-600/10 overflow-hidden"
+                className="group relative rounded-2xl bg-white border border-[#D8E6D8] hover:border-[#5A9F68] p-7 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl hover:shadow-[#3A5A40]/10 overflow-hidden"
               >
                 {/* Top Glowing Hover Accent Line */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#344E41] via-[#5A9F68] to-[#BBD58E] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                 {/* Top Badge & Icon */}
                 <div>
                   <div className="flex items-center justify-between mb-5">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200/80 flex items-center justify-center text-blue-700 group-hover:scale-110 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-indigo-600 group-hover:text-white transition-all shadow-sm">
+                    <div className="w-12 h-12 rounded-xl bg-[#EAF2E8] border border-[#C5D8C5] flex items-center justify-center text-[#344E41] group-hover:scale-110 group-hover:bg-gradient-to-r group-hover:from-[#344E41] group-hover:to-[#588157] group-hover:text-white transition-all shadow-sm">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <span className="px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-[11px] font-semibold group-hover:bg-blue-50 group-hover:text-blue-700 group-hover:border-blue-200 transition-colors">
+                    <span className="px-2.5 py-1 rounded-full bg-[#F4F7F4] border border-[#D8E6D8] text-slate-700 text-[11px] font-semibold group-hover:bg-[#EAF2E8] group-hover:text-[#344E41] group-hover:border-[#C5D8C5] transition-colors">
                       {service.badge}
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#344E41] transition-colors">
                     {service.title}
                   </h3>
 
@@ -106,7 +106,7 @@ export default function Services({ onSelectService }) {
                   <div className="space-y-2.5 mb-6 border-t border-slate-100 pt-5">
                     {service.features.map((feature, fIdx) => (
                       <div key={fIdx} className="flex items-start space-x-2 text-xs text-slate-700">
-                        <Check className="w-3.5 h-3.5 text-blue-600 flex-shrink-0 mt-0.5" />
+                        <Check className="w-3.5 h-3.5 text-[#5A9F68] flex-shrink-0 mt-0.5" />
                         <span>{feature}</span>
                       </div>
                     ))}
@@ -117,10 +117,10 @@ export default function Services({ onSelectService }) {
                 <div className="pt-2">
                   <button
                     onClick={() => onSelectService(service.title)}
-                    className="w-full py-2.5 px-4 rounded-xl bg-slate-50 border border-slate-200 group-hover:border-blue-400 group-hover:bg-blue-50 text-slate-700 group-hover:text-blue-700 text-xs font-bold flex items-center justify-center space-x-2 transition-all shadow-sm"
+                    className="w-full py-2.5 px-4 rounded-xl bg-[#F4F7F4] border border-[#D8E6D8] group-hover:border-[#5A9F68] group-hover:bg-[#EAF2E8] text-slate-700 group-hover:text-[#24362C] text-xs font-bold flex items-center justify-center space-x-2 transition-all shadow-sm"
                   >
                     <span>Inquire About This Service</span>
-                    <ArrowRight className="w-3.5 h-3.5 text-blue-600 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="w-3.5 h-3.5 text-[#3A5A40] group-hover:translate-x-1 transition-transform" />
                   </button>
                 </div>
 
@@ -130,25 +130,25 @@ export default function Services({ onSelectService }) {
         </div>
 
         {/* Our Services from the Official Quotation Proposal */}
-        <div className="rounded-3xl bg-white border border-slate-200 p-8 sm:p-10 shadow-xl shadow-slate-200/50 relative overflow-hidden">
-          <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600" />
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 border-b border-slate-100 pb-6">
+        <div className="rounded-3xl bg-gradient-to-br from-[#1C2C23] via-[#344E41] to-[#3A5A40] text-white border border-[#588157]/40 p-8 sm:p-10 shadow-2xl relative overflow-hidden">
+          <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#BBD58E] via-[#D8ECB6] to-[#5A9F68]" />
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 border-b border-white/10 pb-6">
             <div className="space-y-1">
-              <div className="inline-flex items-center text-xs font-bold text-blue-600 uppercase tracking-wider">
+              <div className="inline-flex items-center text-xs font-bold text-[#BBD58E] uppercase tracking-wider">
                 <ListOrdered className="w-4 h-4 mr-1.5" />
                 <span>Proposal Checklist</span>
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 tracking-tight">
+              <h3 className="text-2xl font-bold text-white tracking-tight">
                 Our Complete Scope of Services
               </h3>
-              <p className="text-xs sm:text-sm text-slate-500">
+              <p className="text-xs sm:text-sm text-[#D6E5D7]">
                 As detailed in our official technical proposal for public & private sector tendering.
               </p>
             </div>
             <div>
               <button
                 onClick={() => onSelectService('Complete Tender Services Package')}
-                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 text-white font-bold text-xs shadow-md shadow-blue-600/25 hover:from-blue-700 hover:to-indigo-700 transition-all"
+                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#BBD58E] via-[#D8ECB6] to-[#A8C974] hover:from-[#C7E09E] hover:to-[#B4D381] text-[#1C2C23] font-bold text-xs shadow-md shadow-[#1C2C23]/40 transition-all hover:scale-105"
               >
                 Request Proposal For Our Services
               </button>
@@ -159,16 +159,16 @@ export default function Services({ onSelectService }) {
             {DETAILED_15_SERVICES.map((item) => (
               <div 
                 key={item.no}
-                className="p-4 rounded-xl bg-slate-50/80 border border-slate-200/80 hover:border-blue-300 hover:bg-white transition-all flex items-start space-x-3.5"
+                className="p-4 rounded-xl bg-white/10 border border-white/15 hover:border-[#BBD58E]/60 hover:bg-white/15 transition-all flex items-start space-x-3.5"
               >
-                <span className="flex items-center justify-center w-7 h-7 rounded-lg bg-blue-100 border border-blue-200 text-blue-800 font-mono font-bold text-xs flex-shrink-0">
+                <span className="flex items-center justify-center w-7 h-7 rounded-lg bg-[#344E41] border border-[#BBD58E]/40 text-[#BBD58E] font-mono font-bold text-xs flex-shrink-0">
                   {item.no < 10 ? `0${item.no}` : item.no}
                 </span>
                 <div className="space-y-1">
-                  <div className="text-sm font-bold text-slate-900 leading-tight">
+                  <div className="text-sm font-bold text-white leading-tight">
                     {item.title}
                   </div>
-                  <div className="text-xs text-slate-600 leading-relaxed font-normal">
+                  <div className="text-xs text-[#D6E5D7] leading-relaxed font-normal">
                     {item.desc}
                   </div>
                 </div>
