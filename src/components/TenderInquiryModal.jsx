@@ -44,7 +44,7 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
-      <div className="relative w-full max-w-lg rounded-2xl bg-white border border-[#FED7AA]/80 p-6 sm:p-8 shadow-2xl">
+      <div className="relative w-full max-w-lg rounded-2xl bg-white border border-yellow-200/90 p-6 sm:p-8 shadow-2xl">
         
         {/* Close Button */}
         <button
@@ -72,7 +72,7 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
 
         {submitted ? (
           <div className="py-8 text-center space-y-4">
-            <CheckCircle2 className="w-12 h-12 text-[#EA580C] mx-auto" />
+            <CheckCircle2 className="w-12 h-12 text-[#CA8A04] mx-auto" />
             <h4 className="text-lg font-bold text-slate-900">Request Dispatched!</h4>
             <p className="text-xs text-slate-600">
               Your details have been pre-filled into WhatsApp. Our tender strategy advisor will consult with you shortly.
@@ -82,7 +82,7 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
                 setSubmitted(false);
                 onClose();
               }}
-              className="px-5 py-2 rounded-xl bg-[#C2410C] hover:bg-[#9A3412] text-white font-bold text-xs"
+              className="px-5 py-2 rounded-xl bg-[#CA8A04] hover:bg-[#A16207] text-white font-bold text-xs shadow-md transition-all"
             >
               Done
             </button>
@@ -99,7 +99,7 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
                 placeholder="Full Name"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-[#EA580C] focus:bg-white"
+                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-[#EAB308] focus:bg-white"
               />
             </div>
 
@@ -113,7 +113,7 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
                 placeholder="Business Name"
                 value={formData.organization}
                 onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
-                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-[#EA580C] focus:bg-white"
+                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-[#EAB308] focus:bg-white"
               />
             </div>
 
@@ -128,7 +128,7 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
                   placeholder="+91..."
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-[#EA580C] focus:bg-white"
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-[#EAB308] focus:bg-white"
                 />
               </div>
               <div>
@@ -141,7 +141,7 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
                   placeholder="name@domain.com"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-[#EA580C] focus:bg-white"
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-[#EAB308] focus:bg-white"
                 />
               </div>
             </div>
@@ -153,7 +153,7 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
               <select
                 value={formData.category}
                 onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-[#EA580C] focus:bg-white"
+                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-[#EAB308] focus:bg-white"
               >
                 <option>Our Outsourced Bid Manager Package</option>
                 <option>GeM Portal, CPPP, UNGM and Other e-procurement Portals Registration</option>
@@ -179,16 +179,16 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
                 placeholder="Mention product category, licenses held, or tender ID..."
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-[#EA580C] focus:bg-white"
+                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-[#EAB308] focus:bg-white"
               ></textarea>
             </div>
 
             <div className="pt-2">
               <button
                 type="submit"
-                className="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-[#C2410C] via-[#EA580C] to-[#F59E0B] hover:from-[#9A3412] hover:to-[#EA580C] transition-all shadow-lg shadow-[#EA580C]/25 flex items-center justify-center space-x-2 border border-[#FEF08A]/40"
+                className="w-full py-3 px-4 rounded-xl font-black text-xs sm:text-sm text-slate-950 bg-gradient-to-r from-[#FDE047] via-[#FACC15] to-[#EAB308] hover:from-[#FEF08A] hover:to-[#FACC15] transition-all shadow-lg shadow-yellow-500/25 flex items-center justify-center space-x-2 border border-yellow-300"
               >
-                <Send className="w-4 h-4" />
+                <Send className="w-4 h-4 text-slate-950" />
                 <span>Submit & Dispatch to WhatsApp Strategy Desk</span>
               </button>
             </div>

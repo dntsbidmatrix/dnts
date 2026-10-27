@@ -9,7 +9,7 @@ export default function TenderWorkflow() {
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#FFF4E5] border border-[#FED7AA] text-[#C2410C] text-xs font-semibold uppercase tracking-wider">
+          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#FEFCE8] border border-yellow-200 text-[#854D0E] text-xs font-semibold uppercase tracking-wider">
             <span>Step-by-Step Bidding Lifecycle</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
@@ -25,23 +25,23 @@ export default function TenderWorkflow() {
           {WORKFLOW_STEPS.map((step, idx) => (
             <div 
               key={idx}
-              className="relative p-6 rounded-2xl bg-[#FFF9F2] border border-[#FED7AA]/70 hover:border-[#F97316] hover:shadow-xl hover:shadow-[#EA580C]/10 transition-all duration-300 group flex flex-col justify-between overflow-hidden"
+              className="relative p-6 rounded-2xl bg-[#FEFDF9] border border-yellow-100/90 hover:border-[#EAB308] hover:shadow-xl hover:shadow-yellow-500/10 transition-all duration-300 group flex flex-col justify-between overflow-hidden"
             >
               {/* Top Hover Accent Bar */}
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#C2410C] via-[#EA580C] to-[#F59E0B] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#B45309] via-[#EAB308] to-[#FDE047] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               {/* Step Number with glowing ring */}
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#C2410C] to-[#F59E0B] font-mono">
+                  <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#B45309] to-[#EAB308] font-mono">
                     {step.step}
                   </span>
-                  <div className="w-8 h-8 rounded-full bg-white border border-[#FED7AA] flex items-center justify-center text-slate-500 group-hover:text-[#EA580C] group-hover:border-[#EA580C] transition-colors">
+                  <div className="w-8 h-8 rounded-full bg-white border border-yellow-200 flex items-center justify-center text-slate-500 group-hover:text-[#CA8A04] group-hover:border-[#EAB308] transition-colors">
                     <CheckCircle2 className="w-4 h-4" />
                   </div>
                 </div>
 
-                <h3 className="text-base font-bold text-slate-900 mb-2 group-hover:text-[#C2410C] transition-colors">
+                <h3 className="text-base font-bold text-slate-900 mb-2 group-hover:text-[#A16207] transition-colors">
                   {step.title}
                 </h3>
 
@@ -51,7 +51,7 @@ export default function TenderWorkflow() {
               </div>
 
               {idx < WORKFLOW_STEPS.length - 1 && (
-                <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 z-10 text-[#FDBA74]">
+                <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 z-10 text-yellow-300">
                   <ArrowRight className="w-5 h-5" />
                 </div>
               )}
@@ -60,8 +60,8 @@ export default function TenderWorkflow() {
         </div>
 
         {/* Post-Bid Assurance Box */}
-        <div className="mt-14 p-6 sm:p-7 rounded-2xl bg-white border border-[#FED7AA]/80 shadow-lg shadow-[#EA580C]/5 flex flex-col sm:flex-row items-center justify-between gap-6 relative overflow-hidden">
-          <div className="absolute top-0 left-0 bottom-0 w-1.5 bg-gradient-to-b from-[#C2410C] via-[#EA580C] to-[#F59E0B]" />
+        <div className="mt-14 p-6 sm:p-7 rounded-2xl bg-white border border-yellow-200 shadow-lg shadow-yellow-500/5 flex flex-col sm:flex-row items-center justify-between gap-6 relative overflow-hidden">
+          <div className="absolute top-0 left-0 bottom-0 w-1.5 bg-gradient-to-b from-[#B45309] via-[#EAB308] to-[#FDE047]" />
           <div className="space-y-1 text-center sm:text-left pl-0 sm:pl-2">
             <h4 className="text-base font-bold text-slate-900">
               End-to-End Commitment: L1 Purchase Order & EMD Refund Assurance
@@ -71,7 +71,7 @@ export default function TenderWorkflow() {
             </p>
           </div>
           <div className="flex-shrink-0">
-            <span className="px-4 py-2 rounded-xl bg-gradient-to-r from-[#C2410C] via-[#EA580C] to-[#F59E0B] text-white font-bold text-xs shadow-md border border-[#FEF08A]/40">
+            <span className="px-4 py-2 rounded-xl bg-gradient-to-r from-[#CA8A04] via-[#D97706] to-[#EAB308] text-white font-bold text-xs shadow-md border border-yellow-300">
               Zero-Risk Handholding
             </span>
           </div>

@@ -57,51 +57,51 @@ export default function AboutPage({ onNavigate, onOpenInquiry }) {
         <nav className="flex items-center space-x-2 text-xs sm:text-sm text-slate-500 font-medium">
           <button 
             onClick={() => onNavigate('/')} 
-            className="flex items-center hover:text-[#C2410C] transition-colors"
+            className="flex items-center hover:text-[#A16207] transition-colors"
           >
-            <Home className="w-3.5 h-3.5 mr-1 text-slate-400 hover:text-[#C2410C]" />
+            <Home className="w-3.5 h-3.5 mr-1 text-slate-400 hover:text-[#A16207]" />
             <span>Home</span>
           </button>
           <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
-          <span className="text-[#C2410C] font-semibold">About Us</span>
+          <span className="text-[#A16207] font-semibold">About Us</span>
         </nav>
       </div>
 
       {/* Main Page Header Banner */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 sm:mb-16">
-        <div className="bg-gradient-to-br from-[#7C2D12] via-[#C2410C] to-[#EA580C] rounded-3xl p-8 sm:p-12 lg:p-16 text-white shadow-2xl relative overflow-hidden border border-[#F97316]/40">
+        <div className="bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0A0F1D] rounded-3xl p-8 sm:p-12 lg:p-16 text-white shadow-2xl relative overflow-hidden border border-yellow-500/30">
           {/* Subtle decorative lighting */}
-          <div className="absolute top-0 right-0 -mt-12 -mr-12 w-96 h-96 bg-[#F59E0B]/25 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 left-0 -mb-12 -ml-12 w-96 h-96 bg-[#FDE047]/20 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute top-0 right-0 -mt-12 -mr-12 w-96 h-96 bg-[#FACC15]/20 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute bottom-0 left-0 -mb-12 -ml-12 w-96 h-96 bg-[#EAB308]/15 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative max-w-3xl space-y-4">
-            <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-[#7C2D12]/70 border border-[#FDE047]/40 text-[#FEF3C7] text-xs font-semibold uppercase tracking-wider">
-              <Building2 className="w-3.5 h-3.5 mr-1 text-[#FDE047]" />
+            <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-[#FEF08A]/10 border border-[#FACC15]/40 text-[#FEF08A] text-xs font-semibold uppercase tracking-wider">
+              <Building2 className="w-3.5 h-3.5 mr-1 text-[#FACC15]" />
               <span>Corporate Profile & Advisory Record</span>
             </div>
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
               Systematic Approach to <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#FED7AA] to-[#FDE047]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#FEF08A] to-[#FACC15]">
                 Government Operations
               </span>
             </h1>
 
-            <p className="text-[#FEF3C7] text-base sm:text-lg leading-relaxed pt-2">
+            <p className="text-slate-300 text-base sm:text-lg leading-relaxed pt-2">
               <strong className="text-white">BidMatrix</strong> is a specialized public procurement advisory & tender bid management initiative, operated and managed by <strong className="text-white">D Nandani Tech Solutions</strong>. We empower MSMEs, OEMs, and contractors across India with professional virtual bid desk solutions.
             </p>
 
             <div className="pt-4 flex flex-wrap gap-4">
               <button
                 onClick={() => onOpenInquiry('Outsourced Bid Management Advisory')}
-                className="inline-flex items-center px-6 py-3 rounded-xl bg-gradient-to-r from-[#FFB703] via-[#FDE047] to-[#FB8500] hover:from-[#FDE047] hover:to-[#F59E0B] text-[#78350F] font-black text-sm shadow-lg shadow-[#7C2D12]/40 border border-[#FEF08A]/50 transition-all hover:scale-105"
+                className="inline-flex items-center px-6 py-3 rounded-xl bg-gradient-to-r from-[#FDE047] via-[#FACC15] to-[#EAB308] hover:from-[#FEF08A] hover:to-[#FACC15] text-slate-950 font-black text-sm shadow-xl shadow-yellow-500/25 border border-yellow-300/50 transition-all hover:scale-105"
               >
                 <span>Request Free Tender Proposal</span>
                 <ArrowRight className="w-4 h-4 ml-2" />
               </button>
               <button
                 onClick={() => onNavigate('/', 'services')}
-                className="inline-flex items-center px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold text-sm transition-all"
+                className="inline-flex items-center px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-yellow-400/30 font-semibold text-sm transition-all"
               >
                 <span>Explore Core Services</span>
               </button>
@@ -114,8 +114,8 @@ export default function AboutPage({ onNavigate, onOpenInquiry }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           {highlights.map((h, i) => (
-            <div key={i} className="bg-white p-5 sm:p-6 rounded-2xl border border-[#FED7AA]/70 shadow-sm hover:border-[#F97316] hover:shadow-[#EA580C]/10 transition-all">
-              <div className="text-2xl sm:text-3xl font-extrabold text-[#C2410C] tracking-tight mb-1">
+            <div key={i} className="bg-white p-5 sm:p-6 rounded-2xl border border-yellow-100 shadow-sm hover:border-[#EAB308] hover:shadow-lg hover:shadow-yellow-500/10 transition-all">
+              <div className="text-2xl sm:text-3xl font-extrabold text-[#A16207] tracking-tight mb-1">
                 {h.value}
               </div>
               <div className="text-xs sm:text-sm font-bold text-slate-800">
@@ -137,8 +137,8 @@ export default function AboutPage({ onNavigate, onOpenInquiry }) {
           <div className="lg:col-span-7 space-y-8">
             
             <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-5">
-              <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-[#FFF4E5] border border-[#FED7AA] text-[#C2410C] text-xs font-semibold">
-                <span className="w-2 h-2 rounded-full bg-[#EA580C] inline-block animate-pulse"></span>
+              <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-[#FEFCE8] border border-yellow-200 text-[#854D0E] text-xs font-semibold">
+                <span className="w-2 h-2 rounded-full bg-[#EAB308] inline-block animate-pulse"></span>
                 <span>Operational Backbone: D Nandani Tech Solutions</span>
               </div>
 
@@ -162,7 +162,7 @@ export default function AboutPage({ onNavigate, onOpenInquiry }) {
             {/* Core Advisory Pillars */}
             <div className="space-y-4">
               <h3 className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight flex items-center">
-                <FileCheck className="w-5 h-5 text-[#C2410C] mr-2" />
+                <FileCheck className="w-5 h-5 text-[#CA8A04] mr-2" />
                 <span>Our Strategic Core Pillars</span>
               </h3>
 
@@ -172,9 +172,9 @@ export default function AboutPage({ onNavigate, onOpenInquiry }) {
                   return (
                     <div 
                       key={idx} 
-                      className="p-5 rounded-2xl bg-white border border-slate-200 hover:border-[#F97316] hover:shadow-md transition-all group"
+                      className="p-5 rounded-2xl bg-white border border-slate-200 hover:border-[#EAB308] hover:shadow-md transition-all group"
                     >
-                      <div className="w-9 h-9 rounded-xl bg-[#FFF4E5] text-[#C2410C] flex items-center justify-center mb-3 group-hover:bg-[#EA580C] group-hover:text-white transition-colors">
+                      <div className="w-9 h-9 rounded-xl bg-[#FEFCE8] text-[#A16207] flex items-center justify-center mb-3 group-hover:bg-[#EAB308] group-hover:text-slate-950 transition-colors">
                         <Icon className="w-5 h-5" />
                       </div>
                       <h4 className="font-bold text-slate-900 text-sm mb-1.5">
@@ -193,15 +193,15 @@ export default function AboutPage({ onNavigate, onOpenInquiry }) {
 
           {/* Right Column: Official Credential Card (lg:col-span-5) */}
           <div className="lg:col-span-5">
-            <div className="rounded-3xl bg-white border-2 border-[#FED7AA] p-6 sm:p-8 shadow-xl shadow-[#EA580C]/5 sticky top-28">
+            <div className="rounded-3xl bg-white border-2 border-yellow-200/90 p-6 sm:p-8 shadow-xl shadow-yellow-500/5 sticky top-28">
               
               <div className="flex items-center justify-between border-b border-slate-100 pb-4 mb-6">
                 <div>
-                  <div className="text-[11px] font-bold uppercase tracking-wider text-[#C2410C]">
+                  <div className="text-[11px] font-bold uppercase tracking-wider text-[#A16207]">
                     Official Advisory Record
                   </div>
                   <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
-                    Bid<span className="text-[#EA580C]">Matrix</span>
+                    Bid<span className="text-[#CA8A04]">Matrix</span>
                   </h3>
                   <p className="text-xs text-slate-500 font-medium mt-0.5">
                     Managed by D Nandani Tech Solutions
@@ -225,12 +225,12 @@ export default function AboutPage({ onNavigate, onOpenInquiry }) {
                   <div className="text-slate-900 font-bold text-sm">Govt. Tender & GeM Bid Processing Management</div>
                 </div>
 
-                <div className="p-3.5 rounded-xl bg-[#FFF4E5] border border-[#FED7AA]">
+                <div className="p-3.5 rounded-xl bg-[#FEFCE8] border border-yellow-200">
                   <div className="flex justify-between items-center text-slate-600 text-[11px] mb-0.5 font-medium uppercase tracking-wider">
                     <span>GSTIN Identifier</span>
-                    <span className="text-amber-800 font-bold bg-[#FEF3C7] px-2 py-0.5 rounded-full text-[10px]">ACTIVE</span>
+                    <span className="text-amber-800 font-bold bg-[#FEF9C3] px-2 py-0.5 rounded-full text-[10px]">ACTIVE</span>
                   </div>
-                  <div className="text-[#C2410C] font-mono font-bold text-base tracking-widest">
+                  <div className="text-[#A16207] font-mono font-bold text-base tracking-widest">
                     {COMPANY_INFO.gstin}
                   </div>
                 </div>
@@ -239,14 +239,14 @@ export default function AboutPage({ onNavigate, onOpenInquiry }) {
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-200">
                     <div className="text-slate-500 text-[10px] mb-0.5 font-medium uppercase tracking-wider">Headquarters</div>
                     <div className="text-slate-800 font-semibold text-xs flex items-center">
-                      <MapPin className="w-3.5 h-3.5 mr-1 text-[#EA580C] flex-shrink-0" />
+                      <MapPin className="w-3.5 h-3.5 mr-1 text-[#CA8A04] flex-shrink-0" />
                       Begusarai, Bihar
                     </div>
                   </div>
                   <div className="p-3 rounded-xl bg-slate-50 border border-slate-200">
                     <div className="text-slate-500 text-[10px] mb-0.5 font-medium uppercase tracking-wider">Bidding Reach</div>
                     <div className="text-slate-800 font-semibold text-xs flex items-center">
-                      <Award className="w-3.5 h-3.5 mr-1 text-[#F59E0B] flex-shrink-0" />
+                      <Award className="w-3.5 h-3.5 mr-1 text-[#EAB308] flex-shrink-0" />
                       Domestic & Global
                     </div>
                   </div>
@@ -255,25 +255,25 @@ export default function AboutPage({ onNavigate, onOpenInquiry }) {
                 <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
                   <div className="text-slate-500 text-[10px] font-medium uppercase tracking-wider">Direct Proposal Desk</div>
                   <div className="flex items-center text-slate-800 font-semibold text-xs">
-                    <Phone className="w-3.5 h-3.5 mr-2 text-[#C2410C] flex-shrink-0" />
-                    <a href={`tel:${COMPANY_INFO.phoneRaw}`} className="hover:text-[#C2410C] transition-colors mr-2">
+                    <Phone className="w-3.5 h-3.5 mr-2 text-[#CA8A04] flex-shrink-0" />
+                    <a href={`tel:${COMPANY_INFO.phoneRaw}`} className="hover:text-[#CA8A04] transition-colors mr-2">
                       {COMPANY_INFO.phone}
                     </a>
                     <span>/</span>
-                    <a href={`tel:${COMPANY_INFO.altPhoneRaw}`} className="hover:text-[#C2410C] transition-colors ml-2">
+                    <a href={`tel:${COMPANY_INFO.altPhoneRaw}`} className="hover:text-[#CA8A04] transition-colors ml-2">
                       {COMPANY_INFO.altPhone}
                     </a>
                   </div>
                   <div className="flex items-center text-slate-800 font-semibold text-xs">
-                    <Mail className="w-3.5 h-3.5 mr-2 text-[#C2410C] flex-shrink-0" />
-                    <a href={`mailto:${COMPANY_INFO.email}`} className="hover:text-[#C2410C] transition-colors break-all">
+                    <Mail className="w-3.5 h-3.5 mr-2 text-[#CA8A04] flex-shrink-0" />
+                    <a href={`mailto:${COMPANY_INFO.email}`} className="hover:text-[#CA8A04] transition-colors break-all">
                       {COMPANY_INFO.email}
                     </a>
                   </div>
                 </div>
 
-                <div className="p-3.5 rounded-xl bg-[#FFF4E5] border border-[#FED7AA] text-[#7C2D12] flex items-start space-x-2">
-                  <ShieldCheck className="w-4 h-4 text-[#EA580C] flex-shrink-0 mt-0.5" />
+                <div className="p-3.5 rounded-xl bg-[#FEFCE8] border border-yellow-200 text-[#713F12] flex items-start space-x-2">
+                  <ShieldCheck className="w-4 h-4 text-[#CA8A04] flex-shrink-0 mt-0.5" />
                   <span className="text-[11px] leading-relaxed">
                     Well-versed in public policies, guidelines, and rules of the Central Vigilance Commission (CVC), General Financial Rules (GFR), PPP projects, and Right to Information.
                   </span>
@@ -282,10 +282,10 @@ export default function AboutPage({ onNavigate, onOpenInquiry }) {
                 <div className="pt-2">
                   <button
                     onClick={() => onOpenInquiry('Official Proposal Request')}
-                    className="w-full inline-flex items-center justify-center py-3 px-4 rounded-xl bg-gradient-to-r from-[#C2410C] via-[#EA580C] to-[#F59E0B] hover:from-[#9A3412] hover:to-[#EA580C] text-white font-bold text-xs shadow-lg shadow-[#EA580C]/25 border border-[#FEF08A]/40 transition-all hover:scale-[1.02]"
+                    className="w-full inline-flex items-center justify-center py-3 px-4 rounded-xl bg-gradient-to-r from-[#CA8A04] via-[#D97706] to-[#EAB308] hover:from-[#A16207] hover:to-[#CA8A04] text-white font-bold text-xs shadow-lg shadow-yellow-600/25 border border-yellow-300 transition-all hover:scale-[1.02]"
                   >
                     <span>Connect with Our Bidding Team</span>
-                    <ArrowRight className="w-3.5 h-3.5 ml-1.5 text-[#FEF08A]" />
+                    <ArrowRight className="w-3.5 h-3.5 ml-1.5 text-yellow-200" />
                   </button>
                 </div>
 
@@ -299,26 +299,26 @@ export default function AboutPage({ onNavigate, onOpenInquiry }) {
 
       {/* Bottom Call to Action Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-br from-[#7C2D12] via-[#C2410C] to-[#EA580C] rounded-3xl p-8 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 border border-[#F97316]/40 relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-80 h-80 bg-[#F59E0B]/25 rounded-full blur-3xl pointer-events-none" />
+        <div className="bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0A0F1D] rounded-3xl p-8 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 border border-yellow-500/30 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-80 h-80 bg-[#FACC15]/20 rounded-full blur-3xl pointer-events-none" />
           <div className="space-y-2 text-center md:text-left relative z-10">
             <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-white">
               Ready to Win Your Next Public Tender?
             </h3>
-            <p className="text-[#FEF3C7] text-sm max-w-xl">
+            <p className="text-slate-300 text-sm max-w-xl">
               Get an end-to-end bid strategy audit or outsource your complete bidding desk to D Nandani Tech Solutions.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3 relative z-10">
             <button
               onClick={() => onOpenInquiry('Tender Proposal Inquiry')}
-              className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#FFB703] via-[#FDE047] to-[#FB8500] hover:from-[#FDE047] hover:to-[#F59E0B] text-[#78350F] font-black text-xs sm:text-sm shadow-lg shadow-[#7C2D12]/40 transition-all hover:scale-105"
+              className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#FDE047] via-[#FACC15] to-[#EAB308] hover:from-[#FEF08A] hover:to-[#FACC15] text-slate-950 font-black text-xs sm:text-sm shadow-xl shadow-yellow-500/25 transition-all hover:scale-105"
             >
               Request Free Consultation
             </button>
             <button
               onClick={() => onNavigate('/', 'services')}
-              className="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold text-xs sm:text-sm transition-all shadow-sm"
+              className="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-yellow-400/30 font-semibold text-xs sm:text-sm transition-all shadow-sm"
             >
               Explore All Scope of Services
             </button>

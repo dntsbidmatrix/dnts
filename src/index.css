@@ -28,31 +28,31 @@
 }
 
 .executive-card:hover {
-  border-color: #F97316;
-  box-shadow: 0 10px 25px -5px rgba(234, 88, 12, 0.14), 0 8px 10px -6px rgba(234, 88, 12, 0.08);
+  border-color: #EAB308;
+  box-shadow: 0 10px 25px -5px rgba(234, 179, 8, 0.16), 0 8px 10px -6px rgba(234, 179, 8, 0.08);
   transform: translateY(-2px);
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #C2410C 0%, #EA580C 45%, #F59E0B 100%);
+  background: linear-gradient(135deg, #B45309 0%, #D97706 35%, #EAB308 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-amber {
-  background: linear-gradient(135deg, #EA580C 0%, #F59E0B 50%, #FBBF24 100%);
+  background: linear-gradient(135deg, #CA8A04 0%, #EAB308 50%, #FACC15 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-gold {
-  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  background: linear-gradient(135deg, #EAB308 0%, #FACC15 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-warm {
-  background: linear-gradient(135deg, #EA580C 0%, #F59E0B 50%, #FBBF24 100%);
+  background: linear-gradient(135deg, #B45309 0%, #EAB308 50%, #FDE047 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
