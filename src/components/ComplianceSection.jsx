@@ -34,8 +34,8 @@ export default function ComplianceSection() {
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold uppercase tracking-wider">
-            <ShieldCheck className="w-3.5 h-3.5 mr-1 text-emerald-600" />
+          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider">
+            <ShieldCheck className="w-3.5 h-3.5 mr-1 text-blue-600" />
             <span>Policy Compliance & FAQs</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
@@ -60,14 +60,14 @@ export default function ComplianceSection() {
               return (
                 <div 
                   key={idx}
-                  className="p-5 rounded-2xl bg-white border border-slate-200 hover:border-emerald-300 hover:shadow-sm transition-all"
+                  className="p-5 rounded-2xl bg-white border border-slate-200 hover:border-blue-400 hover:shadow-md transition-all group"
                 >
                   <div className="flex items-start space-x-4">
-                    <div className="p-2.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-700 flex-shrink-0 mt-1">
+                    <div className="p-2.5 rounded-xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 text-blue-700 flex-shrink-0 mt-1 group-hover:scale-105 transition-transform">
                       <Icon className="w-5 h-5" />
                     </div>
                     <div>
-                      <h4 className="text-base font-bold text-slate-900 mb-1">
+                      <h4 className="text-base font-bold text-slate-900 mb-1 group-hover:text-blue-700 transition-colors">
                         {item.title}
                       </h4>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">

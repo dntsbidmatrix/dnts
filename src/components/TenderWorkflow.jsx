@@ -25,12 +25,15 @@ export default function TenderWorkflow() {
           {WORKFLOW_STEPS.map((step, idx) => (
             <div 
               key={idx}
-              className="relative p-6 rounded-2xl bg-white border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all duration-300 group flex flex-col justify-between"
+              className="relative p-6 rounded-2xl bg-white border border-slate-200/90 hover:border-blue-400 hover:shadow-xl hover:shadow-blue-600/10 transition-all duration-300 group flex flex-col justify-between overflow-hidden"
             >
+              {/* Top Hover Accent Bar */}
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-indigo-500 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
               {/* Step Number with glowing ring */}
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-2xl font-black text-blue-600 font-mono">
+                  <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600 font-mono">
                     {step.step}
                   </span>
                   <div className="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-500 group-hover:text-blue-600 group-hover:border-blue-300 transition-colors">
@@ -57,8 +60,9 @@ export default function TenderWorkflow() {
         </div>
 
         {/* Post-Bid Assurance Box */}
-        <div className="mt-14 p-6 rounded-2xl bg-white border border-blue-200 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="space-y-1 text-center sm:text-left">
+        <div className="mt-14 p-6 sm:p-7 rounded-2xl bg-white border border-blue-200/90 shadow-lg shadow-blue-900/5 flex flex-col sm:flex-row items-center justify-between gap-6 relative overflow-hidden">
+          <div className="absolute top-0 left-0 bottom-0 w-1.5 bg-gradient-to-b from-blue-600 via-indigo-600 to-amber-500" />
+          <div className="space-y-1 text-center sm:text-left pl-0 sm:pl-2">
             <h4 className="text-base font-bold text-slate-900">
               End-to-End Commitment: L1 Purchase Order & EMD Refund Assurance
             </h4>
@@ -67,7 +71,7 @@ export default function TenderWorkflow() {
             </p>
           </div>
           <div className="flex-shrink-0">
-            <span className="px-4 py-2 rounded-xl bg-blue-600 text-white font-bold text-xs shadow-md shadow-blue-500/25">
+            <span className="px-4 py-2 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 text-white font-bold text-xs shadow-md shadow-blue-600/25">
               Zero-Risk Handholding
             </span>
           </div>

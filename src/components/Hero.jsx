@@ -15,11 +15,12 @@ import { COMPANY_INFO } from '../data/companyData';
 
 export default function Hero({ onOpenInquiry }) {
   return (
-    <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-r from-[#009688] via-[#0284C7] to-[#1D4ED8] text-white">
+    <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-br from-[#0B0F19] via-[#0D1D3A] to-[#172554] text-white">
       {/* Background Lighting & Subtle Pattern Overlays */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white/10 via-transparent to-black/20 pointer-events-none" />
-      <div className="absolute -top-40 -right-40 w-96 h-96 bg-cyan-400/20 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-teal-300/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-600/10 via-transparent to-black/40 pointer-events-none" />
+      <div className="absolute -top-40 -right-40 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:32px_32px] opacity-10 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -29,48 +30,48 @@ export default function Hero({ onOpenInquiry }) {
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             
             {/* Tagline Pill */}
-            <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-white text-xs font-semibold shadow-inner">
-              <span className="flex h-2 w-2 rounded-full bg-emerald-300 animate-pulse"></span>
+            <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-sky-200 text-xs font-semibold shadow-inner">
+              <span className="flex h-2 w-2 rounded-full bg-amber-400 animate-pulse"></span>
               <span>Systematic Approach to Government Operations</span>
             </div>
 
             {/* Main Headline (100% Original Text) */}
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12] drop-shadow-sm">
               Expand Your Business Through{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-sky-100 to-white">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-sky-200 to-blue-200">
                 Govt Tenders & GeM Bidding
               </span>
             </h1>
 
             {/* Subtitle (100% Original Text) */}
-            <p className="text-base sm:text-lg text-cyan-50 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+            <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
               <strong className="text-white">BidMatrix</strong> provides end-to-end bid processing management and strategic tendering services. We act as your <strong className="text-white">dedicated Virtual Bid Manager</strong>—handling portal registrations (GeM, CPPP, UNGM), GeM vendor assessment, PSUs empanelment (BHEL, EIL & Indian Railways etc), catalogue approvals, and live reverse auctions.
             </p>
 
             {/* Key Assurance Bullet Points from Official Proposal (100% Original Text) */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2 text-left max-w-xl mx-auto lg:mx-0">
-              <div className="flex items-center space-x-2 text-xs sm:text-sm text-cyan-50">
-                <CheckCircle2 className="w-4 h-4 text-cyan-300 flex-shrink-0" />
+              <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-200">
+                <CheckCircle2 className="w-4 h-4 text-sky-400 flex-shrink-0" />
                 <span>GeM Portal, CPPP, UNGM & e-Procurement Registration</span>
               </div>
-              <div className="flex items-center space-x-2 text-xs sm:text-sm text-cyan-50">
-                <CheckCircle2 className="w-4 h-4 text-cyan-300 flex-shrink-0" />
+              <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-200">
+                <CheckCircle2 className="w-4 h-4 text-sky-400 flex-shrink-0" />
                 <span>Vendor Assessment & Vendor Exemption</span>
               </div>
-              <div className="flex items-center space-x-2 text-xs sm:text-sm text-cyan-50">
-                <CheckCircle2 className="w-4 h-4 text-cyan-300 flex-shrink-0" />
+              <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-200">
+                <CheckCircle2 className="w-4 h-4 text-sky-400 flex-shrink-0" />
                 <span>PSUs Empanelment (BHEL, EIL & Indian Railways etc)</span>
               </div>
-              <div className="flex items-center space-x-2 text-xs sm:text-sm text-cyan-50">
-                <CheckCircle2 className="w-4 h-4 text-cyan-300 flex-shrink-0" />
+              <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-200">
+                <CheckCircle2 className="w-4 h-4 text-sky-400 flex-shrink-0" />
                 <span>OEM Panel and OEM Dashboard</span>
               </div>
-              <div className="flex items-center space-x-2 text-xs sm:text-sm text-cyan-50">
-                <CheckCircle2 className="w-4 h-4 text-cyan-300 flex-shrink-0" />
+              <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-200">
+                <CheckCircle2 className="w-4 h-4 text-sky-400 flex-shrink-0" />
                 <span>Tender Scrutiny, BOQ Study & Rate Strategy</span>
               </div>
-              <div className="flex items-center space-x-2 text-xs sm:text-sm text-cyan-50">
-                <CheckCircle2 className="w-4 h-4 text-cyan-300 flex-shrink-0" />
+              <div className="flex items-center space-x-2 text-xs sm:text-sm text-slate-200">
+                <CheckCircle2 className="w-4 h-4 text-sky-400 flex-shrink-0" />
                 <span>Bid Submission, Pre-Bid & Post-Bid Clarification/Representation</span>
               </div>
             </div>
@@ -79,7 +80,7 @@ export default function Hero({ onOpenInquiry }) {
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
               <button
                 onClick={onOpenInquiry}
-                className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-bold text-sm text-[#0284C7] bg-white hover:bg-cyan-50 transition-all shadow-xl shadow-black/20 hover:scale-105"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 hover:from-blue-500 hover:to-indigo-500 transition-all shadow-xl shadow-blue-950/60 hover:scale-105 border border-blue-400/30"
               >
                 <Send className="w-4 h-4 mr-2" />
                 <span>Request Bidding Proposal</span>
@@ -87,23 +88,23 @@ export default function Hero({ onOpenInquiry }) {
 
               <a
                 href="#services"
-                className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-semibold text-sm text-white bg-white/10 border border-white/25 hover:bg-white/20 transition-all shadow-sm"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-semibold text-sm text-white bg-white/10 border border-white/20 hover:bg-white/20 transition-all shadow-sm"
               >
                 <span>View Our Services</span>
-                <ArrowRight className="w-4 h-4 ml-2 text-cyan-200" />
+                <ArrowRight className="w-4 h-4 ml-2 text-sky-300" />
               </a>
 
               <a
                 href={`tel:${COMPANY_INFO.phoneRaw}`}
-                className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-3.5 rounded-xl font-semibold text-xs text-white hover:text-cyan-200 hover:bg-white/10 border border-transparent hover:border-white/20 transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-3.5 rounded-xl font-semibold text-xs text-slate-300 hover:text-white hover:bg-white/10 border border-transparent hover:border-white/20 transition-all"
               >
-                <PhoneCall className="w-3.5 h-3.5 mr-1.5 text-cyan-300" />
+                <PhoneCall className="w-3.5 h-3.5 mr-1.5 text-amber-400" />
                 <span>{COMPANY_INFO.phone}</span>
               </a>
             </div>
 
             {/* Live Status Footnote (100% Original Text) */}
-            <div className="pt-3 flex items-center justify-center lg:justify-start space-x-4 text-xs text-cyan-100 font-medium">
+            <div className="pt-3 flex items-center justify-center lg:justify-start space-x-4 text-xs text-slate-400 font-medium">
               <span className="flex items-center">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 mr-1.5"></span>
                 Pan-India Tender Strategy & Bid Advisory
@@ -119,7 +120,7 @@ export default function Hero({ onOpenInquiry }) {
             <div className="relative mx-auto max-w-md">
               
               {/* Subtle Halo Shadow */}
-              <div className="absolute -inset-1 rounded-3xl bg-cyan-300/30 opacity-30 blur-2xl"></div>
+              <div className="absolute -inset-1 rounded-3xl bg-blue-500/20 opacity-40 blur-2xl"></div>
               
               {/* Main Credential Showcase Card */}
               <div className="relative rounded-3xl bg-white text-slate-800 p-6 sm:p-8 shadow-2xl border border-white/80 space-y-6">

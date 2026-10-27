@@ -6,7 +6,7 @@ export default function TrustStats() {
   const icons = [Shield, FileCheck, CheckCircle, Clock];
 
   return (
-    <section className="relative z-10 py-8 sm:py-10 bg-slate-100/70 border-y border-slate-200">
+    <section className="relative z-10 py-8 sm:py-10 bg-slate-50/80 border-y border-slate-200/90">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Metric Cards Grid - Centered items and responsive typography */}
@@ -16,15 +16,18 @@ export default function TrustStats() {
             return (
               <div 
                 key={idx}
-                className="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:border-blue-400 hover:shadow-md transition-all duration-300 group flex flex-col items-center justify-center text-center"
+                className="relative p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:border-blue-300 hover:shadow-lg hover:shadow-blue-600/5 transition-all duration-300 group flex flex-col items-center justify-center text-center overflow-hidden"
               >
+                {/* Top Subtle Hover Accent Line */}
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-indigo-500 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
                 {/* Centered Icon */}
-                <div className="p-2 sm:p-2.5 rounded-xl bg-blue-50 text-blue-600 mb-2 sm:mb-2.5 group-hover:scale-110 transition-transform flex items-center justify-center">
+                <div className="p-2 sm:p-2.5 rounded-xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 text-blue-700 mb-2 sm:mb-2.5 group-hover:scale-110 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-indigo-600 group-hover:text-white transition-all flex items-center justify-center shadow-sm">
                   <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
 
                 {/* Primary Metric Value - Scaled down and center aligned */}
-                <h3 className="text-sm sm:text-base md:text-lg font-extrabold text-slate-900 tracking-tight leading-snug w-full text-center break-words">
+                <h3 className="text-sm sm:text-base md:text-lg font-extrabold text-slate-900 group-hover:text-blue-700 tracking-tight leading-snug w-full text-center break-words transition-colors">
                   {item.value}
                 </h3>
 

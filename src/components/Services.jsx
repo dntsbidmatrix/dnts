@@ -62,7 +62,7 @@ export default function Services({ onSelectService }) {
               onClick={() => setActiveFilter(cat)}
               className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${
                 activeFilter === cat
-                  ? 'bg-gradient-to-r from-teal-500 via-sky-600 to-blue-600 text-white shadow-md shadow-blue-500/25 scale-105'
+                  ? 'bg-gradient-to-r from-blue-700 via-indigo-600 to-blue-600 text-white shadow-md shadow-blue-700/25 scale-105'
                   : 'bg-white text-slate-700 border border-slate-200 hover:border-slate-300 hover:bg-slate-50'
               }`}
             >
@@ -78,15 +78,15 @@ export default function Services({ onSelectService }) {
             return (
               <div
                 key={service.id}
-                className="group relative rounded-2xl bg-white border border-slate-200/90 hover:border-blue-400 p-7 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl hover:shadow-blue-500/10 overflow-hidden"
+                className="group relative rounded-2xl bg-white border border-slate-200/90 hover:border-blue-400 p-7 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl hover:shadow-blue-600/10 overflow-hidden"
               >
                 {/* Top Glowing Hover Accent Line */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-teal-400 via-sky-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-indigo-500 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                 {/* Top Badge & Icon */}
                 <div>
                   <div className="flex items-center justify-between mb-5">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-50 to-sky-50 border border-blue-200/80 flex items-center justify-center text-blue-600 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all shadow-sm">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200/80 flex items-center justify-center text-blue-700 group-hover:scale-110 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-indigo-600 group-hover:text-white transition-all shadow-sm">
                       <Icon className="w-6 h-6" />
                     </div>
                     <span className="px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-[11px] font-semibold group-hover:bg-blue-50 group-hover:text-blue-700 group-hover:border-blue-200 transition-colors">
@@ -131,7 +131,7 @@ export default function Services({ onSelectService }) {
 
         {/* Our Services from the Official Quotation Proposal */}
         <div className="rounded-3xl bg-white border border-slate-200 p-8 sm:p-10 shadow-xl shadow-slate-200/50 relative overflow-hidden">
-          <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#00A896] via-[#0284C7] to-[#1D4ED8]" />
+          <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-700 via-indigo-600 to-amber-500" />
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 border-b border-slate-100 pb-6">
             <div className="space-y-1">
               <div className="inline-flex items-center text-xs font-bold text-blue-600 uppercase tracking-wider">
@@ -148,7 +148,7 @@ export default function Services({ onSelectService }) {
             <div>
               <button
                 onClick={() => onSelectService('Complete Tender Services Package')}
-                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-sky-500 via-blue-600 to-indigo-600 text-white font-bold text-xs shadow-md shadow-blue-500/20 hover:from-sky-600 hover:to-indigo-700 transition-all"
+                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 text-white font-bold text-xs shadow-md shadow-blue-600/25 hover:from-blue-700 hover:to-indigo-700 transition-all"
               >
                 Request Proposal For Our Services
               </button>
