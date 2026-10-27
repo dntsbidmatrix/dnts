@@ -49,7 +49,7 @@ export default function ContactSection() {
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#EAF5ED] border border-[#BCDDC4] text-[#245439] text-xs font-semibold uppercase tracking-wider">
+          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#FFF4E5] border border-[#FED7AA] text-[#C2410C] text-xs font-semibold uppercase tracking-wider">
             <span>Direct Liaison & Proposal Desk</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
@@ -66,23 +66,23 @@ export default function ContactSection() {
           {/* Left Column: Direct Communication Cards */}
           <div className="lg:col-span-5 space-y-6">
             
-            <div className="p-6 rounded-2xl bg-white border border-[#D5EADB] shadow-sm space-y-6">
+            <div className="p-6 rounded-2xl bg-white border border-[#FED7AA]/70 shadow-sm space-y-6">
               <h3 className="text-xl font-bold text-slate-900 tracking-tight flex items-center">
                 <span>Direct Contact Directorate</span>
               </h3>
 
               {/* Phone Card with Both Numbers */}
-              <div className="p-4 rounded-xl bg-[#F4F9F5] border border-[#D5EADB] hover:border-[#5A9F68] transition-all space-y-2">
-                <div className="flex items-center space-x-3 text-[#387850]">
+              <div className="p-4 rounded-xl bg-[#FFF9F2] border border-[#FED7AA]/70 hover:border-[#F97316] transition-all space-y-2">
+                <div className="flex items-center space-x-3 text-[#C2410C]">
                   <Phone className="w-5 h-5 flex-shrink-0" />
                   <span className="text-xs text-slate-600 font-bold uppercase tracking-wider">CALL DIRECTLY FOR PROPOSAL</span>
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-1 sm:space-y-0 pt-1">
-                  <a href={`tel:${COMPANY_INFO.phoneRaw}`} className="text-base font-bold text-slate-900 hover:text-[#245439] transition-colors">
+                  <a href={`tel:${COMPANY_INFO.phoneRaw}`} className="text-base font-bold text-slate-900 hover:text-[#C2410C] transition-colors">
                     {COMPANY_INFO.phone}
                   </a>
                   <span className="hidden sm:inline text-slate-300">|</span>
-                  <a href={`tel:${COMPANY_INFO.altPhoneRaw}`} className="text-base font-bold text-slate-900 hover:text-[#245439] transition-colors">
+                  <a href={`tel:${COMPANY_INFO.altPhoneRaw}`} className="text-base font-bold text-slate-900 hover:text-[#C2410C] transition-colors">
                     {COMPANY_INFO.altPhone}
                   </a>
                 </div>
@@ -94,14 +94,14 @@ export default function ContactSection() {
                 href={COMPANY_INFO.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-start space-x-4 p-4 rounded-xl bg-[#EAF5ED] border border-[#BCDDC4] hover:border-[#5A9F68] hover:bg-[#DDF0E2] transition-all group"
+                className="flex items-start space-x-4 p-4 rounded-xl bg-[#FFF4E5] border border-[#FED7AA] hover:border-[#F97316] hover:bg-[#FFEED9] transition-all group"
               >
-                <div className="p-3 rounded-xl bg-[#245439] text-[#BBD58E] group-hover:scale-110 transition-transform">
+                <div className="p-3 rounded-xl bg-[#C2410C] text-[#FEF08A] group-hover:scale-110 transition-transform">
                   <MessageSquare className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-xs text-[#245439] font-bold uppercase tracking-wider">WHATSAPP INSTANT CHAT</div>
-                  <div className="text-base font-bold text-[#245439]">
+                  <div className="text-xs text-[#C2410C] font-bold uppercase tracking-wider">WHATSAPP INSTANT CHAT</div>
+                  <div className="text-base font-bold text-[#C2410C]">
                     +91 8929851130
                   </div>
                   <div className="text-xs text-slate-600 mt-0.5">Share tender documents & NIT links</div>
@@ -111,14 +111,14 @@ export default function ContactSection() {
               {/* Email Card */}
               <a
                 href={`mailto:${COMPANY_INFO.email}`}
-                className="flex items-start space-x-4 p-4 rounded-xl bg-[#F4F9F5] border border-[#D5EADB] hover:border-[#5A9F68] hover:bg-[#EAF5ED] transition-all group"
+                className="flex items-start space-x-4 p-4 rounded-xl bg-[#FFF9F2] border border-[#FED7AA]/70 hover:border-[#F97316] hover:bg-[#FFF4E5] transition-all group"
               >
-                <div className="p-3 rounded-xl bg-[#EAF5ED] text-[#245439] group-hover:scale-110 transition-transform">
+                <div className="p-3 rounded-xl bg-[#FFF4E5] text-[#C2410C] group-hover:scale-110 transition-transform">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
                   <div className="text-xs text-slate-600 font-bold uppercase tracking-wider">OFFICIAL PROPOSAL DESK</div>
-                  <div className="text-sm sm:text-base font-bold text-slate-900 group-hover:text-[#245439] transition-colors break-all">
+                  <div className="text-sm sm:text-base font-bold text-slate-900 group-hover:text-[#C2410C] transition-colors break-all">
                     {COMPANY_INFO.email}
                   </div>
                   <div className="text-xs text-slate-500 mt-0.5">Send company profile & vendor details</div>
@@ -126,8 +126,8 @@ export default function ContactSection() {
               </a>
 
               {/* Head Office Location */}
-              <div className="flex items-start space-x-4 p-4 rounded-xl bg-[#F4F9F5] border border-[#D5EADB]">
-                <div className="p-3 rounded-xl bg-[#EAF5ED] text-[#245439]">
+              <div className="flex items-start space-x-4 p-4 rounded-xl bg-[#FFF9F2] border border-[#FED7AA]/70">
+                <div className="p-3 rounded-xl bg-[#FFF4E5] text-[#C2410C]">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
@@ -140,8 +140,8 @@ export default function ContactSection() {
               </div>
 
               {/* Sales Office Location */}
-              <div className="flex items-start space-x-4 p-4 rounded-xl bg-[#F4F9F5] border border-[#D5EADB]">
-                <div className="p-3 rounded-xl bg-[#EAF5ED] text-[#245439]">
+              <div className="flex items-start space-x-4 p-4 rounded-xl bg-[#FFF9F2] border border-[#FED7AA]/70">
+                <div className="p-3 rounded-xl bg-[#FFF4E5] text-[#C2410C]">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
@@ -155,7 +155,7 @@ export default function ContactSection() {
 
               {/* Operating Hours */}
               <div className="flex items-center space-x-3 text-xs text-slate-500 pt-2 border-t border-slate-100">
-                <Clock className="w-4 h-4 text-[#387850] flex-shrink-0" />
+                <Clock className="w-4 h-4 text-[#C2410C] flex-shrink-0" />
                 <span>{COMPANY_INFO.workingHours}</span>
               </div>
 
@@ -165,7 +165,7 @@ export default function ContactSection() {
 
           {/* Right Column: Interactive Bid Consultation Form */}
           <div className="lg:col-span-7">
-            <div className="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-xl shadow-slate-200/50">
+            <div className="p-6 sm:p-8 rounded-2xl bg-white border border-[#FED7AA]/80 shadow-xl shadow-[#EA580C]/5">
               <h3 className="text-xl font-bold text-slate-900 tracking-tight mb-2">
                 Request Tender Proposal & Feasibility Consultation
               </h3>
@@ -174,8 +174,8 @@ export default function ContactSection() {
               </p>
 
               {submitted ? (
-                <div className="p-8 rounded-xl bg-emerald-50 border border-emerald-300 text-center space-y-4">
-                  <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto" />
+                <div className="p-8 rounded-xl bg-amber-50 border border-amber-300 text-center space-y-4">
+                  <CheckCircle2 className="w-12 h-12 text-[#EA580C] mx-auto" />
                   <h4 className="text-lg font-bold text-slate-900">
                     Proposal Request Dispatched!
                   </h4>
@@ -203,7 +203,7 @@ export default function ContactSection() {
                         placeholder="e.g. Rajesh Sharma"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-blue-600 focus:bg-white transition-colors"
+                        className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-[#EA580C] focus:bg-white transition-colors"
                       />
                     </div>
                     <div>
@@ -216,7 +216,7 @@ export default function ContactSection() {
                         placeholder="e.g. RS Mattress & Fome"
                         value={formData.organization}
                         onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
-                        className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-blue-600 focus:bg-white transition-colors"
+                        className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-[#EA580C] focus:bg-white transition-colors"
                       />
                     </div>
                   </div>
@@ -232,7 +232,7 @@ export default function ContactSection() {
                         placeholder="+91 9876543210"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-blue-600 focus:bg-white transition-colors"
+                        className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-[#EA580C] focus:bg-white transition-colors"
                       />
                     </div>
                     <div>
@@ -245,7 +245,7 @@ export default function ContactSection() {
                         placeholder="company@domain.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-blue-600 focus:bg-white transition-colors"
+                        className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-[#EA580C] focus:bg-white transition-colors"
                       />
                     </div>
                   </div>
@@ -258,7 +258,7 @@ export default function ContactSection() {
                       <select
                         value={formData.category}
                         onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                        className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-blue-600 focus:bg-white transition-colors"
+                        className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-[#EA580C] focus:bg-white transition-colors"
                       >
                         <option>Our Outsourced Bid Manager Package</option>
                         <option>GeM Portal, CPPP, UNGM and Other e-procurement Portals Registration</option>
@@ -280,7 +280,7 @@ export default function ContactSection() {
                       <select
                         value={formData.portal}
                         onChange={(e) => setFormData({ ...formData, portal: e.target.value })}
-                        className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-blue-600 focus:bg-white transition-colors"
+                        className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-[#EA580C] focus:bg-white transition-colors"
                       >
                         <option>GeM Portal (gem.gov.in)</option>
                         <option>CPPP (eprocure.gov.in)</option>
@@ -303,14 +303,14 @@ export default function ContactSection() {
                       placeholder="Mention what products/services you supply, current licenses (BIS/ISO/MSME), or any specific tender you want to bid on..."
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-blue-600 focus:bg-white transition-colors"
+                      className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-[#EA580C] focus:bg-white transition-colors"
                     ></textarea>
                   </div>
 
                   <div className="pt-2">
                     <button
                       type="submit"
-                      className="w-full py-3.5 px-6 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-[#245439] via-[#336848] to-[#468C5D] hover:from-[#1B3E29] hover:to-[#38764E] transition-all shadow-md shadow-[#245439]/25 flex items-center justify-center space-x-2 border border-[#BBD58E]/40"
+                      className="w-full py-3.5 px-6 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-[#C2410C] via-[#EA580C] to-[#F59E0B] hover:from-[#9A3412] hover:to-[#EA580C] transition-all shadow-lg shadow-[#EA580C]/25 flex items-center justify-center space-x-2 border border-[#FEF08A]/40"
                     >
                       <Send className="w-4 h-4" />
                       <span>Request Proposal & WhatsApp Strategy Desk</span>

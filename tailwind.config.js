@@ -17,16 +17,19 @@ export default {
           accent: '#FF4D6D',
           amber: '#FFAA00'
         },
-        forest: {
-          deep: '#1B2921',
-          dark: '#24362C',
-          brunswick: '#344E41',
-          hunter: '#3A5A40',
-          fern: '#588157',
-          shamrock: '#5A9F68',
-          pistachio: '#BBD58E',
-          sage: '#EAF2E8',
-          sageLight: '#F3F7F3',
+        sunset: {
+          deep: '#431407',
+          burnt: '#7C2D12',
+          rust: '#9A3412',
+          cinnamon: '#C2410C',
+          orange: '#EA580C',
+          vivid: '#F97316',
+          amber: '#F59E0B',
+          gold: '#FBBF24',
+          yellow: '#FDE047',
+          light: '#FEF3C7',
+          cream: '#FFF7ED',
+          soft: '#FFFDF9',
         }
       },
       fontFamily: {

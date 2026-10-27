@@ -28,19 +28,19 @@
 }
 
 .executive-card:hover {
-  border-color: #5A9F68;
-  box-shadow: 0 10px 25px -5px rgba(58, 90, 64, 0.12), 0 8px 10px -6px rgba(58, 90, 64, 0.06);
+  border-color: #F97316;
+  box-shadow: 0 10px 25px -5px rgba(234, 88, 12, 0.14), 0 8px 10px -6px rgba(234, 88, 12, 0.08);
   transform: translateY(-2px);
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #245439 0%, #3E7D56 45%, #5A9F68 100%);
+  background: linear-gradient(135deg, #C2410C 0%, #EA580C 45%, #F59E0B 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.text-gradient-green {
-  background: linear-gradient(135deg, #FFFFFF 0%, #E2F2C5 50%, #BBD58E 100%);
+.text-gradient-amber {
+  background: linear-gradient(135deg, #EA580C 0%, #F59E0B 50%, #FBBF24 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -52,7 +52,7 @@
 }
 
 .text-gradient-warm {
-  background: linear-gradient(135deg, #D97706 0%, #DC2626 100%);
+  background: linear-gradient(135deg, #EA580C 0%, #F59E0B 50%, #FBBF24 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

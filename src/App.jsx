@@ -139,10 +139,10 @@ export default function App() {
         {/* Call Pill */}
         <a
           href={`tel:${COMPANY_INFO.phoneRaw}`}
-          className="flex items-center space-x-2 bg-white text-slate-800 border border-slate-300 hover:border-blue-500 hover:text-blue-600 px-3.5 py-2 rounded-full shadow-lg backdrop-blur-md transition-all hover:scale-105 text-xs font-bold"
+          className="flex items-center space-x-2 bg-white text-slate-800 border border-[#FED7AA] hover:border-[#EA580C] hover:text-[#C2410C] px-3.5 py-2 rounded-full shadow-lg backdrop-blur-md transition-all hover:scale-105 text-xs font-bold"
           title="Call Now"
         >
-          <Phone className="w-3.5 h-3.5 text-blue-600" />
+          <Phone className="w-3.5 h-3.5 text-[#C2410C]" />
           <span className="hidden sm:inline">+91 8929851130</span>
         </a>
 
