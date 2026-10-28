@@ -37,8 +37,109 @@ export default function Services({ onSelectService }) {
     : SERVICES.filter(s => s.category === activeFilter);
 
   return (
-    <section id="services" className="py-20 lg:py-28 relative bg-[#F8FAFC]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <section id="services" className="py-20 lg:py-28 relative bg-[#F8FAFC] overflow-hidden">
+      {/* Classy Architectural GovTech Background Elements */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden -z-0">
+        {/* Subtle dot matrix grid */}
+        <div 
+          className="absolute inset-0 opacity-[0.25]" 
+          style={{
+            backgroundImage: 'radial-gradient(#94A3B8 1px, transparent 1px)',
+            backgroundSize: '32px 32px'
+          }}
+        />
+
+        {/* Ambient depth glows */}
+        <div className="absolute -top-24 left-1/4 w-[500px] h-[500px] bg-blue-500/[0.035] rounded-full blur-3xl" />
+        <div className="absolute top-1/2 right-0 w-[450px] h-[450px] bg-cyan-500/[0.03] rounded-full blur-3xl" />
+        <div className="absolute -bottom-20 left-10 w-[550px] h-[550px] bg-indigo-500/[0.03] rounded-full blur-3xl" />
+
+        {/* Left Side: Architectural Vector Linework & Flow Arrows */}
+        <svg className="hidden lg:block absolute left-0 top-24 w-72 h-[800px] text-blue-600/20" viewBox="0 0 288 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+          {/* Vertical conduit line with 90-deg breaks */}
+          <path d="M40 0 V180 L100 240 H160 L200 280 V420 L140 480 H60 L20 520 V800" stroke="currentColor" strokeWidth="1" strokeDasharray="4 4" />
+          
+          {/* Circuit / Procurement Nodes */}
+          <circle cx="40" cy="180" r="3.5" fill="currentColor" />
+          <circle cx="100" cy="240" r="2.5" fill="currentColor" />
+          <circle cx="200" cy="280" r="4" fill="currentColor" />
+          <circle cx="200" cy="420" r="3" fill="currentColor" />
+          <circle cx="140" cy="480" r="2.5" fill="currentColor" />
+          <circle cx="20" cy="520" r="3.5" fill="currentColor" />
+
+          {/* Directional Chevrons / Flow Arrows along the path */}
+          <path d="M196 340 L200 348 L204 340" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M196 355 L200 363 L204 355" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          
+          <path d="M95 480 L103 480 L99 476 M103 480 L99 484" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M16 640 L20 648 L24 640" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+
+          {/* Delicate Wireframe Hexagon Motif */}
+          <polygon points="120,80 150,97 150,132 120,149 90,132 90,97" stroke="currentColor" strokeWidth="0.75" strokeDasharray="3 3" />
+          <circle cx="120" cy="115" r="2" fill="currentColor" />
+
+          {/* Coordinate Crosshairs */}
+          <path d="M35 80 H45 M40 75 V85" stroke="currentColor" strokeWidth="1" />
+          <path d="M215 420 H225 M220 415 V425" stroke="currentColor" strokeWidth="1" />
+        </svg>
+
+        {/* Right Side: Architectural Linework, Geometric Rings & Forward Vectors */}
+        <svg className="hidden lg:block absolute right-0 top-36 w-80 h-[900px] text-cyan-600/20" viewBox="0 0 320 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+          {/* Intersecting flow vectors */}
+          <path d="M280 20 V220 L220 280 H140 L100 320 V500 L160 560 H260 L300 600 V900" stroke="currentColor" strokeWidth="1" strokeDasharray="5 5" />
+          
+          {/* Hub Nodes */}
+          <circle cx="280" cy="220" r="3" fill="currentColor" />
+          <circle cx="140" cy="280" r="3" fill="currentColor" />
+          <circle cx="100" cy="320" r="4.5" fill="currentColor" />
+          <circle cx="100" cy="500" r="3" fill="currentColor" />
+          <circle cx="160" cy="560" r="3" fill="currentColor" />
+          <circle cx="300" cy="600" r="4" fill="currentColor" />
+
+          {/* Downward / Forward Directional Chevron Arrows */}
+          <path d="M96 400 L100 408 L104 400" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M96 415 L100 423 L104 415" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M296 720 L300 728 L304 720" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+
+          {/* Concentric Architectural Rings Motif */}
+          <circle cx="220" cy="120" r="45" stroke="currentColor" strokeWidth="0.75" strokeDasharray="3 4" />
+          <circle cx="220" cy="120" r="28" stroke="currentColor" strokeWidth="0.75" />
+          <circle cx="220" cy="120" r="3" fill="currentColor" />
+          <line x1="220" y1="65" x2="220" y2="175" stroke="currentColor" strokeWidth="0.5" strokeDasharray="2 2" />
+          <line x1="165" y1="120" x2="275" y2="120" stroke="currentColor" strokeWidth="0.5" strokeDasharray="2 2" />
+
+          {/* Geometric Diamond Accent */}
+          <rect x="180" y="660" width="40" height="40" rx="6" transform="rotate(45 200 680)" stroke="currentColor" strokeWidth="0.75" strokeDasharray="2 3" />
+          <circle cx="200" cy="680" r="2" fill="currentColor" />
+        </svg>
+
+        {/* Technical Blueprint Margin Labels */}
+        <div className="hidden xl:flex flex-col space-y-40 absolute left-6 top-72 font-mono text-[9px] text-slate-400/50 uppercase tracking-widest">
+          <div>
+            <span className="text-blue-500/60 font-bold">+ </span>SPEC.MATRIX.01
+          </div>
+          <div>
+            <span className="text-blue-500/60 font-bold">+ </span>BOQ.VERIFY.02
+          </div>
+          <div>
+            <span className="text-blue-500/60 font-bold">+ </span>AUDIT.FLOW.03
+          </div>
+        </div>
+
+        <div className="hidden xl:flex flex-col space-y-40 absolute right-6 top-80 font-mono text-[9px] text-slate-400/50 uppercase tracking-widest text-right">
+          <div>
+            L1.STRATEGY <span className="text-cyan-500/60 font-bold">+</span>
+          </div>
+          <div>
+            PORTAL.SYNC <span className="text-cyan-500/60 font-bold">+</span>
+          </div>
+          <div>
+            REGULATORY.OK <span className="text-cyan-500/60 font-bold">+</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">

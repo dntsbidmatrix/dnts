@@ -44,8 +44,62 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 lg:py-28 relative bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <section id="contact" className="py-20 lg:py-28 relative bg-white overflow-hidden">
+      {/* Classy Direct Liaison & Communication Vectors Background */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden -z-0">
+        {/* Subtle dot matrix */}
+        <div 
+          className="absolute inset-0 opacity-[0.25]" 
+          style={{
+            backgroundImage: 'radial-gradient(#94A3B8 1px, transparent 1px)',
+            backgroundSize: '28px 28px'
+          }}
+        />
+
+        {/* Ambient soft glow */}
+        <div className="absolute -top-20 left-1/4 w-[500px] h-[500px] bg-blue-500/[0.035] rounded-full blur-3xl" />
+        <div className="absolute bottom-10 right-10 w-[550px] h-[550px] bg-cyan-500/[0.035] rounded-full blur-3xl" />
+
+        {/* Communication Radar / Signal Arcs (Left Background behind contact info) */}
+        <svg className="hidden lg:block absolute -left-20 top-20 w-96 h-96 text-blue-600/15" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 60 200 A 140 140 0 0 1 200 60" stroke="currentColor" strokeWidth="1" strokeDasharray="3 4" />
+          <path d="M 20 200 A 180 180 0 0 1 200 20" stroke="currentColor" strokeWidth="1" strokeDasharray="4 5" />
+          <path d="M 0 200 A 200 200 0 0 1 200 0" stroke="currentColor" strokeWidth="0.75" />
+          
+          {/* Signal Transmission Nodes & Directional Chevrons */}
+          <circle cx="160" cy="85" r="3" fill="currentColor" />
+          <path d="M156 80 L164 84 L160 90" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+          <circle cx="95" cy="150" r="3" fill="currentColor" />
+          <path d="M90 146 L98 149 L95 156" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+
+        {/* Right Margin: Technical Flow Arrow Vector */}
+        <svg className="hidden lg:block absolute right-6 bottom-16 w-64 h-80 text-cyan-600/20" viewBox="0 0 256 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M220 20 V120 L160 180 H80 L40 220 V300" stroke="currentColor" strokeWidth="1" strokeDasharray="4 4" />
+          <circle cx="220" cy="120" r="3" fill="currentColor" />
+          <circle cx="160" cy="180" r="4" fill="currentColor" />
+          <circle cx="40" cy="220" r="3" fill="currentColor" />
+          
+          {/* Downward chevrons */}
+          <path d="M36 250 L40 258 L44 250" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M36 265 L40 273 L44 265" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+
+          {/* Geometric Wireframe Diamond */}
+          <rect x="130" y="80" width="30" height="30" rx="4" transform="rotate(45 145 95)" stroke="currentColor" strokeWidth="0.8" strokeDasharray="2 3" />
+        </svg>
+
+        {/* Blueprint coordinate markers */}
+        <div className="hidden xl:flex absolute top-10 left-8 items-center space-x-1 font-mono text-[9px] text-slate-400/50 uppercase tracking-widest">
+          <span className="text-blue-500/60">+</span>
+          <span>DESK.DIRECT_LIAISON.24X7</span>
+        </div>
+        <div className="hidden xl:flex absolute bottom-8 right-8 items-center space-x-1 font-mono text-[9px] text-slate-400/50 uppercase tracking-widest text-right">
+          <span>SECURE.PROPOSAL.TRANSMISSION</span>
+          <span className="text-cyan-500/60">+</span>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">

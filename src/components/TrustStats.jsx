@@ -6,8 +6,51 @@ export default function TrustStats() {
   const icons = [Shield, FileCheck, CheckCircle, Clock];
 
   return (
-    <section className="relative z-10 py-10 sm:py-12 bg-[#F8FAFC] border-b border-slate-200/80">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative z-10 py-10 sm:py-12 bg-[#F8FAFC] border-b border-slate-200/80 overflow-hidden">
+      {/* Classy Architectural Background Elements */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden -z-0">
+        {/* Subtle dot matrix texture */}
+        <div 
+          className="absolute inset-0 opacity-[0.28]" 
+          style={{
+            backgroundImage: 'radial-gradient(#94A3B8 1px, transparent 1px)',
+            backgroundSize: '24px 24px'
+          }}
+        />
+
+        {/* Ambient soft glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-48 bg-gradient-to-r from-blue-500/[0.04] via-cyan-500/[0.03] to-indigo-500/[0.04] blur-2xl rounded-full" />
+
+        {/* Delicate hairline technical trajectory with directional chevrons */}
+        <svg className="absolute w-full h-full inset-0 opacity-40 text-blue-600/30" xmlns="http://www.w3.org/2000/svg" fill="none">
+          <line x1="5%" y1="18" x2="95%" y2="18" stroke="currentColor" strokeWidth="0.75" strokeDasharray="3 6" />
+          <circle cx="5%" cy="18" r="2" fill="currentColor" />
+          <circle cx="95%" cy="18" r="2" fill="currentColor" />
+          
+          <path d="M40 14 L46 18 L40 22" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M50 14 L56 18 L50 22" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M60 14 L66 18 L60 22" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+
+          <path d="M calc(100% - 60px) 14 L calc(100% - 54px) 18 L calc(100% - 60px) 22" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M calc(100% - 50px) 14 L calc(100% - 44px) 18 L calc(100% - 50px) 22" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+
+        {/* Blueprint coordinate markers */}
+        <div className="hidden lg:flex absolute top-3 left-8 items-center space-x-1 font-mono text-[9px] text-slate-400/60 uppercase tracking-widest">
+          <span className="text-blue-500/50">+</span>
+          <span>SYS.VERIFIED</span>
+          <span className="text-slate-300/40">/</span>
+          <span>01</span>
+        </div>
+        <div className="hidden lg:flex absolute top-3 right-8 items-center space-x-1 font-mono text-[9px] text-slate-400/60 uppercase tracking-widest">
+          <span>02</span>
+          <span className="text-slate-300/40">/</span>
+          <span>COMPLIANCE.OK</span>
+          <span className="text-cyan-500/50">+</span>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Metric Cards Grid - Large rounded GovTech cards */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">

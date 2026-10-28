@@ -29,8 +29,58 @@ export default function ComplianceSection() {
   ];
 
   return (
-    <section id="compliance" className="py-20 lg:py-28 relative bg-slate-50/70 border-t border-slate-200/80">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="compliance" className="py-20 lg:py-28 relative bg-slate-50/70 border-t border-slate-200/80 overflow-hidden">
+      {/* Classy Governance Seal & Compliance Blueprint Background */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden -z-0">
+        {/* Subtle dot matrix */}
+        <div 
+          className="absolute inset-0 opacity-[0.25]" 
+          style={{
+            backgroundImage: 'radial-gradient(#94A3B8 1px, transparent 1px)',
+            backgroundSize: '28px 28px'
+          }}
+        />
+
+        {/* Ambient soft glow */}
+        <div className="absolute top-20 right-1/4 w-[500px] h-[500px] bg-blue-500/[0.03] rounded-full blur-3xl" />
+        <div className="absolute bottom-10 left-10 w-[500px] h-[500px] bg-cyan-500/[0.035] rounded-full blur-3xl" />
+
+        {/* Governance Guilloche / Geometric Shield Watermark (Right Background) */}
+        <svg className="hidden lg:block absolute -right-20 top-1/4 w-[520px] h-[520px] text-blue-600/10" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+          {/* Concentric octagonal / geometric security rosette rings */}
+          <circle cx="250" cy="250" r="230" stroke="currentColor" strokeWidth="0.75" strokeDasharray="4 6" />
+          <circle cx="250" cy="250" r="190" stroke="currentColor" strokeWidth="0.75" />
+          <circle cx="250" cy="250" r="150" stroke="currentColor" strokeWidth="0.75" strokeDasharray="3 3" />
+          <circle cx="250" cy="250" r="110" stroke="currentColor" strokeWidth="0.75" />
+          
+          {/* Rotated squares forming security star */}
+          <rect x="150" y="150" width="200" height="200" rx="20" stroke="currentColor" strokeWidth="0.75" strokeDasharray="5 5" />
+          <rect x="150" y="150" width="200" height="200" rx="20" transform="rotate(45 250 250)" stroke="currentColor" strokeWidth="0.75" strokeDasharray="5 5" />
+
+          {/* Coordinate Crosshairs */}
+          <line x1="50" y1="250" x2="450" y2="250" stroke="currentColor" strokeWidth="0.5" strokeDasharray="2 4" />
+          <line x1="250" y1="50" x2="250" y2="450" stroke="currentColor" strokeWidth="0.5" strokeDasharray="2 4" />
+          <circle cx="250" cy="250" r="4" fill="currentColor" />
+
+          {/* Directional Chevrons */}
+          <path d="M250 65 L254 73 L246 73 Z" fill="currentColor" />
+          <path d="M435 250 L427 254 L427 246 Z" fill="currentColor" />
+          <path d="M250 435 L246 427 L254 427 Z" fill="currentColor" />
+          <path d="M65 250 L73 246 L73 254 Z" fill="currentColor" />
+        </svg>
+
+        {/* Blueprint coordinate markers */}
+        <div className="hidden xl:flex absolute top-10 left-8 items-center space-x-1 font-mono text-[9px] text-slate-400/50 uppercase tracking-widest">
+          <span className="text-blue-500/60">+</span>
+          <span>GOV.AUDIT.COMPLIANCE.SEAL</span>
+        </div>
+        <div className="hidden xl:flex absolute bottom-8 left-8 items-center space-x-1 font-mono text-[9px] text-slate-400/50 uppercase tracking-widest">
+          <span className="text-blue-500/60">+</span>
+          <span>STATUTORY.INTEGRITY.GFR2017</span>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">

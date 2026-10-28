@@ -4,8 +4,57 @@ import { CheckCircle2, ArrowRight } from 'lucide-react';
 
 export default function TenderWorkflow() {
   return (
-    <section id="workflow" className="py-20 lg:py-28 relative bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="workflow" className="py-20 lg:py-28 relative bg-white overflow-hidden">
+      {/* Classy Lifecycle Conduit & Process Vector Background */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden -z-0">
+        {/* Subtle dot matrix */}
+        <div 
+          className="absolute inset-0 opacity-[0.25]" 
+          style={{
+            backgroundImage: 'radial-gradient(#94A3B8 1px, transparent 1px)',
+            backgroundSize: '28px 28px'
+          }}
+        />
+
+        {/* Ambient soft glow */}
+        <div className="absolute top-1/3 left-1/3 w-[600px] h-64 bg-gradient-to-r from-blue-500/[0.035] via-cyan-500/[0.03] to-indigo-500/[0.035] rounded-full blur-3xl" />
+
+        {/* Continuous Horizontal Lifecycle Vector Conduit (hidden on mobile, visible on desktop) */}
+        <svg className="hidden md:block absolute top-[44%] left-0 w-full h-32 text-blue-600/20" viewBox="0 0 1200 128" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          {/* Main flow hairline conduit */}
+          <path d="M 0 64 L 1200 64" stroke="currentColor" strokeWidth="1" strokeDasharray="6 6" />
+          
+          {/* Directional Flow Chevrons across the lifecycle */}
+          <path d="M 120 58 L 128 64 L 120 70" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M 360 58 L 368 64 L 360 70" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M 600 58 L 608 64 L 600 70" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M 840 58 L 848 64 L 840 70" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M 1080 58 L 1088 64 L 1080 70" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+
+          {/* Stepped coordinate ticks */}
+          <line x1="240" y1="48" x2="240" y2="80" stroke="currentColor" strokeWidth="0.8" />
+          <line x1="480" y1="48" x2="480" y2="80" stroke="currentColor" strokeWidth="0.8" />
+          <line x1="720" y1="48" x2="720" y2="80" stroke="currentColor" strokeWidth="0.8" />
+          <line x1="960" y1="48" x2="960" y2="80" stroke="currentColor" strokeWidth="0.8" />
+        </svg>
+
+        {/* Architectural Crosshairs in Corners */}
+        <div className="absolute top-12 left-10 text-slate-400/40 font-mono text-[9px] hidden lg:block">
+          <span className="text-blue-500/50">+</span> PHASE.STAGES.01-05
+        </div>
+        <div className="absolute top-12 right-10 text-slate-400/40 font-mono text-[9px] hidden lg:block text-right">
+          SLA.PRECISION <span className="text-cyan-500/50">+</span>
+        </div>
+
+        {/* Subtle geometric wireframe diamond in left margin */}
+        <svg className="hidden lg:block absolute left-8 bottom-16 w-32 h-32 text-indigo-600/15" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="64" y="16" width="68" height="68" rx="8" transform="rotate(45 64 64)" stroke="currentColor" strokeWidth="1" strokeDasharray="3 3" />
+          <circle cx="64" cy="64" r="3" fill="currentColor" />
+          <path d="M60 64 L64 68 L68 64" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
