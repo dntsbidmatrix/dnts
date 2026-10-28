@@ -92,7 +92,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FEFCE8] text-slate-800 flex flex-col font-sans selection:bg-yellow-400 selection:text-slate-900">
+    <div className="min-h-screen bg-[#F8FAFC] text-slate-900 flex flex-col font-sans selection:bg-blue-600 selection:text-white">
       {/* Sticky Top Header */}
       <Navbar 
         currentRoute={currentRoute}
@@ -139,10 +139,10 @@ export default function App() {
         {/* Call Pill */}
         <a
           href={`tel:${COMPANY_INFO.phoneRaw}`}
-          className="flex items-center space-x-2 bg-white text-slate-800 border border-yellow-200 hover:border-[#EAB308] hover:text-[#A16207] px-3.5 py-2 rounded-full shadow-lg backdrop-blur-md transition-all hover:scale-105 text-xs font-bold"
+          className="flex items-center space-x-2 bg-white text-slate-800 border border-slate-200 hover:border-blue-500 hover:text-blue-600 px-3.5 py-2 rounded-full shadow-lg backdrop-blur-md transition-all hover:scale-105 text-xs font-bold"
           title="Call Now"
         >
-          <Phone className="w-3.5 h-3.5 text-[#CA8A04]" />
+          <Phone className="w-3.5 h-3.5 text-blue-600" />
           <span className="hidden sm:inline">+91 8929851130</span>
         </a>
 

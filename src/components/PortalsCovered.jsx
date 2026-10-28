@@ -4,13 +4,13 @@ import { Globe, ExternalLink, CheckCircle2, Award } from 'lucide-react';
 
 export default function PortalsCovered() {
   return (
-    <section id="portals" className="py-20 lg:py-28 relative bg-gradient-to-b from-[#FEFCE8] to-[#FEF9C3]/40 border-t border-yellow-200">
+    <section id="portals" className="py-20 lg:py-28 relative bg-slate-50/60 border-t border-slate-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#FEFCE8] border border-yellow-200 text-[#854D0E] text-xs font-semibold uppercase tracking-wider">
-            <Globe className="w-3.5 h-3.5 mr-1 text-[#CA8A04]" />
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider">
+            <Globe className="w-3.5 h-3.5 mr-1 text-blue-600" />
             <span>Portals & PSUs Covered</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
@@ -21,62 +21,62 @@ export default function PortalsCovered() {
           </p>
         </div>
 
-        {/* Portal Cards Grid */}
+        {/* Portal Cards Grid - Large rounded GovTech cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {PORTALS_COVERED.map((portal, idx) => (
             <div
               key={idx}
-              className="p-6 sm:p-8 rounded-2xl bg-white border border-yellow-100/90 hover:border-[#EAB308] hover:shadow-xl hover:shadow-yellow-500/10 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between"
+              className="p-7 sm:p-8 rounded-3xl bg-white border border-slate-200/90 hover:border-blue-500 hover:shadow-xl hover:shadow-blue-600/10 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between"
             >
               {/* Top Hover Accent Bar */}
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#B45309] via-[#EAB308] to-[#FDE047] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               <div>
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <span className="inline-block px-2.5 py-1 rounded-md bg-[#FEFCE8] border border-yellow-200 text-[#854D0E] text-xs font-semibold mb-2">
-                    {portal.type}
-                  </span>
-                  <h3 className="text-xl font-bold text-slate-900 group-hover:text-[#A16207] transition-colors">
-                    {portal.name}
-                  </h3>
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <span className="inline-block px-3 py-1 rounded-lg bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold mb-2">
+                      {portal.type}
+                    </span>
+                    <h3 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                      {portal.name}
+                    </h3>
+                  </div>
+                  <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-500 group-hover:text-blue-600 transition-colors">
+                    <ExternalLink className="w-4 h-4" />
+                  </div>
                 </div>
-                <div className="p-2 rounded-lg bg-[#FEFDF9] border border-yellow-100 text-slate-500 group-hover:text-[#CA8A04] transition-colors">
-                  <ExternalLink className="w-4 h-4" />
+
+                <div className="font-mono text-xs text-slate-500 mb-3">
+                  Domain / Coverage: <span className="text-blue-600 font-semibold">{portal.domain}</span>
                 </div>
-              </div>
 
-              <div className="font-mono text-xs text-slate-500 mb-3">
-                Domain / Coverage: <span className="text-[#A16207] font-semibold">{portal.domain}</span>
-              </div>
-
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5 font-normal">
-                {portal.description}
-              </p>
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5 font-normal">
+                  {portal.description}
+                </p>
               </div>
 
               <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
-                <span className="flex items-center text-xs font-bold text-[#854D0E]">
-                  <CheckCircle2 className="w-4 h-4 mr-1.5 text-[#CA8A04]" />
+                <span className="flex items-center text-xs font-bold text-slate-800">
+                  <CheckCircle2 className="w-4 h-4 mr-1.5 text-cyan-600" />
                   {portal.highlight}
                 </span>
-                <span className="text-[11px] text-slate-500">Empanelment Ready</span>
+                <span className="text-[11px] text-slate-500 font-medium">Empanelment Ready</span>
               </div>
 
             </div>
           ))}
         </div>
 
-        {/* PSUs Empanelment Banner */}
-        <div className="mt-12 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-[#FEF9C3] via-[#FDE047] to-[#FACC15] text-slate-900 border-2 border-yellow-400 text-center space-y-3 shadow-xl relative overflow-hidden">
-          <div className="inline-flex items-center space-x-1.5 text-xs font-bold uppercase tracking-wider text-[#78350F] bg-white/90 border border-yellow-400 px-3.5 py-1.5 rounded-full shadow-sm">
-            <Award className="w-4 h-4 text-[#CA8A04]" />
+        {/* PSUs Empanelment Banner - Large rounded GovTech plaque */}
+        <div className="mt-12 p-7 sm:p-9 rounded-3xl bg-gradient-to-r from-[#060D20] via-[#0B1536] to-[#111C44] text-white border border-blue-500/30 text-center space-y-3 shadow-xl relative overflow-hidden">
+          <div className="inline-flex items-center space-x-1.5 text-xs font-bold uppercase tracking-wider text-cyan-300 bg-blue-950/80 border border-cyan-500/40 px-4 py-1.5 rounded-full shadow-sm">
+            <Award className="w-4 h-4 text-cyan-400" />
             <span>Specialized Supplier Registration & Empanelment</span>
           </div>
-          <div className="text-base sm:text-lg font-black text-slate-950">
+          <div className="text-base sm:text-lg font-bold text-white">
             BHEL, EIL & Indian Railways etc • NTPC • IOCL • GAIL etc • Defence & State Portals
           </div>
-          <p className="text-xs sm:text-sm text-slate-800 font-medium max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed font-normal">
             We prepare vendor dossiers, balance sheet compilations, technical capability declarations, and handle complete department liaisoning.
           </p>
         </div>

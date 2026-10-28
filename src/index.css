@@ -7,67 +7,97 @@
     scroll-behavior: smooth;
   }
   body {
-    background-color: #FEFCE8;
-    color: #1E293B;
+    background-color: #F8FAFC;
+    color: #0F172A;
   }
 }
 
-/* Executive Light Theme Glass & Shadow Utilities */
-.glass-panel-light {
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(226, 232, 240, 0.8);
+/* GovTech & FinTech Utility Classes */
+.glass-panel-govtech {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.glass-panel-dark {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(59, 130, 246, 0.2);
 }
 
 .executive-card {
   background: #FFFFFF;
   border: 1px solid #E2E8F0;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .executive-card:hover {
-  border-color: #EAB308;
-  box-shadow: 0 10px 25px -5px rgba(234, 179, 8, 0.16), 0 8px 10px -6px rgba(234, 179, 8, 0.08);
-  transform: translateY(-2px);
+  border-color: #2563EB;
+  box-shadow: 0 16px 32px -4px rgba(37, 99, 235, 0.12);
+  transform: translateY(-3px);
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #B45309 0%, #D97706 35%, #EAB308 100%);
+  background: linear-gradient(135deg, #0284C7 0%, #2563EB 50%, #4F46E5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #06B6D4 0%, #0284C7 50%, #2563EB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-teal {
+  background: linear-gradient(135deg, #14B8A6 0%, #0D9488 50%, #0284C7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-amber {
-  background: linear-gradient(135deg, #CA8A04 0%, #EAB308 50%, #FACC15 100%);
+  background: linear-gradient(135deg, #0284C7 0%, #2563EB 50%, #38BDF8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-gold {
-  background: linear-gradient(135deg, #EAB308 0%, #FACC15 100%);
+  background: linear-gradient(135deg, #38BDF8 0%, #60A5FA 50%, #818CF8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-warm {
-  background: linear-gradient(135deg, #B45309 0%, #EAB308 50%, #FDE047 100%);
+  background: linear-gradient(135deg, #06B6D4 0%, #3B82F6 50%, #6366F1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Custom Scrollbar */
+/* Digital Network Pattern Overlay */
+.network-grid {
+  background-image: radial-gradient(rgba(148, 163, 184, 0.25) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.network-grid-dark {
+  background-image: radial-gradient(rgba(56, 189, 248, 0.18) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+}
+
+/* Custom Sleek Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #FEF9C3;
+  background: #F1F5F9;
 }
 ::-webkit-scrollbar-thumb {
-  background: #FACC15;
+  background: #0284C7;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #EAB308;
+  background: #1D4ED8;
 }

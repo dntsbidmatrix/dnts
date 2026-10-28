@@ -65,10 +65,10 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
   };
 
   return (
-    <footer className="relative bg-gradient-to-b from-[#FEF9C3] via-[#FEF08A] to-[#FDE047] text-slate-900 overflow-hidden shadow-2xl border-t-2 border-yellow-400">
+    <footer className="relative bg-gradient-to-b from-[#060D20] via-[#09122C] to-[#030712] text-white overflow-hidden shadow-2xl border-t border-slate-800">
       {/* Subtle background glow for texture */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#FACC15]/20 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[#F59E0B]/15 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
         
@@ -89,14 +89,14 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
               }}
               className="flex items-center space-x-3 cursor-pointer group"
             >
-              <div className="w-11 h-11 rounded-full flex items-center justify-center drop-shadow-md group-hover:scale-105 transition-transform overflow-hidden ring-1 ring-yellow-400 shadow-sm">
+              <div className="w-11 h-11 rounded-full flex items-center justify-center drop-shadow-md group-hover:scale-105 transition-transform overflow-hidden ring-1 ring-blue-500/40 shadow-sm">
                 <img src="/logo.png" alt="D Nandani Tech Solutions" className="w-full h-full object-contain rounded-full" />
               </div>
               <div>
-                <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-950 drop-shadow-sm group-hover:text-[#78350F] transition-colors">
+                <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-white drop-shadow-sm group-hover:text-cyan-400 transition-colors">
                   D Nandani Tech Solutions
                 </h3>
-                <p className="text-[11px] text-[#854D0E] font-bold uppercase tracking-wider">
+                <p className="text-[11px] text-cyan-400 font-bold uppercase tracking-wider">
                   Systematic Approach to Government Operations
                 </p>
               </div>
@@ -104,20 +104,20 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
 
             {/* Head Office */}
             <div className="space-y-1">
-              <h4 className="text-sm font-bold text-[#78350F] uppercase tracking-wider flex items-center">
+              <h4 className="text-sm font-bold text-cyan-300 uppercase tracking-wider flex items-center">
                 <span>Head Office</span>
               </h4>
-              <p className="text-sm text-slate-800 font-medium leading-relaxed max-w-md">
+              <p className="text-sm text-slate-300 font-medium leading-relaxed max-w-md">
                 {COMPANY_INFO.headOffice || "Begusarai, Bihar, 851130"}
               </p>
             </div>
 
             {/* Sales Office */}
             <div className="space-y-1 pt-1">
-              <h4 className="text-sm font-bold text-[#78350F] uppercase tracking-wider flex items-center">
+              <h4 className="text-sm font-bold text-cyan-300 uppercase tracking-wider flex items-center">
                 <span>Sales Office</span>
               </h4>
-              <p className="text-sm text-slate-800 font-medium leading-relaxed max-w-md">
+              <p className="text-sm text-slate-300 font-medium leading-relaxed max-w-md">
                 {COMPANY_INFO.salesOffice || "F-171A/2, Ground Floor, F Block, Gali No.17, Ayanagar Extn, PH-6, Delhi 110047"}
               </p>
             </div>
@@ -128,7 +128,7 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-white/80 text-slate-800 flex items-center justify-center hover:bg-slate-950 hover:text-yellow-300 hover:scale-110 shadow-sm border border-yellow-300 transition-all duration-200"
+                className="w-8 h-8 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-blue-600 hover:text-white hover:scale-110 shadow-sm border border-white/10 transition-all duration-200"
                 aria-label="Facebook"
               >
                 <FacebookIcon />
@@ -138,7 +138,7 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-white/80 text-slate-800 flex items-center justify-center hover:bg-slate-950 hover:text-yellow-300 hover:scale-110 shadow-sm border border-yellow-300 transition-all duration-200"
+                className="w-8 h-8 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-blue-600 hover:text-white hover:scale-110 shadow-sm border border-white/10 transition-all duration-200"
                 aria-label="LinkedIn"
               >
                 <LinkedinIcon />
@@ -148,7 +148,7 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-white/80 text-slate-800 flex items-center justify-center hover:bg-slate-950 hover:text-yellow-300 hover:scale-110 shadow-sm border border-yellow-300 transition-all duration-200"
+                className="w-8 h-8 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-blue-600 hover:text-white hover:scale-110 shadow-sm border border-white/10 transition-all duration-200"
                 aria-label="Twitter / X"
               >
                 <TwitterIcon />
@@ -158,7 +158,7 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
                 href="https://youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-white/80 text-slate-800 flex items-center justify-center hover:bg-slate-950 hover:text-yellow-300 hover:scale-110 shadow-sm border border-yellow-300 transition-all duration-200"
+                className="w-8 h-8 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-blue-600 hover:text-white hover:scale-110 shadow-sm border border-white/10 transition-all duration-200"
                 aria-label="YouTube"
               >
                 <YoutubeIcon />
@@ -168,7 +168,7 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
                 href={COMPANY_INFO.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-white/80 hover:bg-slate-950 text-[#713F12] hover:text-yellow-300 border border-yellow-400 text-xs font-bold shadow-sm transition-all hover:scale-105"
+                className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-cyan-950/70 hover:bg-cyan-500 text-cyan-300 hover:text-slate-950 border border-cyan-500/40 text-xs font-bold shadow-sm transition-all hover:scale-105"
               >
                 <MessageSquare className="w-3.5 h-3.5 mr-1.5" />
                 <span>WhatsApp Desk</span>
@@ -177,11 +177,11 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
 
             {/* Official GSTIN Badge */}
             <div className="pt-2">
-              <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-white/80 border border-yellow-300 text-xs text-slate-800 shadow-sm">
-                <ShieldCheck className="w-4 h-4 text-[#CA8A04]" />
-                <span>GSTIN: <strong className="font-mono text-[#78350F] font-bold">{COMPANY_INFO.gstin}</strong></span>
-                <span className="text-yellow-400">|</span>
-                <span className="text-slate-600">State: Bihar (10)</span>
+              <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-xl bg-white/5 border border-white/10 text-xs text-slate-300 shadow-sm">
+                <ShieldCheck className="w-4 h-4 text-cyan-400" />
+                <span>GSTIN: <strong className="font-mono text-cyan-300 font-bold">{COMPANY_INFO.gstin}</strong></span>
+                <span className="text-slate-600">|</span>
+                <span className="text-slate-400">State: Bihar (10)</span>
               </div>
             </div>
 
@@ -189,17 +189,17 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
 
           {/* Column 2: COMPANY (Real sections on our website) (lg:col-span-3) */}
           <div className="lg:col-span-3 space-y-3">
-            <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#78350F]">
+            <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-cyan-400">
               COMPANY
             </h4>
-            <ul className="space-y-2.5 text-sm text-slate-800">
+            <ul className="space-y-2.5 text-sm text-slate-300">
               <li>
                 <a 
                   href="#services" 
                   onClick={(e) => handleLinkClick(e, 'services')}
-                  className="hover:text-[#78350F] hover:underline transition-colors flex items-center group font-medium"
+                  className="hover:text-cyan-300 hover:underline transition-colors flex items-center group font-medium"
                 >
-                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-[#A16207] group-hover:translate-x-0.5 transition-transform" />
+                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-cyan-400 group-hover:translate-x-0.5 transition-transform" />
                   <span>Our Services</span>
                 </a>
               </li>
@@ -207,9 +207,9 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
                 <a 
                   href="#portals" 
                   onClick={(e) => handleLinkClick(e, 'portals')}
-                  className="hover:text-[#78350F] hover:underline transition-colors flex items-center group font-medium"
+                  className="hover:text-cyan-300 hover:underline transition-colors flex items-center group font-medium"
                 >
-                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-[#A16207] group-hover:translate-x-0.5 transition-transform" />
+                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-cyan-400 group-hover:translate-x-0.5 transition-transform" />
                   <span>Portals & PSUs Covered</span>
                 </a>
               </li>
@@ -217,9 +217,9 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
                 <a 
                   href="#workflow" 
                   onClick={(e) => handleLinkClick(e, 'workflow')}
-                  className="hover:text-[#78350F] hover:underline transition-colors flex items-center group font-medium"
+                  className="hover:text-cyan-300 hover:underline transition-colors flex items-center group font-medium"
                 >
-                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-[#A16207] group-hover:translate-x-0.5 transition-transform" />
+                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-cyan-400 group-hover:translate-x-0.5 transition-transform" />
                   <span>5-Stage Bidding Lifecycle</span>
                 </a>
               </li>
@@ -227,9 +227,9 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
                 <a 
                   href="#compliance" 
                   onClick={(e) => handleLinkClick(e, 'compliance')}
-                  className="hover:text-[#78350F] hover:underline transition-colors flex items-center group font-medium"
+                  className="hover:text-cyan-300 hover:underline transition-colors flex items-center group font-medium"
                 >
-                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-[#A16207] group-hover:translate-x-0.5 transition-transform" />
+                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-cyan-400 group-hover:translate-x-0.5 transition-transform" />
                   <span>Compliance & FAQs</span>
                 </a>
               </li>
@@ -237,9 +237,9 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
                 <a 
                   href="#contact" 
                   onClick={(e) => handleLinkClick(e, 'contact')}
-                  className="hover:text-[#78350F] hover:underline transition-colors flex items-center group font-medium"
+                  className="hover:text-cyan-300 hover:underline transition-colors flex items-center group font-medium"
                 >
-                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-[#A16207] group-hover:translate-x-0.5 transition-transform" />
+                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-cyan-400 group-hover:translate-x-0.5 transition-transform" />
                   <span>Contact Proposal Desk</span>
                 </a>
               </li>
@@ -247,11 +247,11 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
                 <a 
                   href="/about" 
                   onClick={handleAboutClick}
-                  className={`hover:text-[#78350F] hover:underline transition-colors flex items-center group font-medium ${
-                    currentRoute === 'about' ? 'text-[#78350F] font-bold' : ''
+                  className={`hover:text-cyan-300 hover:underline transition-colors flex items-center group font-medium ${
+                    currentRoute === 'about' ? 'text-cyan-400 font-bold' : ''
                   }`}
                 >
-                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-[#A16207] group-hover:translate-x-0.5 transition-transform" />
+                  <ChevronRight className="w-3.5 h-3.5 mr-1 text-cyan-400 group-hover:translate-x-0.5 transition-transform" />
                   <span>About Us</span>
                 </a>
               </li>
@@ -259,11 +259,11 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
 
             {/* Quick Virtual Bid Manager Callout */}
             <div className="pt-4">
-              <div className="p-3.5 rounded-xl bg-white/80 border border-yellow-300 text-xs space-y-1.5 shadow-sm">
-                <div className="font-bold text-slate-900 flex items-center">
+              <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-xs space-y-1.5 shadow-sm text-white">
+                <div className="font-bold text-white flex items-center">
                   <span>Outsourced Bid Management</span>
                 </div>
-                <p className="text-[11px] text-slate-700 leading-relaxed font-normal">
+                <p className="text-[11px] text-slate-300 leading-relaxed font-normal">
                   Dedicated virtual department for MSMEs & OEMs without in-house bid managers.
                 </p>
               </div>
@@ -272,15 +272,15 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
 
           {/* Column 3: CORE CAPABILITIES (Our services offered) (lg:col-span-2) */}
           <div className="lg:col-span-2 space-y-3">
-            <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#78350F]">
+            <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-cyan-400">
               CORE SERVICES
             </h4>
-            <ul className="space-y-2 text-xs sm:text-sm text-slate-800">
+            <ul className="space-y-2 text-xs sm:text-sm text-slate-300">
               <li>
                 <a 
                   href="#services" 
                   onClick={(e) => handleLinkClick(e, 'services')}
-                  className="hover:text-[#78350F] hover:underline transition-colors block font-medium"
+                  className="hover:text-cyan-300 hover:underline transition-colors block font-medium"
                 >
                   GEM & NON-GEM Registration/Bid Management
                 </a>
@@ -289,7 +289,7 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
                 <a 
                   href="#services" 
                   onClick={(e) => handleLinkClick(e, 'services')}
-                  className="hover:text-[#78350F] hover:underline transition-colors block font-medium"
+                  className="hover:text-cyan-300 hover:underline transition-colors block font-medium"
                 >
                   UNGM Registration/RFQ Management
                 </a>
@@ -298,7 +298,7 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
                 <a 
                   href="#services" 
                   onClick={(e) => handleLinkClick(e, 'services')}
-                  className="hover:text-[#78350F] hover:underline transition-colors block font-medium"
+                  className="hover:text-cyan-300 hover:underline transition-colors block font-medium"
                 >
                   Vendor Assessment
                 </a>
@@ -307,7 +307,7 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
                 <a 
                   href="#services" 
                   onClick={(e) => handleLinkClick(e, 'services')}
-                  className="hover:text-[#78350F] hover:underline transition-colors block font-medium"
+                  className="hover:text-cyan-300 hover:underline transition-colors block font-medium"
                 >
                   Vendor Exemption
                 </a>
@@ -316,7 +316,7 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
                 <a 
                   href="#services" 
                   onClick={(e) => handleLinkClick(e, 'services')}
-                  className="hover:text-[#78350F] hover:underline transition-colors block font-medium"
+                  className="hover:text-cyan-300 hover:underline transition-colors block font-medium"
                 >
                   PSUs Empanelment (BHEL, EIL etc)
                 </a>
@@ -325,7 +325,7 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
                 <a 
                   href="#services" 
                   onClick={(e) => handleLinkClick(e, 'services')}
-                  className="hover:text-[#78350F] hover:underline transition-colors block font-medium"
+                  className="hover:text-cyan-300 hover:underline transition-colors block font-medium"
                 >
                   OEM Panel and OEM Dashboard
                 </a>
@@ -334,7 +334,7 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
                 <a 
                   href="#services" 
                   onClick={(e) => handleLinkClick(e, 'services')}
-                  className="hover:text-[#78350F] hover:underline transition-colors block font-medium"
+                  className="hover:text-cyan-300 hover:underline transition-colors block font-medium"
                 >
                   BOQ Study & Rate Strategy
                 </a>
@@ -343,7 +343,7 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
                 <a 
                   href="#services" 
                   onClick={(e) => handleLinkClick(e, 'services')}
-                  className="hover:text-[#78350F] hover:underline transition-colors block font-medium"
+                  className="hover:text-cyan-300 hover:underline transition-colors block font-medium"
                 >
                   Live Reverse & Forward Auction
                 </a>
@@ -352,7 +352,7 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
                 <a 
                   href="#services" 
                   onClick={(e) => handleLinkClick(e, 'services')}
-                  className="hover:text-[#78350F] hover:underline transition-colors block font-medium"
+                  className="hover:text-cyan-300 hover:underline transition-colors block font-medium"
                 >
                   Contract Management
                 </a>
@@ -362,50 +362,50 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
 
           {/* Column 4: DIRECT CONNECT & PROPOSAL DESK (lg:col-span-2) */}
           <div className="lg:col-span-2 space-y-4">
-            <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#78350F]">
+            <h4 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-cyan-400">
               PROPOSAL DESK
             </h4>
             
-            <div className="space-y-3 text-xs sm:text-sm text-slate-800">
+            <div className="space-y-3 text-xs sm:text-sm text-slate-300">
               {/* Phone 1 */}
               <div>
-                <div className="text-[11px] text-[#854D0E] uppercase font-bold">Begusarai HQ:</div>
+                <div className="text-[11px] text-slate-400 uppercase font-semibold">Begusarai HQ:</div>
                 <a 
                   href={`tel:${COMPANY_INFO.phoneRaw}`} 
-                  className="font-bold text-slate-900 hover:text-[#78350F] transition-colors flex items-center mt-0.5"
+                  className="font-bold text-white hover:text-cyan-300 transition-colors flex items-center mt-0.5"
                 >
-                  <Phone className="w-3.5 h-3.5 mr-1.5 flex-shrink-0 text-[#A16207]" />
+                  <Phone className="w-3.5 h-3.5 mr-1.5 flex-shrink-0 text-cyan-400" />
                   <span>{COMPANY_INFO.phone}</span>
                 </a>
               </div>
 
               {/* Phone 2 */}
               <div>
-                <div className="text-[11px] text-[#854D0E] uppercase font-bold">Delhi Sales Desk:</div>
+                <div className="text-[11px] text-slate-400 uppercase font-semibold">Delhi Sales Desk:</div>
                 <a 
                   href={`tel:${COMPANY_INFO.altPhoneRaw}`} 
-                  className="font-bold text-slate-900 hover:text-[#78350F] transition-colors flex items-center mt-0.5"
+                  className="font-bold text-white hover:text-cyan-300 transition-colors flex items-center mt-0.5"
                 >
-                  <Phone className="w-3.5 h-3.5 mr-1.5 flex-shrink-0 text-[#A16207]" />
+                  <Phone className="w-3.5 h-3.5 mr-1.5 flex-shrink-0 text-cyan-400" />
                   <span>{COMPANY_INFO.altPhone}</span>
                 </a>
               </div>
 
               {/* Email */}
               <div>
-                <div className="text-[11px] text-[#854D0E] uppercase font-bold">Official Email:</div>
+                <div className="text-[11px] text-slate-400 uppercase font-semibold">Official Email:</div>
                 <a 
                   href={`mailto:${COMPANY_INFO.email}`} 
-                  className="font-bold text-slate-900 hover:text-[#78350F] transition-colors break-all flex items-center mt-0.5"
+                  className="font-medium text-white hover:text-cyan-300 transition-colors break-all flex items-center mt-0.5"
                 >
-                  <Mail className="w-3.5 h-3.5 mr-1.5 flex-shrink-0 text-[#A16207]" />
+                  <Mail className="w-3.5 h-3.5 mr-1.5 flex-shrink-0 text-cyan-400" />
                   <span>{COMPANY_INFO.email}</span>
                 </a>
               </div>
 
               {/* Working Hours */}
-              <div className="flex items-start space-x-1.5 text-[11px] text-slate-700 pt-1 font-medium">
-                <Clock className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-[#A16207]" />
+              <div className="flex items-start space-x-1.5 text-[11px] text-slate-400 pt-1 font-medium">
+                <Clock className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-cyan-400" />
                 <span>{COMPANY_INFO.workingHours}</span>
               </div>
             </div>
@@ -414,9 +414,9 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
             <div className="pt-2">
               <button
                 onClick={() => onOpenInquiry && onOpenInquiry('Our Outsourced Bid Manager Package')}
-                className="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-slate-950 hover:bg-slate-900 text-yellow-300 hover:text-white font-black text-xs shadow-xl shadow-slate-950/20 border border-yellow-400/40 transition-all hover:scale-105"
+                className="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white font-bold text-xs shadow-lg shadow-blue-600/30 transition-all hover:scale-105"
               >
-                <Send className="w-3.5 h-3.5 mr-1.5 text-yellow-400" />
+                <Send className="w-3.5 h-3.5 mr-1.5" />
                 <span>Request Proposal</span>
               </button>
             </div>
@@ -425,23 +425,23 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
         </div>
 
         {/* Bottom Bar: Statutory Summary & Copyright */}
-        <div className="mt-14 pt-6 pb-2 border-t border-yellow-400/40 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-700 bg-yellow-400/20 px-4 sm:px-6 rounded-2xl">
+        <div className="mt-14 pt-6 pb-2 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <div className="text-center md:text-left space-y-1">
-            <p className="font-bold text-slate-900">
+            <p className="font-bold text-slate-200">
               © {new Date().getFullYear()} D NANDANI TECH SOLUTIONS. All Rights Reserved.
             </p>
-            <p className="text-[11px] text-slate-700">
+            <p className="text-[11px] text-slate-400">
               Begusarai (Bihar) • Delhi NCR • Pan-India Government Tender Advisory & Bid Processing Management.
             </p>
           </div>
 
           <div className="flex items-center space-x-4">
-            <span className="hidden sm:inline-block text-[11px] text-slate-800 font-semibold">
+            <span className="hidden sm:inline-block text-[11px] text-slate-300 font-semibold">
               ⚡ Systematic Approach to Government Operations
             </span>
             <button
               onClick={scrollToTop}
-              className="p-2.5 rounded-xl bg-white/80 hover:bg-slate-950 hover:text-yellow-300 text-slate-800 border border-yellow-300 transition-all shadow-sm group"
+              className="p-2.5 rounded-xl bg-white/10 hover:bg-blue-600 text-white border border-white/20 transition-all shadow-sm group"
               aria-label="Scroll to top"
               title="Scroll to top"
             >
