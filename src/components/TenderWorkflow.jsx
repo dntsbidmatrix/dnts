@@ -56,121 +56,49 @@ export default function TenderWorkflow() {
           </p>
         </div>
 
-        {/* Workflow Timeline Steps with Full-Bleed Fluid Wave Lines Stream (Ref: Image 2) */}
+        {/* Workflow Timeline Steps with Full-Bleed Light Fluid Wave (Ref: User request) */}
         <div className="relative">
-          {/* Full-Bleed Screen-to-Screen Fluid Wave (Touches both screen edges, spans across vertical center of all 5 cards) */}
+          {/* Full-Bleed Screen-to-Screen Light Fluid Wave (Touches both screen edges, centered across all 5 cards) */}
           <div className="hidden md:block absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-screen pointer-events-none -z-0 overflow-hidden">
-            <svg className="w-full h-64 pointer-events-none" viewBox="0 0 1920 220" fill="none" preserveAspectRatio="none">
-              {/* Layer 1: Ambient Background Depth Ribbon */}
-              <path 
-                d="M 0,70 C 240,45 480,110 720,70 C 960,30 1200,95 1440,55 C 1680,15 1800,80 1920,65 L 1920,155 C 1800,140 1680,195 1440,165 C 1200,125 960,190 720,150 C 480,110 240,175 0,150 Z" 
-                fill="url(#cool-wave-depth)" 
-              />
-
-              {/* Layer 2: Main Fluid Ribbon Body (Soft Glowing Cyan-to-Indigo Gradient) */}
+            <svg className="w-full h-52 pointer-events-none" viewBox="0 0 1920 220" fill="none" preserveAspectRatio="none">
+              {/* Soft, Light Fluid Ribbon Body */}
               <path 
                 d="M 0,88 C 120,80 180,73 240,73 C 360,73 420,98 480,98 C 540,98 660,73 720,73 C 780,73 900,93 960,93 C 1020,93 1140,73 1200,73 C 1260,73 1380,98 1440,98 C 1500,98 1620,73 1680,73 C 1760,73 1840,85 1920,88 L 1920,132 C 1840,129 1760,117 1680,117 C 1620,117 1500,142 1440,142 C 1380,142 1260,117 1200,117 C 1140,117 1020,137 960,137 C 900,137 780,117 720,117 C 660,117 540,142 480,142 C 420,142 360,117 240,117 C 180,117 120,124 0,132 Z" 
-                fill="url(#cool-wave-body)" 
+                fill="url(#light-wave-body)" 
               />
 
-              {/* Layer 3: Harmonic Flow Lines (Solid Luminous Wave Vector Lines from Image 2 - Zero Dots) */}
-              {/* Top Boundary Line */}
+              {/* Single Delicate Hairline Contour on Top (Thin, Light, Clean) */}
               <path 
                 d="M 0,88 C 120,80 180,73 240,73 C 360,73 420,98 480,98 C 540,98 660,73 720,73 C 780,73 900,93 960,93 C 1020,93 1140,73 1200,73 C 1260,73 1380,98 1440,98 C 1500,98 1620,73 1680,73 C 1760,73 1840,85 1920,88" 
-                stroke="url(#cool-wave-stroke-1)" 
-                strokeWidth="2.5" 
+                stroke="url(#light-wave-stroke)" 
+                strokeWidth="1" 
                 fill="none" 
-                opacity="0.9" 
+                opacity="0.45" 
               />
 
-              {/* Upper Echo Line */}
-              <path 
-                d="M 0,72 C 160,55 320,110 480,78 C 640,46 800,102 960,70 C 1120,38 1280,94 1440,62 C 1600,30 1760,86 1920,72" 
-                stroke="url(#cool-wave-stroke-cyan)" 
-                strokeWidth="1.5" 
-                fill="none" 
-                opacity="0.65" 
-              />
-
-              {/* Center Flowing Spine Line */}
-              <path 
-                d="M 0,110 C 120,102 180,95 240,95 C 360,95 420,120 480,120 C 540,120 660,95 720,95 C 780,95 900,115 960,115 C 1020,115 1140,95 1200,95 C 1260,95 1380,120 1440,120 C 1500,120 1620,95 1680,95 C 1760,95 1840,107 1920,110" 
-                stroke="url(#cool-wave-stroke-2)" 
-                strokeWidth="2" 
-                fill="none" 
-                opacity="0.8" 
-              />
-
-              {/* Lower Echo Line */}
-              <path 
-                d="M 0,148 C 160,165 320,110 480,142 C 640,174 800,118 960,150 C 1120,182 1280,126 1440,158 C 1600,190 1760,134 1920,148" 
-                stroke="url(#cool-wave-stroke-indigo)" 
-                strokeWidth="1.5" 
-                fill="none" 
-                opacity="0.55" 
-              />
-
-              {/* Bottom Boundary Line */}
+              {/* Single Delicate Hairline Contour on Bottom (Thin, Light, Clean) */}
               <path 
                 d="M 0,132 C 120,124 180,117 240,117 C 360,117 420,142 480,142 C 540,142 660,117 720,117 C 780,117 900,137 960,137 C 1020,137 1140,117 1200,117 C 1260,117 1380,142 1440,142 C 1500,142 1620,117 1680,117 C 1760,117 1840,129 1920,132" 
-                stroke="url(#cool-wave-stroke-3)" 
-                strokeWidth="2.5" 
+                stroke="url(#light-wave-stroke)" 
+                strokeWidth="1" 
                 fill="none" 
-                opacity="0.85" 
+                opacity="0.35" 
               />
 
               <defs>
-                {/* Main Body Gradient */}
-                <linearGradient id="cool-wave-body" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stopColor="#06B6D4" stopOpacity="0.28" />
-                  <stop offset="25%" stopColor="#38BDF8" stopOpacity="0.25" />
-                  <stop offset="50%" stopColor="#2563EB" stopOpacity="0.22" />
-                  <stop offset="75%" stopColor="#4F46E5" stopOpacity="0.24" />
-                  <stop offset="100%" stopColor="#0EA5E9" stopOpacity="0.28" />
+                {/* Light Airy Gradient Body */}
+                <linearGradient id="light-wave-body" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.14" />
+                  <stop offset="35%" stopColor="#60A5FA" stopOpacity="0.11" />
+                  <stop offset="70%" stopColor="#818CF8" stopOpacity="0.09" />
+                  <stop offset="100%" stopColor="#06B6D4" stopOpacity="0.13" />
                 </linearGradient>
 
-                {/* Depth Wave Gradient */}
-                <linearGradient id="cool-wave-depth" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stopColor="#0284C7" stopOpacity="0.14" />
-                  <stop offset="50%" stopColor="#3B82F6" stopOpacity="0.11" />
-                  <stop offset="100%" stopColor="#6366F1" stopOpacity="0.13" />
-                </linearGradient>
-
-                {/* Stroke Gradient 1 */}
-                <linearGradient id="cool-wave-stroke-1" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stopColor="#06B6D4" />
-                  <stop offset="35%" stopColor="#38BDF8" />
-                  <stop offset="70%" stopColor="#2563EB" />
-                  <stop offset="100%" stopColor="#0EA5E9" />
-                </linearGradient>
-
-                {/* Stroke Gradient 2 */}
-                <linearGradient id="cool-wave-stroke-2" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stopColor="#0EA5E9" />
-                  <stop offset="50%" stopColor="#3B82F6" />
-                  <stop offset="100%" stopColor="#6366F1" />
-                </linearGradient>
-
-                {/* Stroke Gradient 3 */}
-                <linearGradient id="cool-wave-stroke-3" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stopColor="#38BDF8" />
-                  <stop offset="40%" stopColor="#2563EB" />
-                  <stop offset="80%" stopColor="#4F46E5" />
-                  <stop offset="100%" stopColor="#06B6D4" />
-                </linearGradient>
-
-                {/* Cyan Echo Stroke */}
-                <linearGradient id="cool-wave-stroke-cyan" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stopColor="#22D3EE" />
+                {/* Light Hairline Stroke */}
+                <linearGradient id="light-wave-stroke" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stopColor="#0284C7" />
                   <stop offset="50%" stopColor="#38BDF8" />
-                  <stop offset="100%" stopColor="#60A5FA" />
-                </linearGradient>
-
-                {/* Indigo Echo Stroke */}
-                <linearGradient id="cool-wave-stroke-indigo" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stopColor="#818CF8" />
-                  <stop offset="50%" stopColor="#6366F1" />
-                  <stop offset="100%" stopColor="#38BDF8" />
+                  <stop offset="100%" stopColor="#6366F1" />
                 </linearGradient>
               </defs>
             </svg>
