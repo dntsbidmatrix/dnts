@@ -65,21 +65,58 @@ export default function ComplianceSection() {
           </defs>
         </svg>
 
-        {/* Left Side: Modern 3D Tilted Capsule & Floating Sphere (Ref: Image 2) */}
-        <div className="hidden lg:block absolute left-8 top-1/4">
+        {/* Left Side: Modern Fluid Wave Blob Touching the Top Section Line (Ref: User request) */}
+        <div className="hidden lg:block absolute left-0 top-0 pointer-events-none">
           <div className="relative">
-            <div className="w-16 h-36 rounded-3xl bg-gradient-to-br from-blue-600/20 via-cyan-400/20 to-transparent rotate-[-20deg] shadow-xl shadow-blue-500/10 border border-white/70 backdrop-blur-sm" />
-            <div className="absolute -bottom-6 -right-4 w-12 h-12 rounded-full bg-gradient-to-tr from-cyan-400/35 to-blue-600/30 shadow-md border border-cyan-300/40" />
-            
-            {/* Crescent Arc (Ref: Image 1) */}
-            <svg className="absolute -top-8 -left-6 w-24 h-24 text-cyan-400 drop-shadow-md" viewBox="0 0 100 100" fill="none">
-              <path d="M 50 20 A 30 30 0 1 1 20 50" stroke="currentColor" strokeWidth="8" strokeLinecap="round" opacity="0.7" />
+            {/* Fluid Wave/Blob Shape Originating Directly from the Top Line */}
+            <svg className="w-64 h-96 pointer-events-none" viewBox="0 0 240 380" fill="none">
+              {/* Layer 1: Ambient Background Depth */}
+              <path 
+                d="M 0,0 L 140,0 C 140,90 190,170 150,260 C 120,330 50,370 0,370 Z" 
+                fill="url(#comp-left-depth)" 
+              />
+              {/* Layer 2: Main Fluid Blob Shape touching the top line */}
+              <path 
+                d="M 0,0 L 110,0 C 110,80 155,150 120,230 C 95,290 40,330 0,330 Z" 
+                fill="url(#comp-left-blob)" 
+              />
+              {/* Solid Luminous Contour Line */}
+              <path 
+                d="M 110,0 C 110,80 155,150 120,230 C 95,290 40,330 0,330" 
+                stroke="url(#comp-left-stroke)" 
+                strokeWidth="2.5" 
+              />
+              <defs>
+                <linearGradient id="comp-left-blob" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stopColor="#06B6D4" stopOpacity="0.28" />
+                  <stop offset="40%" stopColor="#38BDF8" stopOpacity="0.24" />
+                  <stop offset="80%" stopColor="#2563EB" stopOpacity="0.18" />
+                  <stop offset="100%" stopColor="#4F46E5" stopOpacity="0.12" />
+                </linearGradient>
+                <linearGradient id="comp-left-depth" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stopColor="#0284C7" stopOpacity="0.14" />
+                  <stop offset="100%" stopColor="#6366F1" stopOpacity="0.08" />
+                </linearGradient>
+                <linearGradient id="comp-left-stroke" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stopColor="#0284C7" />
+                  <stop offset="50%" stopColor="#38BDF8" />
+                  <stop offset="100%" stopColor="#6366F1" />
+                </linearGradient>
+              </defs>
             </svg>
+
+            {/* Layered Floating Sphere & Crescent Arc Hugging the Fluid Shape (Ref: Image 1 & 2) */}
+            <div className="absolute top-44 left-16">
+              <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-cyan-400/40 via-blue-500/30 to-indigo-600/30 shadow-lg border border-cyan-300/40" />
+              <svg className="absolute -top-6 -left-6 w-24 h-24 text-cyan-400 drop-shadow-md" viewBox="0 0 100 100" fill="none">
+                <path d="M 50 20 A 30 30 0 1 1 20 50" stroke="currentColor" strokeWidth="8" strokeLinecap="round" opacity="0.8" />
+              </svg>
+            </div>
           </div>
         </div>
 
         {/* Polka Dot Matrix Cluster (Ref: Image 1) */}
-        <div className="hidden sm:grid grid-cols-6 gap-2 absolute top-12 left-16 opacity-30">
+        <div className="hidden sm:grid grid-cols-6 gap-2 absolute top-10 left-44 opacity-30">
           {[...Array(18)].map((_, i) => (
             <span key={i} className="w-1.5 h-1.5 rounded-full bg-blue-600" />
           ))}
