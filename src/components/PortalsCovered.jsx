@@ -12,13 +12,23 @@ export default function PortalsCovered() {
         <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-cyan-500/[0.035] rounded-full blur-3xl" />
 
         {/* Organic Flowing Wave Ribbon across Upper Right (Ref: Image 1 & 3) */}
-        <svg className="hidden md:block absolute -top-8 right-0 w-[600px] h-72 opacity-50 text-cyan-500" viewBox="0 0 600 280" fill="none">
-          <path d="M100,0 C220,140 380,40 500,180 C560,240 600,200 600,160 L600,0 Z" fill="url(#portal-wave-grad)" opacity="0.3" />
-          <path d="M100,0 C220,140 380,40 500,180 C560,240 600,200 600,160" stroke="#38BDF8" strokeWidth="1.5" strokeDasharray="5 7" opacity="0.7" />
+        <svg className="hidden md:block absolute -top-8 right-0 w-[600px] h-72 pointer-events-none" viewBox="0 0 600 280" fill="none">
+          <path 
+            d="M100,0 C220,140 380,40 500,180 C560,240 600,200 600,160 L600,0 Z" 
+            fill="url(#portal-wave-grad)" 
+          />
+          <path 
+            d="M100,0 C220,140 380,40 500,180 C560,240 600,200 600,160" 
+            stroke="#0284C7" 
+            strokeWidth="1.75" 
+            strokeDasharray="5 7" 
+            opacity="0.8" 
+          />
           <defs>
             <linearGradient id="portal-wave-grad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#06B6D4" />
-              <stop offset="100%" stopColor="#2563EB" />
+              <stop offset="0%" stopColor="#06B6D4" stopOpacity="0.22" />
+              <stop offset="50%" stopColor="#38BDF8" stopOpacity="0.18" />
+              <stop offset="100%" stopColor="#2563EB" stopOpacity="0.15" />
             </linearGradient>
           </defs>
         </svg>

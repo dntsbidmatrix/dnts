@@ -52,13 +52,23 @@ export default function ContactSection() {
         <div className="absolute bottom-10 right-10 w-[550px] h-[550px] bg-cyan-500/[0.035] rounded-full blur-3xl" />
 
         {/* Top Left Organic Flowing Wave Ribbon (Ref: Image 1 & 3) */}
-        <svg className="hidden lg:block absolute -left-10 top-0 w-[500px] h-[400px] opacity-40 text-blue-600" viewBox="0 0 500 400" fill="none">
-          <path d="M0,0 L350,0 C280,140 400,220 320,340 C280,400 160,380 0,320 Z" fill="url(#contact-wave-grad)" opacity="0.3" />
-          <path d="M350,0 C280,140 400,220 320,340 C280,400 160,380 0,320" stroke="#38BDF8" strokeWidth="2" strokeDasharray="5 7" opacity="0.7" />
+        <svg className="hidden lg:block absolute -left-10 top-0 w-[500px] h-[400px] pointer-events-none" viewBox="0 0 500 400" fill="none">
+          <path 
+            d="M0,0 L350,0 C280,140 400,220 320,340 C280,400 160,380 0,320 Z" 
+            fill="url(#contact-wave-grad)" 
+          />
+          <path 
+            d="M350,0 C280,140 400,220 320,340 C280,400 160,380 0,320" 
+            stroke="#0284C7" 
+            strokeWidth="2" 
+            strokeDasharray="5 7" 
+            opacity="0.8" 
+          />
           <defs>
             <linearGradient id="contact-wave-grad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#2563EB" />
-              <stop offset="100%" stopColor="#06B6D4" />
+              <stop offset="0%" stopColor="#2563EB" stopOpacity="0.20" />
+              <stop offset="50%" stopColor="#0EA5E9" stopOpacity="0.24" />
+              <stop offset="100%" stopColor="#06B6D4" stopOpacity="0.18" />
             </linearGradient>
           </defs>
         </svg>

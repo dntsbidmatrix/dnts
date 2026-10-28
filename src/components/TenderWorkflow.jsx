@@ -11,14 +11,23 @@ export default function TenderWorkflow() {
         <div className="absolute top-1/4 left-1/3 w-[600px] h-64 bg-gradient-to-r from-blue-500/[0.04] via-cyan-500/[0.035] to-indigo-500/[0.035] rounded-full blur-3xl" />
 
         {/* Dynamic S-Wave Flow Ribbon behind Stages (Ref: Image 1 & 3) */}
-        <svg className="hidden md:block absolute top-[36%] left-0 w-full h-44 opacity-50 text-blue-600" viewBox="0 0 1440 200" fill="none" preserveAspectRatio="none">
-          <path d="M0,100 C300,180 600,20 900,140 C1200,220 1350,60 1440,100 L1440,160 C1350,120 1200,240 900,180 C600,60 300,220 0,140 Z" fill="url(#workflow-wave-grad)" opacity="0.3" />
-          <path d="M0,100 C300,180 600,20 900,140 C1200,220 1350,60 1440,100" stroke="#38BDF8" strokeWidth="2" strokeDasharray="5 7" opacity="0.6" />
+        <svg className="hidden md:block absolute top-[34%] left-0 w-full h-48 pointer-events-none" viewBox="0 0 1440 200" fill="none" preserveAspectRatio="none">
+          <path 
+            d="M0,100 C300,180 600,20 900,140 C1200,220 1350,60 1440,100 L1440,165 C1350,125 1200,245 900,185 C600,65 300,225 0,145 Z" 
+            fill="url(#workflow-wave-grad)" 
+          />
+          <path 
+            d="M0,100 C300,180 600,20 900,140 C1200,220 1350,60 1440,100" 
+            stroke="#0284C7" 
+            strokeWidth="2" 
+            strokeDasharray="5 7" 
+            opacity="0.8" 
+          />
           <defs>
             <linearGradient id="workflow-wave-grad" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stopColor="#38BDF8" />
-              <stop offset="50%" stopColor="#2563EB" />
-              <stop offset="100%" stopColor="#6366F1" />
+              <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.22" />
+              <stop offset="50%" stopColor="#2563EB" stopOpacity="0.18" />
+              <stop offset="100%" stopColor="#6366F1" stopOpacity="0.16" />
             </linearGradient>
           </defs>
         </svg>

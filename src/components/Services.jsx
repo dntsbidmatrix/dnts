@@ -46,17 +46,47 @@ export default function Services({ onSelectService }) {
         <div className="absolute bottom-10 left-1/3 w-[600px] h-[400px] bg-indigo-500/[0.03] rounded-full blur-3xl" />
 
         {/* Top Fluid Wave Ribbon with Tracing Contour (Ref: Image 1 & 3) */}
-        <svg className="absolute -top-10 left-0 w-full h-80 opacity-60 text-blue-500" viewBox="0 0 1440 320" fill="none" preserveAspectRatio="none">
-          <path d="M0,128 C280,240 540,40 840,160 C1120,260 1320,100 1440,60 L1440,0 L0,0 Z" fill="url(#services-wave-grad)" opacity="0.25" />
-          <path d="M0,128 C280,240 540,40 840,160 C1120,260 1320,100 1440,60" stroke="url(#services-wave-stroke)" strokeWidth="1.5" strokeDasharray="4 6" opacity="0.6" />
+        <svg className="absolute -top-10 left-0 w-full h-84 pointer-events-none" viewBox="0 0 1440 320" fill="none" preserveAspectRatio="none">
+          {/* Layer 1: Background Depth Wave (Subtle Offset Layer) */}
+          <path 
+            d="M0,95 C320,205 580,30 880,140 C1160,230 1340,75 1440,35 L1440,0 L0,0 Z" 
+            fill="url(#services-wave-back)" 
+          />
+          
+          {/* Layer 2: Main Colored Wave Curve Shape (Visible Gradient Wash) */}
+          <path 
+            d="M0,130 C280,245 540,45 840,165 C1120,265 1320,105 1440,65 L1440,0 L0,0 Z" 
+            fill="url(#services-wave-grad)" 
+          />
+
+          {/* Layer 3: Crisp Dotted Tracing Contour Line */}
+          <path 
+            d="M0,130 C280,245 540,45 840,165 C1120,265 1320,105 1440,65" 
+            stroke="url(#services-wave-stroke)" 
+            strokeWidth="1.75" 
+            strokeDasharray="5 7" 
+            opacity="0.85" 
+          />
+
           <defs>
+            {/* Primary Colored Wave Portion */}
             <linearGradient id="services-wave-grad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.3" />
-              <stop offset="50%" stopColor="#2563EB" stopOpacity="0.15" />
-              <stop offset="100%" stopColor="#6366F1" stopOpacity="0.2" />
+              <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.26" />
+              <stop offset="35%" stopColor="#0EA5E9" stopOpacity="0.22" />
+              <stop offset="70%" stopColor="#3B82F6" stopOpacity="0.18" />
+              <stop offset="100%" stopColor="#6366F1" stopOpacity="0.16" />
             </linearGradient>
+
+            {/* Depth Wave Layer */}
+            <linearGradient id="services-wave-back" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stopColor="#0284C7" stopOpacity="0.14" />
+              <stop offset="50%" stopColor="#38BDF8" stopOpacity="0.11" />
+              <stop offset="100%" stopColor="#818CF8" stopOpacity="0.12" />
+            </linearGradient>
+
+            {/* Dotted Stroke Line */}
             <linearGradient id="services-wave-stroke" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stopColor="#38BDF8" />
+              <stop offset="0%" stopColor="#0284C7" />
               <stop offset="50%" stopColor="#2563EB" />
               <stop offset="100%" stopColor="#06B6D4" />
             </linearGradient>
@@ -116,13 +146,23 @@ export default function Services({ onSelectService }) {
         </div>
 
         {/* Bottom Gentle Wave Transition into Quotation Plaque (Ref: Image 3) */}
-        <svg className="absolute bottom-24 right-0 w-full h-48 opacity-40 text-blue-600" viewBox="0 0 1440 200" fill="none" preserveAspectRatio="none">
-          <path d="M0,160 C360,60 720,190 1080,90 C1240,40 1360,110 1440,70 L1440,200 L0,200 Z" fill="url(#services-wave-bottom)" opacity="0.15" />
-          <path d="M0,160 C360,60 720,190 1080,90 C1240,40 1360,110 1440,70" stroke="#38BDF8" strokeWidth="1" strokeDasharray="3 5" opacity="0.5" />
+        <svg className="absolute bottom-24 right-0 w-full h-48 pointer-events-none" viewBox="0 0 1440 200" fill="none" preserveAspectRatio="none">
+          <path 
+            d="M0,160 C360,60 720,190 1080,90 C1240,40 1360,110 1440,70 L1440,200 L0,200 Z" 
+            fill="url(#services-wave-bottom)" 
+          />
+          <path 
+            d="M0,160 C360,60 720,190 1080,90 C1240,40 1360,110 1440,70" 
+            stroke="#0284C7" 
+            strokeWidth="1.5" 
+            strokeDasharray="4 6" 
+            opacity="0.65" 
+          />
           <defs>
             <linearGradient id="services-wave-bottom" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#0B1536" />
-              <stop offset="100%" stopColor="#0284C7" />
+              <stop offset="0%" stopColor="#0284C7" stopOpacity="0.14" />
+              <stop offset="50%" stopColor="#38BDF8" stopOpacity="0.18" />
+              <stop offset="100%" stopColor="#6366F1" stopOpacity="0.12" />
             </linearGradient>
           </defs>
         </svg>

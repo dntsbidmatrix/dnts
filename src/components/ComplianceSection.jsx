@@ -37,15 +37,30 @@ export default function ComplianceSection() {
         <div className="absolute bottom-10 left-10 w-[500px] h-[500px] bg-cyan-500/[0.035] rounded-full blur-3xl" />
 
         {/* Large Organic Wave Swoosh on the Right Side (Ref: Image 1 & 3) */}
-        <svg className="hidden lg:block absolute -right-16 top-12 w-[650px] h-[650px] opacity-40 text-blue-600" viewBox="0 0 650 650" fill="none">
-          <path d="M200,0 C350,180 500,80 650,250 L650,650 C480,520 320,620 180,480 C40,340 120,180 200,0 Z" fill="url(#comp-wave-grad)" opacity="0.3" />
-          <path d="M200,0 C350,180 500,80 650,250" stroke="#38BDF8" strokeWidth="2" strokeDasharray="6 8" opacity="0.7" />
-          <path d="M650,650 C480,520 320,620 180,480" stroke="#818CF8" strokeWidth="1.5" strokeDasharray="4 6" opacity="0.5" />
+        <svg className="hidden lg:block absolute -right-16 top-12 w-[650px] h-[650px] pointer-events-none" viewBox="0 0 650 650" fill="none">
+          <path 
+            d="M200,0 C350,180 500,80 650,250 L650,650 C480,520 320,620 180,480 C40,340 120,180 200,0 Z" 
+            fill="url(#comp-wave-grad)" 
+          />
+          <path 
+            d="M200,0 C350,180 500,80 650,250" 
+            stroke="#0284C7" 
+            strokeWidth="2" 
+            strokeDasharray="6 8" 
+            opacity="0.8" 
+          />
+          <path 
+            d="M650,650 C480,520 320,620 180,480" 
+            stroke="#6366F1" 
+            strokeWidth="1.5" 
+            strokeDasharray="4 6" 
+            opacity="0.65" 
+          />
           <defs>
             <linearGradient id="comp-wave-grad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#38BDF8" />
-              <stop offset="50%" stopColor="#2563EB" />
-              <stop offset="100%" stopColor="#4F46E5" />
+              <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.22" />
+              <stop offset="50%" stopColor="#2563EB" stopOpacity="0.18" />
+              <stop offset="100%" stopColor="#4F46E5" stopOpacity="0.15" />
             </linearGradient>
           </defs>
         </svg>
