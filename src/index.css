@@ -7,7 +7,7 @@
     scroll-behavior: smooth;
   }
   body {
-    background-color: #F8FAFC;
+    background-color: #FEFCE8;
     color: #1E293B;
   }
 }
@@ -62,12 +62,12 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #F1F5F9;
+  background: #FEF9C3;
 }
 ::-webkit-scrollbar-thumb {
-  background: #A3BCA5;
+  background: #FACC15;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3A5A40;
+  background: #EAB308;
 }

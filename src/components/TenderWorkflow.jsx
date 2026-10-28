@@ -4,7 +4,7 @@ import { CheckCircle2, ArrowRight } from 'lucide-react';
 
 export default function TenderWorkflow() {
   return (
-    <section id="workflow" className="py-20 lg:py-28 relative bg-white">
+    <section id="workflow" className="py-20 lg:py-28 relative bg-gradient-to-b from-[#FEFCE8] via-[#FEF9C3]/50 to-[#FEFCE8]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}

@@ -44,7 +44,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 lg:py-28 relative bg-white">
+    <section id="contact" className="py-20 lg:py-28 relative bg-gradient-to-b from-[#FEFCE8] via-[#FEF9C3]/50 to-[#FEFCE8]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         
         {/* Section Heading */}

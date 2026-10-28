@@ -6,7 +6,7 @@ export default function TrustStats() {
   const icons = [Shield, FileCheck, CheckCircle, Clock];
 
   return (
-    <section className="relative z-10 py-8 sm:py-10 bg-[#FEFDF9] border-y border-yellow-100">
+    <section className="relative z-10 py-8 sm:py-10 bg-gradient-to-r from-[#FEF9C3]/40 via-[#FEF08A]/30 to-[#FEF9C3]/40 border-y border-yellow-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Metric Cards Grid - Centered items and responsive typography */}

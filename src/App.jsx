@@ -92,7 +92,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] text-slate-800 flex flex-col font-sans selection:bg-yellow-400 selection:text-slate-900">
+    <div className="min-h-screen bg-[#FEFCE8] text-slate-800 flex flex-col font-sans selection:bg-yellow-400 selection:text-slate-900">
       {/* Sticky Top Header */}
       <Navbar 
         currentRoute={currentRoute}

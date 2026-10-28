@@ -67,7 +67,7 @@ export default function Navbar({ onOpenInquiry, currentRoute = 'home', onNavigat
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-yellow-200/70 shadow-sm py-2.5 text-slate-800">
+    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#FEFCE8]/95 backdrop-blur-md border-b border-yellow-300/80 shadow-sm py-2.5 text-slate-800">
       {/* Top micro bar for statutory & quick contact */}
       <div className="hidden lg:block border-b border-yellow-100 bg-[#FEFCE8]/80 text-slate-600 pb-2 mb-2 -mt-1 pt-1.5 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-xs whitespace-nowrap">

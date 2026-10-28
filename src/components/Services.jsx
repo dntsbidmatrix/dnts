@@ -37,7 +37,7 @@ export default function Services({ onSelectService }) {
     : SERVICES.filter(s => s.category === activeFilter);
 
   return (
-    <section id="services" className="py-20 lg:py-28 relative bg-white">
+    <section id="services" className="py-20 lg:py-28 relative bg-gradient-to-b from-[#FEFCE8] via-[#FEF9C3]/50 to-[#FEFCE8]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         
         {/* Section Header */}
@@ -130,25 +130,25 @@ export default function Services({ onSelectService }) {
         </div>
 
         {/* Our Services from the Official Quotation Proposal */}
-        <div className="rounded-3xl bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0A0F1D] text-white border border-yellow-500/30 p-8 sm:p-10 shadow-2xl relative overflow-hidden">
-          <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#FEF08A] via-[#FACC15] to-[#EAB308]" />
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 border-b border-white/10 pb-6">
+        <div className="rounded-3xl bg-gradient-to-br from-[#FEF9C3] via-[#FEF08A] to-[#FDE047] text-slate-900 border-2 border-yellow-400 p-8 sm:p-10 shadow-2xl relative overflow-hidden">
+          <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#B45309] via-[#EAB308] to-[#FACC15]" />
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 border-b border-yellow-400/40 pb-6">
             <div className="space-y-1">
-              <div className="inline-flex items-center text-xs font-bold text-[#FACC15] uppercase tracking-wider">
-                <ListOrdered className="w-4 h-4 mr-1.5" />
+              <div className="inline-flex items-center text-xs font-bold text-[#78350F] uppercase tracking-wider">
+                <ListOrdered className="w-4 h-4 mr-1.5 text-[#B45309]" />
                 <span>Proposal Checklist</span>
               </div>
-              <h3 className="text-2xl font-bold text-white tracking-tight">
+              <h3 className="text-2xl font-black text-slate-950 tracking-tight">
                 Our Complete Scope of Services
               </h3>
-              <p className="text-xs sm:text-sm text-slate-300">
+              <p className="text-xs sm:text-sm text-slate-800 font-medium">
                 As detailed in our official technical proposal for public & private sector tendering.
               </p>
             </div>
             <div>
               <button
                 onClick={() => onSelectService('Complete Tender Services Package')}
-                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#FDE047] via-[#FACC15] to-[#EAB308] hover:from-[#FEF08A] hover:to-[#FACC15] text-slate-950 font-black text-xs shadow-lg shadow-yellow-500/20 transition-all hover:scale-105"
+                className="px-5 py-2.5 rounded-xl bg-slate-950 hover:bg-slate-900 text-yellow-300 hover:text-white font-black text-xs shadow-xl shadow-slate-950/20 border border-yellow-400/40 transition-all hover:scale-105"
               >
                 Request Proposal For Our Services
               </button>
@@ -159,16 +159,16 @@ export default function Services({ onSelectService }) {
             {DETAILED_15_SERVICES.map((item) => (
               <div 
                 key={item.no}
-                className="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-[#FACC15]/60 hover:bg-white/10 transition-all flex items-start space-x-3.5"
+                className="p-4 rounded-xl bg-white/90 backdrop-blur-sm border border-yellow-300 hover:border-yellow-500 hover:bg-white hover:shadow-md transition-all flex items-start space-x-3.5"
               >
-                <span className="flex items-center justify-center w-7 h-7 rounded-lg bg-[#FEF08A]/10 border border-yellow-400/40 text-[#FEF08A] font-mono font-bold text-xs flex-shrink-0">
+                <span className="flex items-center justify-center w-7 h-7 rounded-lg bg-[#FEF08A] border border-yellow-400 text-[#78350F] font-mono font-black text-xs flex-shrink-0">
                   {item.no < 10 ? `0${item.no}` : item.no}
                 </span>
                 <div className="space-y-1">
-                  <div className="text-sm font-bold text-white leading-tight">
+                  <div className="text-sm font-bold text-slate-900 leading-tight">
                     {item.title}
                   </div>
-                  <div className="text-xs text-slate-300 leading-relaxed font-normal">
+                  <div className="text-xs text-slate-700 leading-relaxed font-normal">
                     {item.desc}
                   </div>
                 </div>

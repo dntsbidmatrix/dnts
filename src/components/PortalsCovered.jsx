@@ -4,7 +4,7 @@ import { Globe, ExternalLink, CheckCircle2, Award } from 'lucide-react';
 
 export default function PortalsCovered() {
   return (
-    <section id="portals" className="py-20 lg:py-28 relative bg-[#FEFDF9] border-t border-yellow-100">
+    <section id="portals" className="py-20 lg:py-28 relative bg-gradient-to-b from-[#FEFCE8] to-[#FEF9C3]/40 border-t border-yellow-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
@@ -68,15 +68,15 @@ export default function PortalsCovered() {
         </div>
 
         {/* PSUs Empanelment Banner */}
-        <div className="mt-12 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0A0F1D] text-white border border-yellow-500/30 text-center space-y-3 shadow-xl relative overflow-hidden">
-          <div className="inline-flex items-center space-x-1.5 text-xs font-bold uppercase tracking-wider text-[#FACC15] bg-[#FEF08A]/10 border border-yellow-400/30 px-3.5 py-1.5 rounded-full shadow-sm">
-            <Award className="w-4 h-4 text-[#FACC15]" />
+        <div className="mt-12 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-[#FEF9C3] via-[#FDE047] to-[#FACC15] text-slate-900 border-2 border-yellow-400 text-center space-y-3 shadow-xl relative overflow-hidden">
+          <div className="inline-flex items-center space-x-1.5 text-xs font-bold uppercase tracking-wider text-[#78350F] bg-white/90 border border-yellow-400 px-3.5 py-1.5 rounded-full shadow-sm">
+            <Award className="w-4 h-4 text-[#CA8A04]" />
             <span>Specialized Supplier Registration & Empanelment</span>
           </div>
-          <div className="text-base sm:text-lg font-bold text-white">
+          <div className="text-base sm:text-lg font-black text-slate-950">
             BHEL, EIL & Indian Railways etc • NTPC • IOCL • GAIL etc • Defence & State Portals
           </div>
-          <p className="text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xs sm:text-sm text-slate-800 font-medium max-w-2xl mx-auto leading-relaxed">
             We prepare vendor dossiers, balance sheet compilations, technical capability declarations, and handle complete department liaisoning.
           </p>
         </div>
