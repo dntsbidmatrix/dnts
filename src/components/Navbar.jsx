@@ -67,9 +67,9 @@ export default function Navbar({ onOpenInquiry, currentRoute = 'home', onNavigat
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-sm py-2.5 text-slate-800">
-      {/* Top micro bar for statutory & quick contact */}
-      <div className="hidden lg:block border-b border-slate-800 bg-slate-900 text-slate-300 pb-2 mb-2 -mt-1 pt-1.5 transition-colors">
+    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm text-slate-800">
+      {/* Top micro bar for statutory & quick contact - Flush to top edge */}
+      <div className="hidden lg:block border-b border-slate-800 bg-[#060D20] text-slate-300 py-2 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-xs whitespace-nowrap">
           <div className="flex items-center space-x-3 xl:space-x-4">
             <span className="flex items-center font-semibold text-slate-200">
@@ -109,7 +109,7 @@ export default function Navbar({ onOpenInquiry, currentRoute = 'home', onNavigat
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3">
         <div className="flex items-center justify-between gap-4">
           
           {/* Logo & Brand Name */}
