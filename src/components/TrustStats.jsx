@@ -7,46 +7,34 @@ export default function TrustStats() {
 
   return (
     <section className="relative z-10 py-10 sm:py-12 bg-[#F8FAFC] border-b border-slate-200/80 overflow-hidden">
-      {/* Classy Architectural Background Elements */}
+      {/* Modern Fluid Shapes & Subtle Wave Background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden -z-0">
-        {/* Subtle dot matrix texture */}
-        <div 
-          className="absolute inset-0 opacity-[0.28]" 
-          style={{
-            backgroundImage: 'radial-gradient(#94A3B8 1px, transparent 1px)',
-            backgroundSize: '24px 24px'
-          }}
-        />
-
-        {/* Ambient soft glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-48 bg-gradient-to-r from-blue-500/[0.04] via-cyan-500/[0.03] to-indigo-500/[0.04] blur-2xl rounded-full" />
-
-        {/* Delicate hairline technical trajectory with directional chevrons */}
-        <svg className="absolute w-full h-full inset-0 opacity-40 text-blue-600/30" xmlns="http://www.w3.org/2000/svg" fill="none">
-          <line x1="5%" y1="18" x2="95%" y2="18" stroke="currentColor" strokeWidth="0.75" strokeDasharray="3 6" />
-          <circle cx="5%" cy="18" r="2" fill="currentColor" />
-          <circle cx="95%" cy="18" r="2" fill="currentColor" />
-          
-          <path d="M40 14 L46 18 L40 22" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M50 14 L56 18 L50 22" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M60 14 L66 18 L60 22" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
-
-          <path d="M calc(100% - 60px) 14 L calc(100% - 54px) 18 L calc(100% - 60px) 22" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M calc(100% - 50px) 14 L calc(100% - 44px) 18 L calc(100% - 50px) 22" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-
-        {/* Blueprint coordinate markers */}
-        <div className="hidden lg:flex absolute top-3 left-8 items-center space-x-1 font-mono text-[9px] text-slate-400/60 uppercase tracking-widest">
-          <span className="text-blue-500/50">+</span>
-          <span>SYS.VERIFIED</span>
-          <span className="text-slate-300/40">/</span>
-          <span>01</span>
+        {/* Soft Ambient Depth Glows */}
+        <div className="absolute -top-10 left-1/3 w-96 h-48 bg-gradient-to-r from-blue-400/10 via-cyan-400/10 to-indigo-400/10 blur-3xl rounded-full" />
+        
+        {/* Left Margin: Floating Crescent Arc & Soft Disc (Ref: Image 1) */}
+        <div className="hidden lg:block absolute -left-6 top-1/2 -translate-y-1/2">
+          <svg className="w-28 h-28 text-cyan-400 drop-shadow-md" viewBox="0 0 100 100" fill="none">
+            <path d="M 22 50 A 30 30 0 1 1 50 78" stroke="currentColor" strokeWidth="8" strokeLinecap="round" opacity="0.65" />
+            <circle cx="50" cy="50" r="14" fill="#2563EB" opacity="0.2" />
+          </svg>
         </div>
-        <div className="hidden lg:flex absolute top-3 right-8 items-center space-x-1 font-mono text-[9px] text-slate-400/60 uppercase tracking-widest">
-          <span>02</span>
-          <span className="text-slate-300/40">/</span>
-          <span>COMPLIANCE.OK</span>
-          <span className="text-cyan-500/50">+</span>
+
+        {/* Small Dot Grid Cluster (Top Left - Ref: Image 1) */}
+        <div className="hidden sm:grid grid-cols-6 gap-2 absolute top-4 left-10 opacity-30">
+          {[...Array(18)].map((_, i) => (
+            <span key={i} className="w-1.5 h-1.5 rounded-full bg-blue-600" />
+          ))}
+        </div>
+
+        {/* Floating Plus (+) Accents (Ref: Image 1) */}
+        <span className="hidden sm:block absolute top-6 right-24 text-cyan-500/40 text-xl font-bold select-none">+</span>
+        <span className="hidden sm:block absolute bottom-4 left-1/4 text-blue-500/30 text-lg font-bold select-none">+</span>
+
+        {/* Right Margin: Floating Tilted Rounded Capsule & Sphere (Ref: Image 2) */}
+        <div className="hidden lg:flex items-center space-x-3 absolute -right-6 top-1/2 -translate-y-1/2">
+          <div className="w-10 h-24 rounded-full bg-gradient-to-b from-blue-500/20 to-cyan-400/25 rotate-[20deg] shadow-lg shadow-blue-500/10 border border-white/60" />
+          <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-cyan-400/30 to-blue-600/25 shadow-md -mt-8" />
         </div>
       </div>
 

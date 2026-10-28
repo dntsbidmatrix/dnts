@@ -30,53 +30,59 @@ export default function ComplianceSection() {
 
   return (
     <section id="compliance" className="py-20 lg:py-28 relative bg-slate-50/70 border-t border-slate-200/80 overflow-hidden">
-      {/* Classy Governance Seal & Compliance Blueprint Background */}
+      {/* Modern Fluid Shapes & Wave Accents Background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden -z-0">
-        {/* Subtle dot matrix */}
-        <div 
-          className="absolute inset-0 opacity-[0.25]" 
-          style={{
-            backgroundImage: 'radial-gradient(#94A3B8 1px, transparent 1px)',
-            backgroundSize: '28px 28px'
-          }}
-        />
-
-        {/* Ambient soft glow */}
-        <div className="absolute top-20 right-1/4 w-[500px] h-[500px] bg-blue-500/[0.03] rounded-full blur-3xl" />
+        {/* Soft Ambient Depth Glows */}
+        <div className="absolute top-20 right-1/4 w-[500px] h-[500px] bg-blue-500/[0.04] rounded-full blur-3xl" />
         <div className="absolute bottom-10 left-10 w-[500px] h-[500px] bg-cyan-500/[0.035] rounded-full blur-3xl" />
 
-        {/* Governance Guilloche / Geometric Shield Watermark (Right Background) */}
-        <svg className="hidden lg:block absolute -right-20 top-1/4 w-[520px] h-[520px] text-blue-600/10" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-          {/* Concentric octagonal / geometric security rosette rings */}
-          <circle cx="250" cy="250" r="230" stroke="currentColor" strokeWidth="0.75" strokeDasharray="4 6" />
-          <circle cx="250" cy="250" r="190" stroke="currentColor" strokeWidth="0.75" />
-          <circle cx="250" cy="250" r="150" stroke="currentColor" strokeWidth="0.75" strokeDasharray="3 3" />
-          <circle cx="250" cy="250" r="110" stroke="currentColor" strokeWidth="0.75" />
-          
-          {/* Rotated squares forming security star */}
-          <rect x="150" y="150" width="200" height="200" rx="20" stroke="currentColor" strokeWidth="0.75" strokeDasharray="5 5" />
-          <rect x="150" y="150" width="200" height="200" rx="20" transform="rotate(45 250 250)" stroke="currentColor" strokeWidth="0.75" strokeDasharray="5 5" />
-
-          {/* Coordinate Crosshairs */}
-          <line x1="50" y1="250" x2="450" y2="250" stroke="currentColor" strokeWidth="0.5" strokeDasharray="2 4" />
-          <line x1="250" y1="50" x2="250" y2="450" stroke="currentColor" strokeWidth="0.5" strokeDasharray="2 4" />
-          <circle cx="250" cy="250" r="4" fill="currentColor" />
-
-          {/* Directional Chevrons */}
-          <path d="M250 65 L254 73 L246 73 Z" fill="currentColor" />
-          <path d="M435 250 L427 254 L427 246 Z" fill="currentColor" />
-          <path d="M250 435 L246 427 L254 427 Z" fill="currentColor" />
-          <path d="M65 250 L73 246 L73 254 Z" fill="currentColor" />
+        {/* Large Organic Wave Swoosh on the Right Side (Ref: Image 1 & 3) */}
+        <svg className="hidden lg:block absolute -right-16 top-12 w-[650px] h-[650px] opacity-40 text-blue-600" viewBox="0 0 650 650" fill="none">
+          <path d="M200,0 C350,180 500,80 650,250 L650,650 C480,520 320,620 180,480 C40,340 120,180 200,0 Z" fill="url(#comp-wave-grad)" opacity="0.3" />
+          <path d="M200,0 C350,180 500,80 650,250" stroke="#38BDF8" strokeWidth="2" strokeDasharray="6 8" opacity="0.7" />
+          <path d="M650,650 C480,520 320,620 180,480" stroke="#818CF8" strokeWidth="1.5" strokeDasharray="4 6" opacity="0.5" />
+          <defs>
+            <linearGradient id="comp-wave-grad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#38BDF8" />
+              <stop offset="50%" stopColor="#2563EB" />
+              <stop offset="100%" stopColor="#4F46E5" />
+            </linearGradient>
+          </defs>
         </svg>
 
-        {/* Blueprint coordinate markers */}
-        <div className="hidden xl:flex absolute top-10 left-8 items-center space-x-1 font-mono text-[9px] text-slate-400/50 uppercase tracking-widest">
-          <span className="text-blue-500/60">+</span>
-          <span>GOV.AUDIT.COMPLIANCE.SEAL</span>
+        {/* Left Side: Modern 3D Tilted Capsule & Floating Sphere (Ref: Image 2) */}
+        <div className="hidden lg:block absolute left-8 top-1/4">
+          <div className="relative">
+            <div className="w-16 h-36 rounded-3xl bg-gradient-to-br from-blue-600/20 via-cyan-400/20 to-transparent rotate-[-20deg] shadow-xl shadow-blue-500/10 border border-white/70 backdrop-blur-sm" />
+            <div className="absolute -bottom-6 -right-4 w-12 h-12 rounded-full bg-gradient-to-tr from-cyan-400/35 to-blue-600/30 shadow-md border border-cyan-300/40" />
+            
+            {/* Crescent Arc (Ref: Image 1) */}
+            <svg className="absolute -top-8 -left-6 w-24 h-24 text-cyan-400 drop-shadow-md" viewBox="0 0 100 100" fill="none">
+              <path d="M 50 20 A 30 30 0 1 1 20 50" stroke="currentColor" strokeWidth="8" strokeLinecap="round" opacity="0.7" />
+            </svg>
+          </div>
         </div>
-        <div className="hidden xl:flex absolute bottom-8 left-8 items-center space-x-1 font-mono text-[9px] text-slate-400/50 uppercase tracking-widest">
-          <span className="text-blue-500/60">+</span>
-          <span>STATUTORY.INTEGRITY.GFR2017</span>
+
+        {/* Polka Dot Matrix Cluster (Ref: Image 1) */}
+        <div className="hidden sm:grid grid-cols-6 gap-2 absolute top-12 left-16 opacity-30">
+          {[...Array(18)].map((_, i) => (
+            <span key={i} className="w-1.5 h-1.5 rounded-full bg-blue-600" />
+          ))}
+        </div>
+
+        {/* Floating Plus (+) Accents (Ref: Image 1) */}
+        <span className="hidden sm:block absolute top-1/2 left-12 text-blue-500/35 text-2xl font-bold select-none">+</span>
+        <span className="hidden sm:block absolute bottom-24 left-1/4 text-cyan-500/40 text-xl font-bold select-none">+</span>
+        <span className="hidden sm:block absolute top-32 right-1/4 text-cyan-500/40 text-2xl font-bold select-none">+</span>
+
+        {/* Right Side: Layered Floating Sphere & Crescent Ring (Ref: Image 1) */}
+        <div className="hidden lg:block absolute right-12 bottom-20">
+          <div className="relative">
+            <div className="w-18 h-18 rounded-full bg-gradient-to-tr from-cyan-400/30 to-blue-600/25 shadow-lg border border-cyan-300/40" />
+            <svg className="absolute -top-6 -left-6 w-24 h-24 text-blue-500 drop-shadow-md" viewBox="0 0 100 100" fill="none">
+              <path d="M 22 50 A 30 30 0 1 1 50 78" stroke="currentColor" strokeWidth="8" strokeLinecap="round" opacity="0.65" />
+            </svg>
+          </div>
         </div>
       </div>
 

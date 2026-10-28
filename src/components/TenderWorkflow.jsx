@@ -5,53 +5,53 @@ import { CheckCircle2, ArrowRight } from 'lucide-react';
 export default function TenderWorkflow() {
   return (
     <section id="workflow" className="py-20 lg:py-28 relative bg-white overflow-hidden">
-      {/* Classy Lifecycle Conduit & Process Vector Background */}
+      {/* Modern Fluid Shapes & S-Wave Workflow Background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden -z-0">
-        {/* Subtle dot matrix */}
-        <div 
-          className="absolute inset-0 opacity-[0.25]" 
-          style={{
-            backgroundImage: 'radial-gradient(#94A3B8 1px, transparent 1px)',
-            backgroundSize: '28px 28px'
-          }}
-        />
+        {/* Soft Ambient Depth Glows */}
+        <div className="absolute top-1/4 left-1/3 w-[600px] h-64 bg-gradient-to-r from-blue-500/[0.04] via-cyan-500/[0.035] to-indigo-500/[0.035] rounded-full blur-3xl" />
 
-        {/* Ambient soft glow */}
-        <div className="absolute top-1/3 left-1/3 w-[600px] h-64 bg-gradient-to-r from-blue-500/[0.035] via-cyan-500/[0.03] to-indigo-500/[0.035] rounded-full blur-3xl" />
-
-        {/* Continuous Horizontal Lifecycle Vector Conduit (hidden on mobile, visible on desktop) */}
-        <svg className="hidden md:block absolute top-[44%] left-0 w-full h-32 text-blue-600/20" viewBox="0 0 1200 128" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          {/* Main flow hairline conduit */}
-          <path d="M 0 64 L 1200 64" stroke="currentColor" strokeWidth="1" strokeDasharray="6 6" />
-          
-          {/* Directional Flow Chevrons across the lifecycle */}
-          <path d="M 120 58 L 128 64 L 120 70" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M 360 58 L 368 64 L 360 70" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M 600 58 L 608 64 L 600 70" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M 840 58 L 848 64 L 840 70" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M 1080 58 L 1088 64 L 1080 70" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-
-          {/* Stepped coordinate ticks */}
-          <line x1="240" y1="48" x2="240" y2="80" stroke="currentColor" strokeWidth="0.8" />
-          <line x1="480" y1="48" x2="480" y2="80" stroke="currentColor" strokeWidth="0.8" />
-          <line x1="720" y1="48" x2="720" y2="80" stroke="currentColor" strokeWidth="0.8" />
-          <line x1="960" y1="48" x2="960" y2="80" stroke="currentColor" strokeWidth="0.8" />
+        {/* Dynamic S-Wave Flow Ribbon behind Stages (Ref: Image 1 & 3) */}
+        <svg className="hidden md:block absolute top-[36%] left-0 w-full h-44 opacity-50 text-blue-600" viewBox="0 0 1440 200" fill="none" preserveAspectRatio="none">
+          <path d="M0,100 C300,180 600,20 900,140 C1200,220 1350,60 1440,100 L1440,160 C1350,120 1200,240 900,180 C600,60 300,220 0,140 Z" fill="url(#workflow-wave-grad)" opacity="0.3" />
+          <path d="M0,100 C300,180 600,20 900,140 C1200,220 1350,60 1440,100" stroke="#38BDF8" strokeWidth="2" strokeDasharray="5 7" opacity="0.6" />
+          <defs>
+            <linearGradient id="workflow-wave-grad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stopColor="#38BDF8" />
+              <stop offset="50%" stopColor="#2563EB" />
+              <stop offset="100%" stopColor="#6366F1" />
+            </linearGradient>
+          </defs>
         </svg>
 
-        {/* Architectural Crosshairs in Corners */}
-        <div className="absolute top-12 left-10 text-slate-400/40 font-mono text-[9px] hidden lg:block">
-          <span className="text-blue-500/50">+</span> PHASE.STAGES.01-05
-        </div>
-        <div className="absolute top-12 right-10 text-slate-400/40 font-mono text-[9px] hidden lg:block text-right">
-          SLA.PRECISION <span className="text-cyan-500/50">+</span>
+        {/* Left Side: Crescent Arc Ring & Floating Disc (Ref: Image 1) */}
+        <div className="hidden lg:block absolute left-6 top-16">
+          <div className="relative">
+            <svg className="w-24 h-24 text-cyan-400 drop-shadow-md" viewBox="0 0 100 100" fill="none">
+              <path d="M 20 50 A 30 30 0 1 1 50 80" stroke="currentColor" strokeWidth="8" strokeLinecap="round" opacity="0.75" />
+            </svg>
+            <div className="absolute top-6 left-6 w-10 h-10 rounded-full bg-gradient-to-tr from-blue-600/30 to-indigo-600/25 shadow-md" />
+          </div>
         </div>
 
-        {/* Subtle geometric wireframe diamond in left margin */}
-        <svg className="hidden lg:block absolute left-8 bottom-16 w-32 h-32 text-indigo-600/15" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="64" y="16" width="68" height="68" rx="8" transform="rotate(45 64 64)" stroke="currentColor" strokeWidth="1" strokeDasharray="3 3" />
-          <circle cx="64" cy="64" r="3" fill="currentColor" />
-          <path d="M60 64 L64 68 L68 64" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
+        {/* Dot Cluster (Ref: Image 1) */}
+        <div className="hidden sm:grid grid-cols-6 gap-2 absolute top-8 right-28 opacity-25">
+          {[...Array(18)].map((_, i) => (
+            <span key={i} className="w-1.5 h-1.5 rounded-full bg-blue-600" />
+          ))}
+        </div>
+
+        {/* Floating Plus (+) Accents (Ref: Image 1) */}
+        <span className="hidden sm:block absolute top-12 left-1/4 text-cyan-500/40 text-2xl font-bold select-none">+</span>
+        <span className="hidden sm:block absolute bottom-12 right-1/4 text-blue-500/35 text-xl font-bold select-none">+</span>
+        <span className="hidden sm:block absolute top-1/2 right-10 text-cyan-500/30 text-lg font-bold select-none">+</span>
+
+        {/* Right Margin: Modern Tilted Rounded Capsule & Floating Sphere (Ref: Image 2) */}
+        <div className="hidden lg:block absolute right-8 bottom-24">
+          <div className="relative">
+            <div className="w-14 h-32 rounded-3xl bg-gradient-to-br from-cyan-400/25 to-blue-600/20 rotate-[22deg] shadow-lg shadow-blue-500/10 border border-white/70 backdrop-blur-sm" />
+            <div className="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-gradient-to-tr from-cyan-400/40 to-blue-600/30 shadow-md border border-cyan-300/40" />
+          </div>
+        </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

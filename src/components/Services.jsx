@@ -38,105 +38,94 @@ export default function Services({ onSelectService }) {
 
   return (
     <section id="services" className="py-20 lg:py-28 relative bg-[#F8FAFC] overflow-hidden">
-      {/* Classy Architectural GovTech Background Elements */}
+      {/* Modern Fluid Shapes & Layered Wave Background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden -z-0">
-        {/* Subtle dot matrix grid */}
-        <div 
-          className="absolute inset-0 opacity-[0.25]" 
-          style={{
-            backgroundImage: 'radial-gradient(#94A3B8 1px, transparent 1px)',
-            backgroundSize: '32px 32px'
-          }}
-        />
+        {/* Soft Ambient Depth Glows */}
+        <div className="absolute top-10 left-1/4 w-[500px] h-[500px] bg-blue-500/[0.04] rounded-full blur-3xl" />
+        <div className="absolute top-1/2 right-10 w-[500px] h-[500px] bg-cyan-500/[0.035] rounded-full blur-3xl" />
+        <div className="absolute bottom-10 left-1/3 w-[600px] h-[400px] bg-indigo-500/[0.03] rounded-full blur-3xl" />
 
-        {/* Ambient depth glows */}
-        <div className="absolute -top-24 left-1/4 w-[500px] h-[500px] bg-blue-500/[0.035] rounded-full blur-3xl" />
-        <div className="absolute top-1/2 right-0 w-[450px] h-[450px] bg-cyan-500/[0.03] rounded-full blur-3xl" />
-        <div className="absolute -bottom-20 left-10 w-[550px] h-[550px] bg-indigo-500/[0.03] rounded-full blur-3xl" />
-
-        {/* Left Side: Architectural Vector Linework & Flow Arrows */}
-        <svg className="hidden lg:block absolute left-0 top-24 w-72 h-[800px] text-blue-600/20" viewBox="0 0 288 800" fill="none" xmlns="http://www.w3.org/2000/svg">
-          {/* Vertical conduit line with 90-deg breaks */}
-          <path d="M40 0 V180 L100 240 H160 L200 280 V420 L140 480 H60 L20 520 V800" stroke="currentColor" strokeWidth="1" strokeDasharray="4 4" />
-          
-          {/* Circuit / Procurement Nodes */}
-          <circle cx="40" cy="180" r="3.5" fill="currentColor" />
-          <circle cx="100" cy="240" r="2.5" fill="currentColor" />
-          <circle cx="200" cy="280" r="4" fill="currentColor" />
-          <circle cx="200" cy="420" r="3" fill="currentColor" />
-          <circle cx="140" cy="480" r="2.5" fill="currentColor" />
-          <circle cx="20" cy="520" r="3.5" fill="currentColor" />
-
-          {/* Directional Chevrons / Flow Arrows along the path */}
-          <path d="M196 340 L200 348 L204 340" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M196 355 L200 363 L204 355" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          
-          <path d="M95 480 L103 480 L99 476 M103 480 L99 484" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M16 640 L20 648 L24 640" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-
-          {/* Delicate Wireframe Hexagon Motif */}
-          <polygon points="120,80 150,97 150,132 120,149 90,132 90,97" stroke="currentColor" strokeWidth="0.75" strokeDasharray="3 3" />
-          <circle cx="120" cy="115" r="2" fill="currentColor" />
-
-          {/* Coordinate Crosshairs */}
-          <path d="M35 80 H45 M40 75 V85" stroke="currentColor" strokeWidth="1" />
-          <path d="M215 420 H225 M220 415 V425" stroke="currentColor" strokeWidth="1" />
+        {/* Top Fluid Wave Ribbon with Tracing Contour (Ref: Image 1 & 3) */}
+        <svg className="absolute -top-10 left-0 w-full h-80 opacity-60 text-blue-500" viewBox="0 0 1440 320" fill="none" preserveAspectRatio="none">
+          <path d="M0,128 C280,240 540,40 840,160 C1120,260 1320,100 1440,60 L1440,0 L0,0 Z" fill="url(#services-wave-grad)" opacity="0.25" />
+          <path d="M0,128 C280,240 540,40 840,160 C1120,260 1320,100 1440,60" stroke="url(#services-wave-stroke)" strokeWidth="1.5" strokeDasharray="4 6" opacity="0.6" />
+          <defs>
+            <linearGradient id="services-wave-grad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.3" />
+              <stop offset="50%" stopColor="#2563EB" stopOpacity="0.15" />
+              <stop offset="100%" stopColor="#6366F1" stopOpacity="0.2" />
+            </linearGradient>
+            <linearGradient id="services-wave-stroke" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stopColor="#38BDF8" />
+              <stop offset="50%" stopColor="#2563EB" />
+              <stop offset="100%" stopColor="#06B6D4" />
+            </linearGradient>
+          </defs>
         </svg>
 
-        {/* Right Side: Architectural Linework, Geometric Rings & Forward Vectors */}
-        <svg className="hidden lg:block absolute right-0 top-36 w-80 h-[900px] text-cyan-600/20" viewBox="0 0 320 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-          {/* Intersecting flow vectors */}
-          <path d="M280 20 V220 L220 280 H140 L100 320 V500 L160 560 H260 L300 600 V900" stroke="currentColor" strokeWidth="1" strokeDasharray="5 5" />
-          
-          {/* Hub Nodes */}
-          <circle cx="280" cy="220" r="3" fill="currentColor" />
-          <circle cx="140" cy="280" r="3" fill="currentColor" />
-          <circle cx="100" cy="320" r="4.5" fill="currentColor" />
-          <circle cx="100" cy="500" r="3" fill="currentColor" />
-          <circle cx="160" cy="560" r="3" fill="currentColor" />
-          <circle cx="300" cy="600" r="4" fill="currentColor" />
-
-          {/* Downward / Forward Directional Chevron Arrows */}
-          <path d="M96 400 L100 408 L104 400" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M96 415 L100 423 L104 415" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M296 720 L300 728 L304 720" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-
-          {/* Concentric Architectural Rings Motif */}
-          <circle cx="220" cy="120" r="45" stroke="currentColor" strokeWidth="0.75" strokeDasharray="3 4" />
-          <circle cx="220" cy="120" r="28" stroke="currentColor" strokeWidth="0.75" />
-          <circle cx="220" cy="120" r="3" fill="currentColor" />
-          <line x1="220" y1="65" x2="220" y2="175" stroke="currentColor" strokeWidth="0.5" strokeDasharray="2 2" />
-          <line x1="165" y1="120" x2="275" y2="120" stroke="currentColor" strokeWidth="0.5" strokeDasharray="2 2" />
-
-          {/* Geometric Diamond Accent */}
-          <rect x="180" y="660" width="40" height="40" rx="6" transform="rotate(45 200 680)" stroke="currentColor" strokeWidth="0.75" strokeDasharray="2 3" />
-          <circle cx="200" cy="680" r="2" fill="currentColor" />
-        </svg>
-
-        {/* Technical Blueprint Margin Labels */}
-        <div className="hidden xl:flex flex-col space-y-40 absolute left-6 top-72 font-mono text-[9px] text-slate-400/50 uppercase tracking-widest">
-          <div>
-            <span className="text-blue-500/60 font-bold">+ </span>SPEC.MATRIX.01
-          </div>
-          <div>
-            <span className="text-blue-500/60 font-bold">+ </span>BOQ.VERIFY.02
-          </div>
-          <div>
-            <span className="text-blue-500/60 font-bold">+ </span>AUDIT.FLOW.03
+        {/* Left Side: Modern Floating Tilted Capsule, Crescent Arc & Spheres (Ref: Image 1 & 2) */}
+        <div className="hidden lg:block absolute left-8 top-36">
+          <div className="relative">
+            {/* Tilted Rounded Capsule */}
+            <div className="w-20 h-44 rounded-3xl bg-gradient-to-br from-cyan-400/20 via-blue-500/15 to-transparent rotate-[-18deg] shadow-xl shadow-cyan-500/10 border border-white/70 backdrop-blur-sm" />
+            
+            {/* Layered Floating Sphere */}
+            <div className="absolute -bottom-6 -right-6 w-16 h-16 rounded-full bg-gradient-to-tr from-blue-600/30 to-indigo-600/20 shadow-lg border border-blue-400/30" />
+            
+            {/* Crescent Arc Ring (Ref: Image 1) */}
+            <svg className="absolute -top-10 -right-8 w-24 h-24 text-cyan-400 drop-shadow-md" viewBox="0 0 100 100" fill="none">
+              <path d="M 20 50 A 30 30 0 1 1 50 80" stroke="currentColor" strokeWidth="8" strokeLinecap="round" opacity="0.75" />
+            </svg>
           </div>
         </div>
 
-        <div className="hidden xl:flex flex-col space-y-40 absolute right-6 top-80 font-mono text-[9px] text-slate-400/50 uppercase tracking-widest text-right">
-          <div>
-            L1.STRATEGY <span className="text-cyan-500/60 font-bold">+</span>
-          </div>
-          <div>
-            PORTAL.SYNC <span className="text-cyan-500/60 font-bold">+</span>
-          </div>
-          <div>
-            REGULATORY.OK <span className="text-cyan-500/60 font-bold">+</span>
+        {/* Polka Dot Matrix Cluster (Left Margin - Ref: Image 1) */}
+        <div className="hidden xl:grid grid-cols-6 gap-2.5 absolute left-12 top-[600px] opacity-30">
+          {[...Array(24)].map((_, i) => (
+            <span key={i} className="w-1.5 h-1.5 rounded-full bg-blue-600" />
+          ))}
+        </div>
+
+        {/* Floating Plus (+) Accents Scattered in White Space (Ref: Image 1) */}
+        <span className="hidden lg:block absolute top-48 left-1/4 text-cyan-500/40 text-2xl font-bold select-none">+</span>
+        <span className="hidden lg:block absolute top-[480px] left-8 text-blue-500/30 text-xl font-bold select-none">+</span>
+        <span className="hidden lg:block absolute top-72 right-1/4 text-blue-500/35 text-2xl font-bold select-none">+</span>
+        <span className="hidden lg:block absolute top-[750px] right-20 text-cyan-500/40 text-2xl font-bold select-none">+</span>
+
+        {/* Right Side: Floating Tilted Diamond, Layered Circle & Crescent Ring (Ref: Image 1 & 2) */}
+        <div className="hidden lg:block absolute right-8 top-64">
+          <div className="relative">
+            {/* Tilted Rounded Diamond */}
+            <div className="w-20 h-20 rounded-3xl bg-gradient-to-tr from-blue-600/20 via-cyan-400/25 to-white/40 rotate-45 shadow-xl shadow-blue-500/10 border border-white/80" />
+            
+            {/* Floating Sphere */}
+            <div className="absolute -top-8 -left-8 w-14 h-14 rounded-full bg-gradient-to-br from-cyan-400/35 to-blue-600/30 shadow-md border border-cyan-300/40" />
+
+            {/* Crescent Arc (Ref: Image 1) */}
+            <svg className="absolute -bottom-10 -left-6 w-28 h-28 text-blue-500/60 drop-shadow-md" viewBox="0 0 100 100" fill="none">
+              <path d="M 50 20 A 30 30 0 1 1 20 50" stroke="currentColor" strokeWidth="8" strokeLinecap="round" opacity="0.65" />
+            </svg>
           </div>
         </div>
+
+        {/* Dot Grid Cluster (Right Margin - Ref: Image 3) */}
+        <div className="hidden xl:grid grid-cols-6 gap-2.5 absolute right-12 top-[620px] opacity-30">
+          {[...Array(24)].map((_, i) => (
+            <span key={i} className="w-1.5 h-1.5 rounded-full bg-cyan-600" />
+          ))}
+        </div>
+
+        {/* Bottom Gentle Wave Transition into Quotation Plaque (Ref: Image 3) */}
+        <svg className="absolute bottom-24 right-0 w-full h-48 opacity-40 text-blue-600" viewBox="0 0 1440 200" fill="none" preserveAspectRatio="none">
+          <path d="M0,160 C360,60 720,190 1080,90 C1240,40 1360,110 1440,70 L1440,200 L0,200 Z" fill="url(#services-wave-bottom)" opacity="0.15" />
+          <path d="M0,160 C360,60 720,190 1080,90 C1240,40 1360,110 1440,70" stroke="#38BDF8" strokeWidth="1" strokeDasharray="3 5" opacity="0.5" />
+          <defs>
+            <linearGradient id="services-wave-bottom" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#0B1536" />
+              <stop offset="100%" stopColor="#0284C7" />
+            </linearGradient>
+          </defs>
+        </svg>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

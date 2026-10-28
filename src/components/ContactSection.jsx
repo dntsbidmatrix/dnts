@@ -45,57 +45,58 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="py-20 lg:py-28 relative bg-white overflow-hidden">
-      {/* Classy Direct Liaison & Communication Vectors Background */}
+      {/* Modern Fluid Shapes & Wave Accents Background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden -z-0">
-        {/* Subtle dot matrix */}
-        <div 
-          className="absolute inset-0 opacity-[0.25]" 
-          style={{
-            backgroundImage: 'radial-gradient(#94A3B8 1px, transparent 1px)',
-            backgroundSize: '28px 28px'
-          }}
-        />
-
-        {/* Ambient soft glow */}
-        <div className="absolute -top-20 left-1/4 w-[500px] h-[500px] bg-blue-500/[0.035] rounded-full blur-3xl" />
+        {/* Soft Ambient Depth Glows */}
+        <div className="absolute -top-20 left-1/4 w-[500px] h-[500px] bg-blue-500/[0.04] rounded-full blur-3xl" />
         <div className="absolute bottom-10 right-10 w-[550px] h-[550px] bg-cyan-500/[0.035] rounded-full blur-3xl" />
 
-        {/* Communication Radar / Signal Arcs (Left Background behind contact info) */}
-        <svg className="hidden lg:block absolute -left-20 top-20 w-96 h-96 text-blue-600/15" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M 60 200 A 140 140 0 0 1 200 60" stroke="currentColor" strokeWidth="1" strokeDasharray="3 4" />
-          <path d="M 20 200 A 180 180 0 0 1 200 20" stroke="currentColor" strokeWidth="1" strokeDasharray="4 5" />
-          <path d="M 0 200 A 200 200 0 0 1 200 0" stroke="currentColor" strokeWidth="0.75" />
-          
-          {/* Signal Transmission Nodes & Directional Chevrons */}
-          <circle cx="160" cy="85" r="3" fill="currentColor" />
-          <path d="M156 80 L164 84 L160 90" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-          <circle cx="95" cy="150" r="3" fill="currentColor" />
-          <path d="M90 146 L98 149 L95 156" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+        {/* Top Left Organic Flowing Wave Ribbon (Ref: Image 1 & 3) */}
+        <svg className="hidden lg:block absolute -left-10 top-0 w-[500px] h-[400px] opacity-40 text-blue-600" viewBox="0 0 500 400" fill="none">
+          <path d="M0,0 L350,0 C280,140 400,220 320,340 C280,400 160,380 0,320 Z" fill="url(#contact-wave-grad)" opacity="0.3" />
+          <path d="M350,0 C280,140 400,220 320,340 C280,400 160,380 0,320" stroke="#38BDF8" strokeWidth="2" strokeDasharray="5 7" opacity="0.7" />
+          <defs>
+            <linearGradient id="contact-wave-grad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#2563EB" />
+              <stop offset="100%" stopColor="#06B6D4" />
+            </linearGradient>
+          </defs>
         </svg>
 
-        {/* Right Margin: Technical Flow Arrow Vector */}
-        <svg className="hidden lg:block absolute right-6 bottom-16 w-64 h-80 text-cyan-600/20" viewBox="0 0 256 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M220 20 V120 L160 180 H80 L40 220 V300" stroke="currentColor" strokeWidth="1" strokeDasharray="4 4" />
-          <circle cx="220" cy="120" r="3" fill="currentColor" />
-          <circle cx="160" cy="180" r="4" fill="currentColor" />
-          <circle cx="40" cy="220" r="3" fill="currentColor" />
-          
-          {/* Downward chevrons */}
-          <path d="M36 250 L40 258 L44 250" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M36 265 L40 273 L44 265" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-
-          {/* Geometric Wireframe Diamond */}
-          <rect x="130" y="80" width="30" height="30" rx="4" transform="rotate(45 145 95)" stroke="currentColor" strokeWidth="0.8" strokeDasharray="2 3" />
-        </svg>
-
-        {/* Blueprint coordinate markers */}
-        <div className="hidden xl:flex absolute top-10 left-8 items-center space-x-1 font-mono text-[9px] text-slate-400/50 uppercase tracking-widest">
-          <span className="text-blue-500/60">+</span>
-          <span>DESK.DIRECT_LIAISON.24X7</span>
+        {/* Left Side: Modern Tilted Rounded Capsule & Floating Sphere (Ref: Image 2) */}
+        <div className="hidden lg:block absolute left-8 bottom-36">
+          <div className="relative">
+            <div className="w-16 h-36 rounded-3xl bg-gradient-to-br from-cyan-400/25 to-blue-600/20 rotate-[25deg] shadow-xl shadow-cyan-500/10 border border-white/70 backdrop-blur-sm" />
+            <div className="absolute -top-6 -right-4 w-12 h-12 rounded-full bg-gradient-to-tr from-cyan-400/40 to-blue-600/30 shadow-md border border-cyan-300/40" />
+            
+            {/* Crescent Arc (Ref: Image 1) */}
+            <svg className="absolute -bottom-8 -left-6 w-24 h-24 text-cyan-400 drop-shadow-md" viewBox="0 0 100 100" fill="none">
+              <path d="M 22 50 A 30 30 0 1 1 50 78" stroke="currentColor" strokeWidth="8" strokeLinecap="round" opacity="0.7" />
+            </svg>
+          </div>
         </div>
-        <div className="hidden xl:flex absolute bottom-8 right-8 items-center space-x-1 font-mono text-[9px] text-slate-400/50 uppercase tracking-widest text-right">
-          <span>SECURE.PROPOSAL.TRANSMISSION</span>
-          <span className="text-cyan-500/60">+</span>
+
+        {/* Polka Dot Matrix Cluster (Ref: Image 1) */}
+        <div className="hidden sm:grid grid-cols-6 gap-2 absolute top-10 right-20 opacity-30">
+          {[...Array(18)].map((_, i) => (
+            <span key={i} className="w-1.5 h-1.5 rounded-full bg-blue-600" />
+          ))}
+        </div>
+
+        {/* Floating Plus (+) Accents (Ref: Image 1) */}
+        <span className="hidden sm:block absolute top-20 left-1/3 text-cyan-500/40 text-2xl font-bold select-none">+</span>
+        <span className="hidden sm:block absolute top-1/2 right-12 text-blue-500/35 text-xl font-bold select-none">+</span>
+        <span className="hidden sm:block absolute bottom-16 left-1/4 text-blue-500/30 text-lg font-bold select-none">+</span>
+
+        {/* Right Side: Floating Layered Sphere & Crescent Ring (Ref: Image 1 & 2) */}
+        <div className="hidden lg:block absolute right-8 top-1/3">
+          <div className="relative">
+            <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-600/25 via-indigo-600/20 to-cyan-400/30 shadow-xl shadow-blue-600/15 border border-white/60" />
+            <svg className="absolute -top-6 -left-6 w-28 h-28 text-cyan-400 drop-shadow-md" viewBox="0 0 100 100" fill="none">
+              <path d="M 50 20 A 30 30 0 1 1 20 50" stroke="currentColor" strokeWidth="8" strokeLinecap="round" opacity="0.75" />
+            </svg>
+            <div className="absolute -bottom-4 -right-4 w-10 h-10 rounded-2xl bg-gradient-to-tr from-cyan-400/40 to-blue-600/30 rotate-45 shadow-md border border-white/60" />
+          </div>
         </div>
       </div>
 

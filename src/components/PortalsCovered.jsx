@@ -5,68 +5,66 @@ import { Globe, ExternalLink, CheckCircle2, Award } from 'lucide-react';
 export default function PortalsCovered() {
   return (
     <section id="portals" className="py-20 lg:py-28 relative bg-slate-50/60 border-t border-slate-200/80 overflow-hidden">
-      {/* Classy Procurement Network & Inter-Portal Vectors Background */}
+      {/* Modern Fluid Shapes & Wave Accents Background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden -z-0">
-        {/* Subtle dot matrix */}
-        <div 
-          className="absolute inset-0 opacity-[0.25]" 
-          style={{
-            backgroundImage: 'radial-gradient(#94A3B8 1px, transparent 1px)',
-            backgroundSize: '28px 28px'
-          }}
-        />
-
-        {/* Ambient soft glow */}
-        <div className="absolute top-1/4 left-10 w-[500px] h-[500px] bg-blue-500/[0.03] rounded-full blur-3xl" />
+        {/* Soft Ambient Depth Glows */}
+        <div className="absolute top-1/4 left-10 w-[500px] h-[500px] bg-blue-500/[0.04] rounded-full blur-3xl" />
         <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-cyan-500/[0.035] rounded-full blur-3xl" />
 
-        {/* Subtle Radar Broadcast Rings (Top Right) */}
-        <svg className="hidden md:block absolute -top-16 -right-16 w-96 h-96 text-blue-600/15" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="200" cy="200" r="70" stroke="currentColor" strokeWidth="0.75" strokeDasharray="3 3" />
-          <circle cx="200" cy="200" r="120" stroke="currentColor" strokeWidth="0.75" strokeDasharray="4 4" />
-          <circle cx="200" cy="200" r="170" stroke="currentColor" strokeWidth="0.75" strokeDasharray="5 5" />
-          <circle cx="200" cy="200" r="4" fill="currentColor" />
-          {/* Crosshair lines */}
-          <line x1="20" y1="200" x2="380" y2="200" stroke="currentColor" strokeWidth="0.5" strokeDasharray="2 3" />
-          <line x1="200" y1="20" x2="200" y2="380" stroke="currentColor" strokeWidth="0.5" strokeDasharray="2 3" />
-          {/* Subtle directional sweep chevron */}
-          <path d="M260 170 L268 174 L260 178" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+        {/* Organic Flowing Wave Ribbon across Upper Right (Ref: Image 1 & 3) */}
+        <svg className="hidden md:block absolute -top-8 right-0 w-[600px] h-72 opacity-50 text-cyan-500" viewBox="0 0 600 280" fill="none">
+          <path d="M100,0 C220,140 380,40 500,180 C560,240 600,200 600,160 L600,0 Z" fill="url(#portal-wave-grad)" opacity="0.3" />
+          <path d="M100,0 C220,140 380,40 500,180 C560,240 600,200 600,160" stroke="#38BDF8" strokeWidth="1.5" strokeDasharray="5 7" opacity="0.7" />
+          <defs>
+            <linearGradient id="portal-wave-grad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#06B6D4" />
+              <stop offset="100%" stopColor="#2563EB" />
+            </linearGradient>
+          </defs>
         </svg>
 
-        {/* Pan-India Procurement Gateway Network Graph (Left Margin to Center) */}
-        <svg className="hidden lg:block absolute left-4 top-1/3 w-80 h-96 text-indigo-600/20" viewBox="0 0 320 384" fill="none" xmlns="http://www.w3.org/2000/svg">
-          {/* Interconnecting gateway lines */}
-          <line x1="40" y1="60" x2="140" y2="120" stroke="currentColor" strokeWidth="0.8" strokeDasharray="3 3" />
-          <line x1="140" y1="120" x2="240" y2="80" stroke="currentColor" strokeWidth="0.8" strokeDasharray="3 3" />
-          <line x1="140" y1="120" x2="100" y2="240" stroke="currentColor" strokeWidth="0.8" strokeDasharray="3 3" />
-          <line x1="100" y1="240" x2="220" y2="280" stroke="currentColor" strokeWidth="0.8" strokeDasharray="3 3" />
-          <line x1="240" y1="80" x2="220" y2="280" stroke="currentColor" strokeWidth="0.8" strokeDasharray="3 3" />
-          <line x1="100" y1="240" x2="30" y2="330" stroke="currentColor" strokeWidth="0.8" strokeDasharray="3 3" />
+        {/* Left Side: Modern 3D Tilted Rounded Slab, Crescent Arc & Sphere (Ref: Image 1 & 2) */}
+        <div className="hidden lg:block absolute left-8 top-1/3">
+          <div className="relative">
+            {/* Tilted Rounded Capsule */}
+            <div className="w-16 h-36 rounded-3xl bg-gradient-to-b from-blue-600/20 via-cyan-400/20 to-transparent rotate-[25deg] shadow-xl shadow-blue-500/10 border border-white/70 backdrop-blur-sm" />
+            
+            {/* Floating Soft Sphere with Shadow */}
+            <div className="absolute -bottom-4 -left-6 w-14 h-14 rounded-full bg-gradient-to-tr from-cyan-400/35 to-blue-600/30 shadow-lg border border-cyan-300/40" />
 
-          {/* Network Nodes */}
-          <circle cx="40" cy="60" r="4" fill="currentColor" />
-          <circle cx="140" cy="120" r="5" fill="currentColor" />
-          <circle cx="240" cy="80" r="3.5" fill="currentColor" />
-          <circle cx="100" cy="240" r="4.5" fill="currentColor" />
-          <circle cx="220" cy="280" r="4" fill="currentColor" />
-          <circle cx="30" cy="330" r="3" fill="currentColor" />
+            {/* Crescent Arc (Ref: Image 1) */}
+            <svg className="absolute -top-10 -left-6 w-24 h-24 text-cyan-400 drop-shadow-md" viewBox="0 0 100 100" fill="none">
+              <path d="M 50 20 A 30 30 0 1 1 20 50" stroke="currentColor" strokeWidth="8" strokeLinecap="round" opacity="0.7" />
+            </svg>
+          </div>
+        </div>
 
-          {/* Directional Chevrons on vectors */}
-          <path d="M85 87 L92 92 L87 97" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M185 98 L193 100 L188 106" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M156 257 L164 260 L160 266" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+        {/* Polka Dot Matrix Cluster (Left Margin - Ref: Image 1) */}
+        <div className="hidden xl:grid grid-cols-6 gap-2 absolute left-12 bottom-24 opacity-30">
+          {[...Array(18)].map((_, i) => (
+            <span key={i} className="w-1.5 h-1.5 rounded-full bg-blue-600" />
+          ))}
+        </div>
 
-          {/* Micro coordinate tags */}
-          <text x="48" y="58" fill="currentColor" fontSize="7" fontFamily="monospace" letterSpacing="1">PORTAL.GEM</text>
-          <text x="148" y="118" fill="currentColor" fontSize="7" fontFamily="monospace" letterSpacing="1">GATEWAY.CPPP</text>
-          <text x="108" y="238" fill="currentColor" fontSize="7" fontFamily="monospace" letterSpacing="1">RAIL.IREPS</text>
-          <text x="228" y="278" fill="currentColor" fontSize="7" fontFamily="monospace" letterSpacing="1">PSU.SYNC</text>
-        </svg>
+        {/* Floating Plus (+) Accents (Ref: Image 1) */}
+        <span className="hidden sm:block absolute top-16 left-28 text-cyan-500/40 text-2xl font-bold select-none">+</span>
+        <span className="hidden sm:block absolute top-1/2 right-12 text-blue-500/35 text-xl font-bold select-none">+</span>
+        <span className="hidden sm:block absolute bottom-20 left-1/3 text-blue-500/30 text-lg font-bold select-none">+</span>
 
-        {/* Blueprint coordinate markers */}
-        <div className="hidden xl:flex absolute bottom-8 left-8 items-center space-x-1 font-mono text-[9px] text-slate-400/50 uppercase tracking-widest">
-          <span className="text-blue-500/60">+</span>
-          <span>NET.PAN_INDIA.COVERAGE</span>
+        {/* Right Side: Layered Floating Sphere & Crescent Ring (Ref: Image 1) */}
+        <div className="hidden lg:block absolute right-8 bottom-32">
+          <div className="relative">
+            {/* Soft Floating Disc */}
+            <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-600/25 via-indigo-600/20 to-cyan-400/30 shadow-xl shadow-blue-600/15 border border-white/60" />
+            
+            {/* Crescent Arc Hugging Disc */}
+            <svg className="absolute -top-6 -right-6 w-28 h-28 text-cyan-400 drop-shadow-md" viewBox="0 0 100 100" fill="none">
+              <path d="M 22 50 A 30 30 0 1 1 50 78" stroke="currentColor" strokeWidth="8" strokeLinecap="round" opacity="0.75" />
+            </svg>
+
+            {/* Tilted Small Diamond */}
+            <div className="absolute -bottom-4 -left-4 w-8 h-8 rounded-xl bg-gradient-to-tr from-cyan-400/40 to-blue-600/30 rotate-45 shadow-md border border-white/60" />
+          </div>
         </div>
       </div>
 
