@@ -45,46 +45,46 @@ export default function Services({ onSelectService }) {
         <div className="absolute top-1/2 right-10 w-[500px] h-[500px] bg-cyan-500/[0.035] rounded-full blur-3xl" />
         <div className="absolute bottom-10 left-1/3 w-[600px] h-[400px] bg-indigo-500/[0.03] rounded-full blur-3xl" />
 
-        {/* Top Fluid Wave Ribbon with Tracing Contour (Ref: Image 1 & 3) */}
-        <svg className="absolute -top-10 left-0 w-full h-84 pointer-events-none" viewBox="0 0 1440 320" fill="none" preserveAspectRatio="none">
+        {/* Top Short Fluid Wave Ribbon (Ref: User request - shallow height, stays above text) */}
+        <svg className="absolute top-0 left-0 w-full h-36 sm:h-40 pointer-events-none" viewBox="0 0 1440 160" fill="none" preserveAspectRatio="none">
           {/* Layer 1: Background Depth Wave (Subtle Offset Layer) */}
           <path 
-            d="M0,95 C320,205 580,30 880,140 C1160,230 1340,75 1440,35 L1440,0 L0,0 Z" 
+            d="M0,55 C320,105 580,20 880,75 C1160,115 1340,40 1440,20 L1440,0 L0,0 Z" 
             fill="url(#services-wave-back)" 
           />
           
           {/* Layer 2: Main Colored Wave Curve Shape (Visible Gradient Wash) */}
           <path 
-            d="M0,130 C280,245 540,45 840,165 C1120,265 1320,105 1440,65 L1440,0 L0,0 Z" 
+            d="M0,75 C280,125 540,30 840,90 C1120,130 1320,55 1440,35 L1440,0 L0,0 Z" 
             fill="url(#services-wave-grad)" 
           />
 
-          {/* Layer 3: Crisp Dotted Tracing Contour Line */}
+          {/* Layer 3: Crisp Contour Line */}
           <path 
-            d="M0,130 C280,245 540,45 840,165 C1120,265 1320,105 1440,65" 
+            d="M0,75 C280,125 540,30 840,90 C1120,130 1320,55 1440,35" 
             stroke="url(#services-wave-stroke)" 
-            strokeWidth="1.75" 
+            strokeWidth="1.5" 
             strokeDasharray="5 7" 
-            opacity="0.85" 
+            opacity="0.75" 
           />
 
           <defs>
             {/* Primary Colored Wave Portion */}
             <linearGradient id="services-wave-grad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.26" />
-              <stop offset="35%" stopColor="#0EA5E9" stopOpacity="0.22" />
-              <stop offset="70%" stopColor="#3B82F6" stopOpacity="0.18" />
-              <stop offset="100%" stopColor="#6366F1" stopOpacity="0.16" />
+              <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.22" />
+              <stop offset="35%" stopColor="#0EA5E9" stopOpacity="0.18" />
+              <stop offset="70%" stopColor="#3B82F6" stopOpacity="0.15" />
+              <stop offset="100%" stopColor="#6366F1" stopOpacity="0.14" />
             </linearGradient>
 
             {/* Depth Wave Layer */}
             <linearGradient id="services-wave-back" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stopColor="#0284C7" stopOpacity="0.14" />
-              <stop offset="50%" stopColor="#38BDF8" stopOpacity="0.11" />
-              <stop offset="100%" stopColor="#818CF8" stopOpacity="0.12" />
+              <stop offset="0%" stopColor="#0284C7" stopOpacity="0.12" />
+              <stop offset="50%" stopColor="#38BDF8" stopOpacity="0.09" />
+              <stop offset="100%" stopColor="#818CF8" stopOpacity="0.10" />
             </linearGradient>
 
-            {/* Dotted Stroke Line */}
+            {/* Stroke Line */}
             <linearGradient id="services-wave-stroke" x1="0" y1="0" x2="1" y2="0">
               <stop offset="0%" stopColor="#0284C7" />
               <stop offset="50%" stopColor="#2563EB" />
@@ -92,22 +92,6 @@ export default function Services({ onSelectService }) {
             </linearGradient>
           </defs>
         </svg>
-
-        {/* Left Side: Modern Floating Tilted Capsule, Crescent Arc & Spheres (Ref: Image 1 & 2) */}
-        <div className="hidden lg:block absolute left-8 top-36">
-          <div className="relative">
-            {/* Tilted Rounded Capsule */}
-            <div className="w-20 h-44 rounded-3xl bg-gradient-to-br from-cyan-400/20 via-blue-500/15 to-transparent rotate-[-18deg] shadow-xl shadow-cyan-500/10 border border-white/70 backdrop-blur-sm" />
-            
-            {/* Layered Floating Sphere */}
-            <div className="absolute -bottom-6 -right-6 w-16 h-16 rounded-full bg-gradient-to-tr from-blue-600/30 to-indigo-600/20 shadow-lg border border-blue-400/30" />
-            
-            {/* Crescent Arc Ring (Ref: Image 1) */}
-            <svg className="absolute -top-10 -right-8 w-24 h-24 text-cyan-400 drop-shadow-md" viewBox="0 0 100 100" fill="none">
-              <path d="M 20 50 A 30 30 0 1 1 50 80" stroke="currentColor" strokeWidth="8" strokeLinecap="round" opacity="0.75" />
-            </svg>
-          </div>
-        </div>
 
         {/* Polka Dot Matrix Cluster (Left Margin - Ref: Image 1) */}
         <div className="hidden xl:grid grid-cols-6 gap-2.5 absolute left-12 top-[600px] opacity-30">
