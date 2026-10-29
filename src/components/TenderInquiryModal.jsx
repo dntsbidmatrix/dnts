@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { X, Send, CheckCircle2 } from 'lucide-react';
 import { COMPANY_INFO } from '../data/companyData';
 
-export default function TenderInquiryModal({ isOpen, onClose, initialService }) {
+export default function TenderInquiryModal({ isOpen, onClose, initialService, hideServiceScope = false }) {
   const [formData, setFormData] = useState({
     name: '',
     organization: '',
@@ -31,7 +31,7 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
       `*Company:* ${formData.organization}\n` +
       `*Phone:* ${formData.phone}\n` +
       `*Email:* ${formData.email}\n` +
-      `*Service Required:* ${formData.category}\n` +
+      (!hideServiceScope ? `*Service Required:* ${formData.category}\n` : '') +
       (formData.tenderDetails ? `*Tender / Product Details:* ${formData.tenderDetails}\n` : '') +
       `*Scope / Notes:* ${formData.message}`;
 
@@ -146,28 +146,30 @@ export default function TenderInquiryModal({ isOpen, onClose, initialService }) 
               </div>
             </div>
 
-            <div>
-              <label className="block text-xs font-bold text-slate-700 mb-1">
-                Service Scope
-              </label>
-              <select
-                value={formData.category}
-                onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100 focus:bg-white transition-colors"
-              >
-                <option>Our Outsourced Bid Manager Package</option>
-                <option>GeM Portal, CPPP, UNGM and Other e-procurement Portals Registration</option>
-                <option>Vendor Assessment on GeM</option>
-                <option>Vendor Exemption</option>
-                <option>PSUs Empanelment (BHEL, EIL & Indian Railways etc)</option>
-                <option>OEM Panel and OEM Dashboard</option>
-                <option>Product Upload & Catalogue Approval</option>
-                <option>Tender Document Study & Eligibility Summary</option>
-                <option>Bid Submission, Pre-Bid & Post-Bid Clarification/Representation</option>
-                <option>Live Bidding & Reverse Auction (RA) Management</option>
-                <option>L1 Purchase Order & EMD Refund Follow-up</option>
-              </select>
-            </div>
+            {!hideServiceScope && (
+              <div>
+                <label className="block text-xs font-bold text-slate-700 mb-1">
+                  Service Scope
+                </label>
+                <select
+                  value={formData.category}
+                  onChange={(e) => setFormData({ ...formData, category: e.target.value })}
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100 focus:bg-white transition-colors"
+                >
+                  <option>Our Outsourced Bid Manager Package</option>
+                  <option>GeM Portal, CPPP, UNGM and Other e-procurement Portals Registration</option>
+                  <option>Vendor Assessment on GeM</option>
+                  <option>Vendor Exemption</option>
+                  <option>PSUs Empanelment (BHEL, EIL & Indian Railways etc)</option>
+                  <option>OEM Panel and OEM Dashboard</option>
+                  <option>Product Upload & Catalogue Approval</option>
+                  <option>Tender Document Study & Eligibility Summary</option>
+                  <option>Bid Submission, Pre-Bid & Post-Bid Clarification/Representation</option>
+                  <option>Live Bidding & Reverse Auction (RA) Management</option>
+                  <option>L1 Purchase Order & EMD Refund Follow-up</option>
+                </select>
+              </div>
+            )}
 
             <div>
               <label className="block text-xs font-bold text-slate-700 mb-1">

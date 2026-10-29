@@ -413,7 +413,7 @@ export default function Footer({ onOpenInquiry, currentRoute = 'home', onNavigat
             {/* Request Proposal Action Button */}
             <div className="pt-2">
               <button
-                onClick={() => onOpenInquiry && onOpenInquiry('Our Outsourced Bid Manager Package')}
+                onClick={() => onOpenInquiry && onOpenInquiry('Our Outsourced Bid Manager Package', { hideServiceScope: true })}
                 className="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white font-bold text-xs shadow-lg shadow-blue-600/30 transition-all hover:scale-105"
               >
                 <Send className="w-3.5 h-3.5 mr-1.5" />

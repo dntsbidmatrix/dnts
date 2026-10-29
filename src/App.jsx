@@ -16,6 +16,7 @@ import { COMPANY_INFO } from './data/companyData';
 export default function App() {
   const [isInquiryOpen, setIsInquiryOpen] = useState(false);
   const [selectedService, setSelectedService] = useState('Our Outsourced Bid Manager Package');
+  const [hideServiceScope, setHideServiceScope] = useState(false);
 
   // Helper to determine route from current browser URL & hash
   const getRouteFromLocation = () => {
@@ -51,10 +52,11 @@ export default function App() {
     };
   }, []);
 
-  const handleOpenInquiry = (serviceName) => {
+  const handleOpenInquiry = (serviceName, options = {}) => {
     if (typeof serviceName === 'string') {
       setSelectedService(serviceName);
     }
+    setHideServiceScope(Boolean(options?.hideServiceScope));
     setIsInquiryOpen(true);
   };
 
@@ -130,8 +132,12 @@ export default function App() {
       {/* Interactive Modal */}
       <TenderInquiryModal
         isOpen={isInquiryOpen}
-        onClose={() => setIsInquiryOpen(false)}
+        onClose={() => {
+          setIsInquiryOpen(false);
+          setHideServiceScope(false);
+        }}
         initialService={selectedService}
+        hideServiceScope={hideServiceScope}
       />
 
       {/* Floating Action Buttons (Bottom Right) */}
